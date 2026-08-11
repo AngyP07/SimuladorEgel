@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simulador interactivo de práctica para EGEL Plus ICOMPU: temario por áreas, banco de preguntas, tarjetas y simulacros." />
+  <title>EGEL ICOMPU Study Lab</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-orb orb-c"></div>
+
+  <header class="site-header">
+    <button class="brand" data-route="home" type="button" aria-label="Ir al inicio">
+      <span class="brand-mark">E</span>
+      <span class="brand-copy"><strong>EGEL ICOMPU Lab</strong><small>CENEVAL study interface</small></span>
+    </button>
+    <nav class="site-nav">
+      <button class="nav-link is-active" data-route="home">Inicio</button>
+      <button class="nav-link" data-route="study">Temario</button>
+      <button class="nav-link" data-route="materials">Guía</button>
+      <button class="nav-link" data-route="flashcards">Tarjetas</button>
+      <button class="nav-link" data-route="configure">Simulador</button>
+      <button class="nav-link" data-route="progress">Progreso</button>
+    </nav>
+    <div class="header-tools">
+      <button class="ghost-btn small-btn" id="themeToggle" type="button">Tema</button>
+      <button class="ghost-btn mobile-menu" id="menuToggle" type="button">Menú</button>
+    </div>
+  </header>
+
+  <aside class="mobile-panel" id="mobilePanel">
+    <button data-route="home">Inicio</button>
+    <button data-route="study">Temario</button>
+    <button data-route="materials">Guía de estudio</button>
+    <button data-route="flashcards">Tarjetas</button>
+    <button data-route="configure">Simulador</button>
+    <button data-route="mistakes">Errores</button>
+    <button data-route="progress">Progreso</button>
+  </aside>
+
+  <main class="main-shell">
+    <section class="screen is-visible" id="screen-home">
+      <section class="home-hero">
+        <div class="home-copy">
+          <span class="home-badge">EGEL PLUS ICOMPU · 200 REACTIVOS · 5 ÁREAS</span>
+          <div class="headline-wrap">
+            <svg class="color-ribbon" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 920 360">
+              <defs><linearGradient id="egelRibbon" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#ff2d55"/><stop offset="18%" stop-color="#ff8a00"/><stop offset="36%" stop-color="#ffd600"/><stop offset="54%" stop-color="#33d17a"/><stop offset="72%" stop-color="#3478f6"/><stop offset="100%" stop-color="#8e44ff"/></linearGradient></defs>
+              <path d="M8 244 C 92 137, 154 311, 238 186 S 381 274 478 139 S 631 258 732 126 S 846 188 912 56" fill="none" stroke="url(#egelRibbon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="64"/>
+              <path d="M8 244 C 92 137, 154 311, 238 186 S 381 274 478 139 S 631 258 732 126 S 846 188 912 56" fill="none" stroke="rgba(255,255,255,.38)" stroke-linecap="round" stroke-width="9"/>
+            </svg>
+            <h1><span>Practica por área.</span><span>Simula el examen</span><span class="accent-word">completo.</span></h1>
+          </div>
+          <p class="home-intro">Repasa hardware, redes, desarrollo de software, comprensión lectora y redacción indirecta. El banco está organizado por las subáreas del EGEL Plus ICOMPU y permite prácticas de 10, 20 y 50 reactivos, además de un simulacro de 200.</p>
+          <div class="home-actions">
+            <button class="home-btn home-btn-primary" data-route="study">Explorar temario</button>
+            <button class="home-btn home-btn-secondary" data-route="configure">Configurar simulador</button>
+          </div>
+          <div class="home-topic-row" aria-label="Áreas disponibles">
+            <button data-area-shortcut="Implementación de hardware">HARDWARE</button>
+            <button data-area-shortcut="Implementación de redes de computadoras">REDES</button>
+            <button data-area-shortcut="Desarrollo de software">SOFTWARE</button>
+            <button data-area-shortcut="Comprensión lectora">LECTURA</button>
+            <button data-area-shortcut="Redacción indirecta">REDACCIÓN</button>
+          </div>
+        </div>
+        <aside class="hero-type-art" aria-label="Estructura de 200 reactivos">
+          <span class="type-score">200</span>
+          <span class="type-aso">EGEL</span>
+          <span class="type-percent">140</span>
+          <span class="type-equivalent">disciplinares</span>
+          <span class="type-rest">+60</span>
+          <span class="type-java">LENGUAJE</span>
+          <span class="type-formula">8 h · 2 sesiones de 4 h</span>
+        </aside>
+      </section>
+
+      <section class="home-metrics" aria-label="Resumen de progreso">
+        <article><small>Intentos</small><strong id="statAttempts">0</strong></article>
+        <article><small>Promedio</small><strong id="statAverage">0%</strong></article>
+        <article><small>Mejor resultado</small><strong id="statBest">0%</strong></article>
+        <article><small>Errores por reforzar</small><strong id="statMistakes">0</strong></article>
+        <article class="metric-message"><small>Banco de práctica</small><strong id="bankSize">0 reactivos</strong><span>organizados por 15 subáreas</span></article>
+      </section>
+
+      <section class="home-path">
+        <div class="path-intro">
+          <span class="home-badge">RUTA DE ESTUDIO</span>
+          <h2>Del repaso por subárea al simulacro de 200.</h2>
+          <p>Usa el mismo flujo del simulador original: comprende, recuerda, practica y revisa tus errores.</p>
+        </div>
+        <div class="path-list">
+          <button class="path-item" data-route="study"><span class="path-number">01</span><span class="path-copy"><strong>Comprender</strong><small>15 subáreas con conceptos, reglas mentales y trampas.</small></span><span class="path-arrow">↗</span></button>
+          <button class="path-item" data-route="flashcards"><span class="path-number">02</span><span class="path-copy"><strong>Recordar</strong><small>Tarjetas por subárea para recuerdo activo.</small></span><span class="path-arrow">↗</span></button>
+          <button class="path-item" data-quick="20"><span class="path-number">03</span><span class="path-copy"><strong>Detectar huecos</strong><small>Reto de 20 reactivos con explicación inmediata.</small></span><span class="path-arrow">↗</span></button>
+          <button class="path-item" data-exact-quiz="egel-200"><span class="path-number">04</span><span class="path-copy"><strong>Simular</strong><small>200 reactivos con la distribución oficial por subárea.</small></span><span class="path-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="home-countdown">
+        <div><span class="home-badge">FECHA DEL EXAMEN</span><h2>Cuenta regresiva personal.</h2></div>
+        <div class="countdown-box" id="countdownBox"></div>
+        <label class="date-field"><span>Cambiar fecha</span><input id="examDateInput" type="date"/></label>
+      </section>
+    </section>
+
+    <section class="screen" id="screen-study">
+      <section class="inner-hero inner-hero-study">
+        <div class="inner-hero-copy">
+          <span class="home-badge">TEMARIO · 15 SUBÁREAS · REPASO GUIADO</span>
+          <div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Estudia por categoría.<br/><strong>Sin mezclar temas.</strong></h1></div>
+          <p>Selecciona una subárea y abre sus conceptos. Cada bloque indica también cuántos reactivos representa en el simulacro de 200.</p>
+          <label class="editorial-control"><span>Buscar concepto</span><input id="studySearch" type="search" placeholder="Ej. caché, VLAN, Scrum, transacción, puntuación..."/></label>
+        </div>
+        <div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">TEMARIO</span><span class="inner-ghost-number">15</span><span class="inner-ghost-side">SUBÁREAS</span><span class="inner-ghost-small">HW · REDES · SW · LENGUAJE</span></div>
+      </section>
+      <div class="study-layout editorial-study"><aside class="study-sidebar reveal" id="topicSidebar"></aside><div class="study-stage reveal" id="studyStage"></div></div>
+    </section>
+
+    <section class="screen" id="screen-materials">
+      <section class="inner-hero inner-hero-materials">
+        <div class="inner-hero-copy">
+          <span class="home-badge">GUÍA INTEGRADA · ESTRUCTURA ACTUAL</span>
+          <div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Qué estudiar.<br/><strong>Cómo preguntan.</strong></h1></div>
+          <p>Resumen construido a partir de los PDFs adjuntos: distribución por áreas, formatos de reactivo y mapa de estudio.</p>
+        </div>
+        <div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">200</span><span class="inner-ghost-number">03</span><span class="inner-ghost-side">OPCIONES</span><span class="inner-ghost-small">DIRECTO · ORDEN · RELACIÓN</span></div>
+      </section>
+      <div class="materials-layout materials-layout-html">
+        <aside class="materials-index" id="materialsIndex"></aside>
+        <section class="material-html-stage" id="materialsStage"></section>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-flashcards">
+      <section class="inner-hero inner-hero-cards">
+        <div class="inner-hero-copy">
+          <span class="home-badge">RECUERDO ACTIVO · TARJETAS</span>
+          <div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Intenta recordarlo.<br/><strong>Luego voltea.</strong></h1></div>
+          <p>Filtra por subárea, responde mentalmente y marca si lo recordaste o necesitas repasarlo.</p>
+          <label class="editorial-control compact-control"><span>Filtrar por subárea</span><select id="flashTopicSelect"></select></label>
+        </div>
+        <div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">CARDS</span><span class="inner-ghost-number">01</span><span class="inner-ghost-side">MEMORIA</span><span class="inner-ghost-small">VOLTEA · RESPONDE · REPITE</span></div>
+      </section>
+      <div class="flash-stage reveal editorial-flash">
+        <div class="flash-card-shell" id="flashCard"><div class="flash-card-inner"><article class="flash-face front-face"><span class="flash-badge" id="flashTopicLabel"></span><h2 id="flashQuestion"></h2><p class="flash-hint">Haz clic para ver la respuesta</p></article><article class="flash-face back-face"><span class="flash-badge alt">Respuesta</span><p id="flashAnswer"></p><small id="flashMemory"></small></article></div></div>
+        <div class="flash-toolbar"><button class="ghost-btn" id="flashPrev">Anterior</button><div class="flash-meta"><strong id="flashCounter">1 / 1</strong><small id="flashStatus">Estado: sin evaluar</small></div><button class="ghost-btn" id="flashNext">Siguiente</button></div>
+        <div class="flash-actions"><button class="secondary-btn danger-soft" id="flashReview">Necesito repaso</button><button class="primary-btn success-soft" id="flashKnown">La recordé</button></div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-configure">
+      <section class="inner-hero inner-hero-quiz">
+        <div class="inner-hero-copy">
+          <span class="home-badge">SIMULADOR · 10 / 20 / 50 / 200</span>
+          <div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Elige el tamaño.<br/><strong>Y el área.</strong></h1></div>
+          <p>Practica una categoría específica o mezcla todo el banco. El simulacro de 200 usa la distribución oficial de subáreas.</p>
+        </div>
+        <div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">QUIZ</span><span class="inner-ghost-number">200</span><span class="inner-ghost-side">EGEL</span><span class="inner-ghost-small">10 · 20 · 50 · 200</span></div>
+      </section>
+
+      <form class="config-layout reveal editorial-config" id="quizConfig">
+        <article class="config-card" data-step="01">
+          <h3>Modalidad</h3>
+          <label class="choice-block"><input checked name="mode" type="radio" value="practice"/><span><strong>Práctica</strong><small>Explicación inmediata después de comprobar.</small></span></label>
+          <label class="choice-block"><input name="mode" type="radio" value="simulation"/><span><strong>Simulación</strong><small>Revisión completa hasta el final.</small></span></label>
+        </article>
+        <article class="config-card" data-step="02">
+          <h3>Número de reactivos</h3>
+          <div class="chip-row">
+            <label class="pill-choice"><input checked name="count" type="radio" value="10"/><span>10</span></label>
+            <label class="pill-choice"><input name="count" type="radio" value="20"/><span>20</span></label>
+            <label class="pill-choice"><input name="count" type="radio" value="50"/><span>50</span></label>
+            <label class="pill-choice"><input name="count" type="radio" value="200"/><span>200</span></label>
+          </div>
+          <p class="muted">200 activa el simulacro completo y utiliza la distribución oficial.</p>
+        </article>
+        <article class="config-card" data-step="03">
+          <h3>Enfoque</h3>
+          <label class="input-stack"><span>Área o subárea</span><select id="quizTopic" name="topic"></select></label>
+          <label class="switch-row"><input id="timerCheck" type="checkbox"/><span><strong>Activar temporizador</strong><small>Ritmo equivalente a 8 h / 200: 2 min 24 s por reactivo.</small></span></label>
+        </article>
+        <aside class="config-summary-box"><span class="section-kicker">Resumen</span><h2 id="configTitle">Práctica de 10 reactivos</h2><p id="configText">Todas las áreas · explicación inmediata</p><div class="goal-pill" id="configGoal">Resultado expresado como porcentaje de práctica</div><button class="primary-btn wide" type="submit">Comenzar</button></aside>
+      </form>
+
+      <section class="exact-quiz-section">
+        <div class="exact-quiz-heading"><span class="home-badge">SIMULACROS POR ESTRUCTURA</span><h2>Distribución oficial</h2><p>Elige una sección completa o el examen de 200. Las preguntas se toman del banco sin copiar el examen real.</p></div>
+        <div class="exact-quiz-grid" id="exactQuizGrid"></div>
+      </section>
+    </section>
+
+    <section class="screen" id="screen-exam">
+      <div class="exam-shell reveal">
+        <header class="exam-head">
+          <div><span class="hero-pill soft" id="examModeBadge">Práctica</span><strong id="examProgressText">Pregunta 1 de 10</strong><small class="exam-area-label" id="examAreaLabel"></small></div>
+          <div class="exam-tools"><div class="timer-box hidden" id="examTimer">24:00</div><button class="ghost-btn danger-soft" id="leaveExam">Salir</button></div>
+        </header>
+        <div class="progress-line"><span id="examProgressBar"></span></div>
+        <article class="question-card">
+          <div class="question-topline"><span class="tag-badge" id="questionTopic"></span><span class="muted-strong" id="questionDifficulty"></span><span class="muted-strong" id="questionType"></span></div>
+          <div class="stimulus-card hidden" id="questionStimulus"></div>
+          <h1 id="questionText"></h1>
+          <form class="answer-grid" id="answerForm"></form>
+          <div class="feedback-box hidden" id="feedbackBox"><strong id="feedbackTitle"></strong><p id="feedbackText"></p><small id="feedbackSource"></small></div>
+          <div class="question-actions"><button class="ghost-btn" id="prevQuestion" type="button">Anterior</button><button class="primary-btn" id="mainQuestionAction" type="button">Comprobar</button></div>
+        </article>
+        <section class="question-navigator-section"><div class="question-navigator-heading"><span class="home-badge">ÍNDICE DEL CUESTIONARIO</span><p>Selecciona un número para ir directamente a esa pregunta.</p></div><nav class="question-navigator" id="questionNavigator" aria-label="Índice de preguntas"></nav></section>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-results">
+      <div class="results-stage reveal">
+        <section class="results-hero"><div class="score-disc"><strong id="resultScore">0%</strong><span id="resultStatus">Práctica</span></div><div class="result-copy"><span class="hero-pill soft">RESULTADO</span><h1 id="resultTitle">Resumen del intento</h1><p id="resultSummary"></p><div class="hero-actions"><button class="primary-btn" id="retryQuiz">Reintentar</button><button class="ghost-btn" data-route="mistakes">Ver errores</button></div></div></section>
+        <section class="results-grid"><article class="feature-panel"><div class="section-kicker">Desglose</div><h3>Rendimiento por área</h3><div id="topicBreakdown"></div></article><article class="feature-panel"><div class="section-kicker">Siguiente paso</div><h3 id="resultAdviceTitle">Sigue reforzando</h3><p id="resultAdviceText"></p><div class="official-note">Este porcentaje es solo una métrica interna de práctica; no equivale a la escala oficial de Ceneval.</div></article></section>
+        <section class="review-panel"><div class="section-kicker">Revisión pregunta por pregunta</div><div id="answerReview"></div></section>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-mistakes">
+      <section class="inner-hero inner-hero-errors"><div class="inner-hero-copy"><span class="home-badge">ERRORES · REPASO DIRIGIDO</span><div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Regresa al error.<br/><strong>Hasta entenderlo.</strong></h1></div><p>Las preguntas falladas se guardan localmente para crear un repaso específico.</p><button class="home-btn home-btn-primary" id="practiceMistakes">Practicar errores</button></div><div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">ERROR</span><span class="inner-ghost-number">↻</span><span class="inner-ghost-side">REPASO</span><span class="inner-ghost-small">FALLA · REVISA · REPITE</span></div></section>
+      <div class="mistakes-layout reveal editorial-mistakes" id="mistakesList"></div>
+    </section>
+
+    <section class="screen" id="screen-progress">
+      <section class="inner-hero inner-hero-progress"><div class="inner-hero-copy"><span class="home-badge">PROGRESO · DATOS LOCALES</span><div class="inner-title-wrap"><span class="inner-ribbon" aria-hidden="true"></span><h1>Mide el avance.<br/><strong>Por área.</strong></h1></div><p>Consulta tus intentos, promedio, mejor resultado, tarjetas dominadas y precisión por subárea. Todo se guarda solo en este navegador.</p><button class="home-btn home-btn-secondary danger-soft" id="clearProgress">Borrar progreso</button></div><div class="inner-type-art" aria-hidden="true"><span class="inner-ghost-main">DATA</span><span class="inner-ghost-number">15</span><span class="inner-ghost-side">ÁREAS</span><span class="inner-ghost-small">INTENTOS · PROMEDIO · MEJOR</span></div></section>
+      <section class="stats-wall reveal editorial-stats"><article><small>Intentos</small><strong id="progressAttempts">0</strong></article><article><small>Promedio</small><strong id="progressAverage">0%</strong></article><article><small>Mejor</small><strong id="progressBest">0%</strong></article><article><small>Tarjetas dominadas</small><strong id="progressCards">0</strong></article></section>
+      <section class="results-grid reveal"><article class="feature-panel"><div class="section-kicker">Subáreas</div><h3>Precisión acumulada</h3><div id="progressTopics"></div></article><article class="feature-panel"><div class="section-kicker">Historial</div><h3>Últimos intentos</h3><div id="historyList"></div></article></section>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="data/topics.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="data/exam-sets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

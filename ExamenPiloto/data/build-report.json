@@ -1,0 +1,71 @@
+{
+  "total": 890,
+  "counts": {
+    "hw-circuits": 64,
+    "hw-architecture": 64,
+    "hw-embedded": 64,
+    "hw-control": 64,
+    "net-design": 64,
+    "net-admin": 64,
+    "net-security": 64,
+    "sw-engineering": 64,
+    "sw-programming": 64,
+    "sw-data": 64,
+    "read-study": 50,
+    "read-literary": 50,
+    "read-social": 50,
+    "write-study": 50,
+    "write-social": 50
+  },
+  "official_blueprint": {
+    "hw-circuits": 11,
+    "hw-architecture": 11,
+    "hw-embedded": 13,
+    "hw-control": 14,
+    "net-design": 11,
+    "net-admin": 13,
+    "net-security": 17,
+    "sw-engineering": 16,
+    "sw-programming": 13,
+    "sw-data": 21,
+    "read-study": 12,
+    "read-literary": 12,
+    "read-social": 6,
+    "write-study": 15,
+    "write-social": 15
+  },
+  "exact_sets": [
+    [
+      "Simulacro EGEL Plus ICOMPU",
+      200
+    ],
+    [
+      "Sección Disciplinar",
+      140
+    ],
+    [
+      "Área 1 · Implementación de hardware",
+      49
+    ],
+    [
+      "Área 2 · Implementación de redes",
+      41
+    ],
+    [
+      "Área 3 · Desarrollo de software",
+      50
+    ],
+    [
+      "Lenguaje y Comunicación",
+      60
+    ],
+    [
+      "Comprensión lectora",
+      30
+    ],
+    [
+      "Redacción indirecta",
+      30
+    ]
+  ]
+}
