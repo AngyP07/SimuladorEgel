@@ -443,7 +443,7 @@
 
   function currentQ() { return currentExam?.questions[currentExam.index]; }
   function selectedAnswer() { return currentExam?.answers[currentExam.index]; }
-  function isCorrect(q, answer) { return answer !== null && q.answer.includes(answer); }
+  function isCorrect(q, answer) { if (q.type === 'multiple') { return Array.isArray(answer) && answer.length === q.answer.length && [...answer].sort((a,b)=>a-b).every((v,i)=>v === [...q.answer].sort((a,b)=>a-b)[i]); } return answer !== null && q.answer.includes(answer); }
 
   function renderQuestion() {
     if (!currentExam) return;
@@ -461,15 +461,21 @@
 
     refs.answerForm.innerHTML = q.options.map((option,idx)=>{
       let cls='answer-option';
-      if (answered===idx) cls+=' is-selected';
+      const selected = q.type === 'multiple' ? Array.isArray(answered) && answered.includes(idx) : answered===idx;
+      if (selected) cls+=' is-selected';
       if (currentExam.mode==='practice' && checked) {
         if (q.answer.includes(idx)) cls+=' is-correct';
-        else if (answered===idx) cls+=' is-wrong';
+        else if (selected) cls+=' is-wrong';
       }
-      return `<label class="${cls}"><input type="radio" name="answer" value="${idx}" ${answered===idx?'checked':''} ${(currentExam.mode==='practice'&&checked)?'disabled':''}/><span class="option-letter">${String.fromCharCode(65+idx)}</span><span>${esc(option)}</span></label>`;
+      const inputType = q.type === 'multiple' ? 'checkbox' : 'radio';
+      return `<label class="${cls}"><input type="${inputType}" name="answer" value="${idx}" ${selected?'checked':''} ${(currentExam.mode==='practice'&&checked)?'disabled':''}/><span class="option-letter">${String.fromCharCode(65+idx)}</span><span>${esc(option)}</span></label>`;
     }).join('');
     refs.answerForm.querySelectorAll('input[name="answer"]').forEach(input=>input.addEventListener('change',()=>{
-      currentExam.answers[i]=Number(input.value);
+      const idx=Number(input.value);
+      if (q.type === 'multiple') {
+        const selected = Array.isArray(currentExam.answers[i]) ? [...currentExam.answers[i]] : [];
+        currentExam.answers[i] = input.checked ? [...new Set([...selected,idx])].sort((a,b)=>a-b) : selected.filter(v=>v!==idx);
+      } else currentExam.answers[i]=idx;
       renderQuestion();
     }));
 
@@ -500,7 +506,7 @@
     refs.questionNavigator.innerHTML = currentExam.questions.map((q,idx)=>{
       const ans=currentExam.answers[idx], checked=currentExam.checked[idx]; let cls='';
       if(idx===currentExam.index) cls+=' is-current';
-      if(ans!==null) cls+=' is-answered';
+      if(ans!==null && (!Array.isArray(ans) || ans.length>0)) cls+=' is-answered';
       if(currentExam.mode==='practice'&&checked) cls+=isCorrect(q,ans)?' is-correct':' is-wrong';
       const area = topicById[q.topic]?.area || q.topic;
       let marker = '';
@@ -517,7 +523,7 @@
     if (!currentExam) return;
     const i=currentExam.index, q=currentQ(), ans=currentExam.answers[i];
     if (currentExam.mode==='practice' && !currentExam.checked[i]) {
-      if (ans===null) { showToast('Selecciona una respuesta antes de comprobar.'); return; }
+      if (ans===null || (Array.isArray(ans) && ans.length===0)) { showToast('Selecciona una respuesta antes de comprobar.'); return; }
       currentExam.checked[i]=true; renderQuestion(); return;
     }
     if (i===currentExam.questions.length-1) { finishExam(); return; }
@@ -561,7 +567,7 @@
 
     refs.answerReview.innerHTML=currentExam.questions.map((q,i)=>{
       const ans=currentExam.answers[i], good=isCorrect(q,ans), correctIdx=q.answer[0];
-      return `<article class="review-item ${good?'correct':'wrong'}"><span class="review-number">${i+1}</span><div><small>${esc(topicById[q.topic]?.title||q.topic)} · ${esc(q.format||'Opción múltiple')}</small><h4>${richText(q.question)}</h4>${q.stimulus?`<div class="review-stimulus">${esc(q.stimulus)}</div>`:''}<p><strong>Tu respuesta:</strong> ${ans===null?'Sin responder':`${String.fromCharCode(65+ans)}) ${esc(q.options[ans])}`}</p><p><strong>Correcta:</strong> ${String.fromCharCode(65+correctIdx)}) ${esc(q.options[correctIdx])}</p><p>${esc(q.explanation)}</p></div></article>`;
+      return `<article class="review-item ${good?'correct':'wrong'}"><span class="review-number">${i+1}</span><div><small>${esc(topicById[q.topic]?.title||q.topic)} · ${esc(q.format||'Opción múltiple')}</small><h4>${richText(q.question)}</h4>${q.stimulus?`<div class="review-stimulus">${esc(q.stimulus)}</div>`:''}<p><strong>Tu respuesta:</strong> ${ans===null || (Array.isArray(ans)&&!ans.length)?'Sin responder':(Array.isArray(ans)?ans:[ans]).map(a=>`${String.fromCharCode(65+a)}) ${esc(q.options[a])}`).join('; ')}</p><p><strong>Correcta:</strong> ${(Array.isArray(q.answer)?q.answer:[q.answer]).map(a=>`${String.fromCharCode(65+a)}) ${esc(q.options[a])}`).join('; ')}</p><p>${esc(q.explanation)}</p></div></article>`;
     }).join('');
   }
 

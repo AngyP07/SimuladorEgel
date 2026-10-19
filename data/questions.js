@@ -16908,5 +16908,10711 @@ window.QUESTIONS = [
     ],
     "explanation": "La opción correcta respeta grafías, acentuación y puntuación.",
     "source": "Reactivo original de práctica · alineado a la Guía EGEL Plus ICOMPU 2023"
+  },
+  {
+    "id": 891,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué operación permite obtener la dirección de red a partir de una dirección IPv4 y su máscara?",
+    "stimulus": "",
+    "options": [
+      "Una operación AND bit a bit entre la IP y la máscara",
+      "Una suma decimal de la IP y la máscara",
+      "Una operación OR entre la IP y la máscara"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La operación AND conserva los bits donde la máscara vale 1 y pone en cero los bits de host; el resultado identifica la red.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 892,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una subred usa la máscara 255.255.255.192. ¿Cuántas direcciones IPv4 totales contiene cada bloque?",
+    "stimulus": "",
+    "options": [
+      "32",
+      "64",
+      "128"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El último octeto tiene tamaño de bloque 256 − 192 = 64. El bloque incluye 64 direcciones totales; normalmente 62 son asignables a hosts.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 893,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para la dirección 10.254.255.19/29, ¿cuál es la dirección de broadcast de su subred?",
+    "stimulus": "",
+    "options": [
+      "10.254.255.23",
+      "10.254.255.24",
+      "10.254.255.31"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un prefijo /29 deja 3 bits de host y genera bloques de 8 direcciones. El bloque que contiene .19 va de .16 a .23, por lo que .23 es el broadcast.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 894,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la cantidad máxima de hosts utilizables en una subred IPv4 /28 tradicional?",
+    "stimulus": "",
+    "options": [
+      "14",
+      "16",
+      "30"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un /28 deja 32 − 28 = 4 bits de host: 2⁴ = 16 direcciones totales. Se excluyen la dirección de red y el broadcast, así que quedan 14 hosts.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 895,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se necesita un enlace IPv4 punto a punto tradicional con dos direcciones de host utilizables y mínimo desperdicio. ¿Qué prefijo es el más apropiado?",
+    "stimulus": "",
+    "options": [
+      "/28",
+      "/30",
+      "/24"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Un /30 contiene cuatro direcciones: red, dos hosts utilizables y broadcast. Es la máscara clásica eficiente para un enlace punto a punto IPv4.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 896,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una dirección IP es 172.16.99.99/18. ¿Cuál es el broadcast de la subred?",
+    "stimulus": "",
+    "options": [
+      "172.16.63.255",
+      "172.16.127.255",
+      "172.16.255.255"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La máscara /18 equivale a 255.255.192.0; el tamaño del bloque en el tercer octeto es 64. El tercer octeto 99 cae en el bloque 64–127, cuyo broadcast es 172.16.127.255.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 897,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué rango corresponde a direcciones IPv4 privadas de clase B históricamente definida?",
+    "stimulus": "",
+    "options": [
+      "172.16.0.0 a 172.31.255.255",
+      "172.0.0.0 a 172.255.255.255",
+      "192.168.0.0 a 192.168.255.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El bloque privado correspondiente es 172.16.0.0/12, que abarca desde 172.16.0.0 hasta 172.31.255.255.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 898,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se parte de una red /24 y se requieren al menos 12 subredes de igual tamaño. ¿Qué prefijo mínimo satisface la cantidad de subredes?",
+    "stimulus": "",
+    "options": [
+      "/26",
+      "/27",
+      "/28"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Se deben tomar 4 bits para subredes porque 2⁴ = 16 subredes. Al sumar 4 bits al prefijo /24 se obtiene /28.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 899,
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál afirmación describe correctamente una dirección IPv4 de broadcast de subred?",
+    "stimulus": "",
+    "options": [
+      "Tiene todos los bits de host en cero",
+      "Tiene todos los bits de host en uno",
+      "Siempre es 255.255.255.255"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El broadcast dirigido de una subred se forma poniendo en 1 todos los bits de host. 255.255.255.255 es el broadcast limitado, no el broadcast de cada subred.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 900,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué servicio asigna automáticamente dirección IP, máscara, gateway y otros parámetros a los clientes?",
+    "stimulus": "",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "DHCP entrega de forma dinámica parámetros de configuración IP a los clientes, lo que reduce la configuración manual.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 901,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función cumple DNS en una red IP?",
+    "stimulus": "",
+    "options": [
+      "Traduce nombres de dominio a registros como direcciones IP",
+      "Cifra todas las conexiones de red",
+      "Asigna direcciones MAC a los puertos del switch"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "DNS resuelve nombres de dominio consultando registros, por ejemplo A o AAAA, que pueden proporcionar direcciones IP.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 902,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo permite obtener la dirección MAC asociada a una dirección IPv4 dentro de la red local?",
+    "stimulus": "",
+    "options": [
+      "ARP",
+      "ICMP",
+      "SMTP"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "ARP permite descubrir la dirección de enlace asociada a una IPv4 en la red local; no se utiliza para resolver nombres de dominio.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 903,
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el propósito principal de una ACL en un router o firewall?",
+    "stimulus": "",
+    "options": [
+      "Filtrar tráfico según reglas definidas",
+      "Convertir nombres de dominio en direcciones IP",
+      "Asignar automáticamente direcciones IP"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Una lista de control de acceso permite aceptar o denegar tráfico según criterios como dirección origen/destino, protocolo y puertos.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 904,
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué medida reduce mejor el riesgo de acceso no autorizado a la administración de un switch?",
+    "stimulus": "",
+    "options": [
+      "Usar Telnet sin contraseña",
+      "Habilitar SSH y autenticación robusta",
+      "Compartir la cuenta de administrador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "SSH cifra la sesión administrativa, a diferencia de Telnet. Debe combinarse con credenciales robustas y permisos mínimos.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 905,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un proyecto, el cliente revisa entregas parciales y solicita ajustes al finalizar cada iteración. ¿Qué enfoque encaja mejor?",
+    "stimulus": "",
+    "options": [
+      "Desarrollo incremental e iterativo",
+      "Modelo estrictamente lineal sin revisiones",
+      "Mantenimiento correctivo únicamente"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El enfoque incremental entrega partes funcionales y la iteración permite incorporar retroalimentación entre ciclos.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 906,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué técnica de factibilidad compara sistemáticamente los costos estimados con los beneficios esperados de una solución?",
+    "stimulus": "",
+    "options": [
+      "Análisis costo-beneficio",
+      "Diagrama de clases",
+      "Prueba de caja blanca"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El análisis costo-beneficio compara inversión, operación y beneficios esperados para apoyar la decisión sobre la viabilidad económica.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 907,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la finalidad principal de un caso de uso en el análisis de requisitos?",
+    "stimulus": "",
+    "options": [
+      "Describir cómo un actor interactúa con el sistema para lograr un objetivo",
+      "Definir la estructura física de los servidores",
+      "Medir exclusivamente el consumo de memoria"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un caso de uso describe interacciones entre actores y sistema para alcanzar un objetivo, delimitando comportamiento funcional.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 908,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué modelo de proceso de software enfatiza la identificación y gestión explícita de riesgos en ciclos sucesivos?",
+    "stimulus": "",
+    "options": [
+      "Espiral",
+      "Cascada pura",
+      "Big bang"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El modelo espiral organiza ciclos alrededor de objetivos, evaluación de riesgos, desarrollo y planificación de la siguiente iteración.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 909,
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el orden habitual de las fases principales de un compilador desde el análisis hasta la generación del programa?",
+    "stimulus": "",
+    "options": [
+      "Análisis léxico, sintáctico, semántico, código intermedio/optimización y generación de código",
+      "Generación de código, análisis léxico y análisis sintáctico",
+      "Análisis semántico, ejecución y diseño de interfaz"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El compilador reconoce tokens, analiza la estructura sintáctica y semántica, y después transforma/optimiza una representación intermedia antes de generar código objetivo.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 910,
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué estructura de datos sigue el principio LIFO?",
+    "stimulus": "",
+    "options": [
+      "Cola",
+      "Pila",
+      "Lista circular"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "LIFO significa Last In, First Out: el último elemento insertado es el primero en salir, como ocurre en una pila.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 911,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué propiedad de una transacción ACID garantiza que los cambios confirmados sobrevivan a una falla del sistema?",
+    "stimulus": "",
+    "options": [
+      "Consistencia",
+      "Durabilidad",
+      "Aislamiento"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La durabilidad asegura que, una vez confirmada una transacción, sus cambios persistan aunque ocurra una falla posterior.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 912,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En una base de datos relacional, ¿qué función tiene una clave foránea?",
+    "stimulus": "",
+    "options": [
+      "Relacionar una fila con una clave de otra tabla y mantener integridad referencial",
+      "Garantizar que todas las columnas sean únicas",
+      "Ordenar físicamente los registros por fecha"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Una clave foránea referencia una clave candidata, normalmente primaria, de otra tabla y ayuda a impedir referencias a filas inexistentes.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 913,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de sentencia SQL se usa para recuperar filas de una tabla?",
+    "stimulus": "",
+    "options": [
+      "SELECT",
+      "UPDATE",
+      "DROP"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "SELECT consulta y devuelve datos. UPDATE modifica filas existentes y DROP elimina un objeto de la base de datos.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 914,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué memoria suele ser volátil y se utiliza para almacenar temporalmente programas y datos en ejecución?",
+    "stimulus": "",
+    "options": [
+      "RAM",
+      "ROM",
+      "SSD"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La RAM es memoria de trabajo de acceso rápido y normalmente volátil: pierde su contenido al retirar la alimentación.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 915,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué componente ejecuta instrucciones y coordina operaciones aritméticas y lógicas de una computadora?",
+    "stimulus": "",
+    "options": [
+      "CPU",
+      "Fuente de poder",
+      "Tarjeta de red"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La unidad central de procesamiento interpreta y ejecuta instrucciones; integra, entre otros componentes, unidad de control y unidad aritmético-lógica.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 916,
+    "topic": "hw-embedded",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un sistema embebido que debe responder dentro de límites temporales definidos, ¿qué atributo es esencial?",
+    "stimulus": "",
+    "options": [
+      "Cumplimiento de restricciones de tiempo real",
+      "Mayor tamaño de pantalla",
+      "Almacenamiento ilimitado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un sistema de tiempo real debe producir respuestas dentro de plazos definidos; la corrección depende tanto del resultado como del momento en que se entrega.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 917,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un sistema de control con realimentación, ¿qué se compara para calcular el error?",
+    "stimulus": "",
+    "options": [
+      "La referencia deseada y la salida medida",
+      "La dirección IP y la máscara",
+      "La frecuencia del reloj y el tamaño del disco"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El error es la diferencia entre el valor de referencia y la salida medida; el controlador usa ese error para ajustar la acción de control.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 918,
+    "topic": "read-study",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un texto académico, ¿qué función cumple una conclusión bien construida?",
+    "stimulus": "",
+    "options": [
+      "Introduce un tema completamente nuevo sin relacionarlo con el desarrollo",
+      "Integra los hallazgos y responde al propósito planteado",
+      "Sustituye todas las evidencias por opiniones personales"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La conclusión sintetiza los resultados y los vincula con el objetivo o pregunta inicial; no debe introducir argumentos centrales que no se desarrollaron.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 919,
+    "topic": "write-study",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál oración presenta una relación causal explícita y coherente?",
+    "stimulus": "",
+    "options": [
+      "El servidor se saturó porque aumentó el número de solicitudes concurrentes.",
+      "El servidor se saturó, aunque por lo tanto aumentó las solicitudes.",
+      "El servidor se saturó y debido de las solicitudes."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La conjunción «porque» introduce una causa clara y la oración mantiene una relación gramatical coherente entre el efecto y su explicación.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "id": 920,
+    "topic": "read-social",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un aviso institucional sobre mantenimiento de la red, ¿qué información resulta más importante para el lector?",
+    "stimulus": "",
+    "options": [
+      "Fecha, horario, servicios afectados y acciones necesarias",
+      "Una anécdota sin relación con el mantenimiento",
+      "Una lista de términos técnicos sin explicación ni instrucciones"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un aviso práctico debe permitir que el destinatario actúe: comunica cuándo ocurrirá, qué afectará y qué debe hacer.",
+    "source": "Reactivo de práctica elaborado a partir de los documentos proporcionados: guías EGEL-ISOFT/EGEL-ICOMPU y material de direccionamiento IP y subneteo."
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles son las características del software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El software está desarrollado o diseñado; No se fabrica en el sentido clásico.",
+      "El software no se \"desgasta\".",
+      "El software puede ser personalizado o personalizac.",
+      "Todo lo mencionado anteriormente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «El software no se \"desgasta\"». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 921
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los compiladores, los editores de software vienen bajo qué tipo de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software del sistema",
+      "Software de la aplicacion",
+      "Software científico",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Software científico». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 922
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software se define como ____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Instrucciones",
+      "Estructuras de datos",
+      "Documentos",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Documentos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 923
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles son las señales de que un proyecto de software está en problemas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El alcance del producto está mal definic.",
+      "Los plazos son poco realistas.",
+      "Los cambios se gestionan mal.",
+      "Todas las anteriores."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Los plazos son poco realistas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 924
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted está trabajando como gerente de proyecto. Tu empresa quiere desarrollar un proyecto. Usted también está involucrado en el equipo de planificación. ¿Cuál será tu primer paso en la planificación de proyectos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Establecer los objetivos y alcance del producto.",
+      "Determine las restricciones del proyecto.",
+      "Selecciona el equipo.",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 925
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué elemento de codificación se omite generalmente al final de la línea? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Convenciones de nombres",
+      "Identificando",
+      "Espacio en blanco",
+      "Los operadores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Convenciones de nombres». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 926
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las reglas para escribir 'if-then-else', 'case-switch', 'while-until' y 'for' flujo de control se denominan _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Comentarios",
+      "Funciones",
+      "Longitud de línea y envoltura",
+      "Estructura de control"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Longitud de línea y envoltura». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 927
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Mantenimiento d. La optimización del rendimiento (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "1-c, 2-a, 3-d, 4-b",
+      "1-c, 2-a, 3-b, 4-d",
+      "1-a, 2-c, 3-d, 4-b",
+      "1-b, 2-c, 3-a, 4-d"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «1-c, 2-a, 3-b, 4-d». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 928
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un proyecto puede ser caracterizado como _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cada proyecto puede no tener un objetivo único y distinto.",
+      "El proyecto es una actividad de rutina o operaciones diarias.",
+      "El proyecto no viene con una hora de inicio y finalización.",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «El proyecto no viene con una hora de inicio y finalización». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 929
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Elija la opción correcta en términos de problemas relacionados con la responsabilidad profesional (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Confidencialidad",
+      "Derechos de propiedad intelectual",
+      "Ambos a y b",
+      "Gestionando las relaciones con los clientes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Confidencialidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 930
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "“Los ingenieros de software no deben usar sus habilidades técnicas para hacer un mal uso de las computadoras de otras personas”. Aquí el término uso incorrecto se refiere a: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Acceso no autorizado a material informático",
+      "Modificación no autorizada de material informático.",
+      "Diseminación de virus u otro malwad.",
+      "Todos los mencionados"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Modificación no autorizada de material informático». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 931
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Explique qué se entiende por PRODUCTO con referencia a uno de los ocho principios según el Código de ética de ACM / IEEE (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El producto debe ser fácil de usar.",
+      "Los ingenieros de software se asegurarán de que sus productos y las modificaciones relacionadas",
+      "Los ingenieros de software se asegurarán de que sus productos y las modificaciones relacionadas",
+      "Significa que el producto diseñado / creado debe estar fácilmente disponible."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Significa que el producto diseñado / creado debe estar fácilmente disponible». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 932
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Identifique un dilema ético de las situaciones mencionadas a continuación: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Su empleador lanza un sistema crítico para la seguridad sin terminar la prueba del sistema.",
+      "Negarse a emprender un proyecto.",
+      "Acuerdo en principio con las políticas de la alta dirección.",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Negarse a emprender un proyecto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 933
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Identifique la afirmación correcta: “Los ingenieros de software (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "actuar de una manera que sea en el mejor interés de su experiencia y favor.",
+      "actuar consistentemente con el interés público.",
+      "Asegurar que sus productos solo cumplan con el SRS.",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 934
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Seleccione la declaración incorrecta: Los ingenieros de software deben__________________________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "No a sabiendas acepte trabajos que estén fuera de su competencia.",
+      "No uses tus habilidades técnicas para hacer mal uso de las computadoras de otras personas.",
+      "Ser dependientes de sus colegas.",
+      "Mantener la integridad y la independencia en su juicio profesional."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «No a sabiendas acepte trabajos que estén fuera de su competencia». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 935
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La eficiencia en un producto de software no incluye ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "sensibilidad",
+      "licenciamiento",
+      "utilización de memoria",
+      "Tiempo de procesamiento"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «utilización de memoria». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 936
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos no se encuentra entre los ocho principios seguidos por el Código de ética y práctica profesional de ingeniería de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "PÚBLICO",
+      "PROFESIÓN",
+      "PRODUCTO",
+      "AMBIENTE"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «PROFESIÓN». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 937
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es un software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El software es un conjunto de programas.",
+      "El software es documentación y configuración de datos.",
+      "Tanto a como B",
+      "Ninguno de los mencionados"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Tanto a como B». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 938
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos no tiene en cuenta la falla del software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Aumento de la demanda",
+      "Baja expectativa",
+      "Aumento de la oferta",
+      "Menos confiable y costoso"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Aumento de la demanda». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 939
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles son los atributos de un buen software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Mantenimiento del software",
+      "Funcionalidad de software",
+      "Desarrollo de software",
+      "a y B"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Funcionalidad de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 940
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estas actividades de ingeniería de software no forma parte de los procesos de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Dependencia de software",
+      "Desarrollo de software",
+      "Validación de software",
+      "Especificación de software"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Especificación de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 941
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos es incorrecto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "La ingeniería de software pertenece a la informática.",
+      "La ingeniería de software es una parte de la forma más general de la ingeniería de sistemas.",
+      "La informática pertenece a la ingeniería de softwad.",
+      "La ingeniería de software se ocupa de los aspectos prácticos de desarrollar y entregar software"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «La ingeniería de software se ocupa de los aspectos prácticos de desarrollar y entregar software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 942
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos es verdad? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Los productos genéricos y los productos personalizados son tipos de productos de softwad.",
+      "Los productos genéricos se producen por organización y se venden al mercado abierto.",
+      "Los productos personalizados son encargados por clientes particulares.",
+      "Todas las anteriores."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Los productos personalizados son encargados por clientes particulares». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 943
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos no afecta a los diferentes tipos de software en su conjunto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Heterogeneidad",
+      "Flexibilidad",
+      "Negocios y cambio social.",
+      "Seguridad"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Negocios y cambio social». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 944
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Las nociones fundamentales de la ingeniería de software no tienen en cuenta? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Procesos de software",
+      "Seguridad del software",
+      "Reutilización de software",
+      "Validación de Software"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Seguridad del software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 945
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de estos no es cierto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "La web ha llevado a la disponibilidad de servicios de software y la posibilidad de desarrollar",
+      "Los sistemas basados en web han conducido a la degradación de los lenguajes de programación.",
+      "Web trae concepto de software como servicio.",
+      "El sistema basado en la web debe ser desarrollado y entregado de manera incremental."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «El sistema basado en la web debe ser desarrollado y entregado de manera incremental». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 946
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Identifique un lenguaje de cuarta generación (4GL) a partir de lo que se indica a continuación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "FORTRAN",
+      "COBOL",
+      "Shell de unix",
+      "C ++"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «FORTRAN». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 947
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Organice las siguientes actividades para hacer un producto de software utilizando 4GT. i. Estrategia de diseño ii. Transformación en producto. iii. Implementación iv. Recolección de requisitos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "1, 4, 3, 2",
+      "4, 3, 1, 2",
+      "4, 1, 3, 2",
+      "1, 3, 4, 2"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «4, 3, 1, 2». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 948
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "4GL es un ejemplo de procesamiento ______________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Caja blanca",
+      "Caja negra",
+      "Funcional",
+      "Ambos b & c"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Funcional». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 949
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El modelo 4GT es un paquete de __________________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Herramientas de caja",
+      "Herramientas de software",
+      "Programas de software",
+      "Documentación"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Programas de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 950
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Modelo de proceso del software RAD significa _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Desarrollo rápido de aplicaciones.",
+      "Desarrollo relativo de aplicaciones.",
+      "Diseño de aplicaciones rápidas.",
+      "Desarrollo de aplicaciones recientes."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Desarrollo de aplicaciones recientes». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 951
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el modelo más simple de paradigma de desarrollo de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo espiral",
+      "Modelo de Big Bang",
+      "Modelo V",
+      "Modelo de cascada"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Modelo espiral». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 952
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué modelo también se conoce como modelo de verificación y validación? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo de cascada",
+      "Modelo de Big Bang",
+      "Modelo V",
+      "Modelo espiral"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Modelo de cascada». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 953
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué modelo no es adecuado para grandes proyectos de software pero es bueno para aprender y experimentar? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo de Big Bang",
+      "Modelo espiral",
+      "Modelo iterativo",
+      "Modelo de cascada"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Modelo iterativo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 954
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿A qué modelo también se le llama ciclo de vida clásico o modelo de cascada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Desarrollo iterativo",
+      "Desarrollo secuencial lineal",
+      "Modelo RAD",
+      "Desarrollo incremental"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Desarrollo secuencial lineal». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 955
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la tasa de actividad global efectiva promedio en un sistema de tipo E en evolución que es invariante durante la vida útil del producto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Autorregulación",
+      "Reduciendo la calidad",
+      "Sistemas de retroalimentación",
+      "Estabilidad organizacional"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Estabilidad organizacional». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 956
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Build & Fix Model es adecuado para los ejercicios de programación de ___________ LOC (línea de código) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "100-200",
+      "200-400",
+      "400-1000",
+      "por encima de 1000"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «400-1000». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 957
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes modelos no es adecuado para adaptarse a cualquier cambio? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Construir y arreglar el modelo",
+      "Modelo de prototipos",
+      "Modelo RAD",
+      "Modelo de cascada"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Modelo de prototipos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 958
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál no es uno de los tipos de prototipo de Modelo de Prototipos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Prototipo horizontal",
+      "Prototipo vertical",
+      "Prototipo diagonal",
+      "Prototipo de dominio"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Prototipo vertical». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 959
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es una fase del modelo de prototipos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Diseño rapido",
+      "Codificación",
+      "Refinamiento de prototipos",
+      "Producto de ingeniero"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Diseño rapido». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 960
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones con respecto al modelo de construcción y reparación es incorrecta? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "No hay espacio para el diseño estructurac.",
+      "El código pronto se vuelve no apto para ser arreglado e inmutable",
+      "El mantenimiento es prácticamente imposible.",
+      "Se adapta bien a grandes proyectos."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «No hay espacio para el diseño estructurac». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 961
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el mayor inconveniente de usar el modelo RAD? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Se requieren desarrolladores / diseñadores altamente especializados y capacitados.",
+      "Aumenta la reutilización de los componentes.",
+      "Alienta la retroalimentación de cliente / cliente.",
+      "Tanto a y c."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Alienta la retroalimentación de cliente / cliente». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 962
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué modelo se puede seleccionar si el usuario está involucrado en todas las fases de SDLC? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo de cascada",
+      "Modelo de prototipos",
+      "Modelo RAD",
+      "ambos b & c"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «ambos b & c». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 963
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un modelo de proceso evolutivo? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo Espiral WINWIN",
+      "Modelo incremental",
+      "Modelo de desarrollo concurrente",
+      "Todos son modelos de software evolutivos"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Modelo de desarrollo concurrente». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 964
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El modelo incremental es el resultado de una combinación de elementos, ¿de qué dos modelos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Construir y arreglar modelo y modelo de cascada",
+      "Modelo lineal y modelo RAD",
+      "Modelo lineal y modelo de prototipos.",
+      "Modelo de cascada y modelo de RAD"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Modelo lineal y modelo RAD». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 965
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la principal ventaja de usar el modelo incremental? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El cliente puede responder a cada incremento",
+      "Más fácil de probar y depurar",
+      "Se utiliza cuando existe la necesidad de llevar un producto al mercado antes de tiempo.",
+      "Ambos b & c"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «El cliente puede responder a cada incremento». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 966
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El modelo espiral fue propuesto originalmente por (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "IBM",
+      "Barry Boehm",
+      "Periodista",
+      "Royce"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Periodista». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 967
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El modelo en espiral tiene dos dimensiones: _____________ y ____________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagonal, angular",
+      "radial, perpendicular",
+      "radial, angular",
+      "diagonal, perpendicular"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «diagonal, angular». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 968
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿En qué se diferencia WINWIN Spiral Model de Spiral Model? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Define las tareas necesarias para definir recursos, líneas de tiempo y otra información relacionada",
+      "Define un conjunto de actividades de negociación al comienzo de cada paso alrededor de la",
+      "Define las tareas requeridas para evaluar los riesgos tanto técnicos como de gestión.",
+      "Define las tareas necesarias para construir, probar, instalar y proporcionar soporte al usuario."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Define las tareas necesarias para construir, probar, instalar y proporcionar soporte al usuario». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 969
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Identificar la desventaja del modelo espiral (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "No funciona bien para proyectos más pequeños.",
+      "Gran cantidad de análisis de riesgo",
+      "Fuerte aprobación y control de documentación.",
+      "La funcionalidad adicional se puede agregar en una fecha posterior"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «La funcionalidad adicional se puede agregar en una fecha posterior». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 970
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿En qué se diferencia el modelo incremental del modelo espiral? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El progreso se puede medir para el modelo incremental.",
+      "Los requisitos cambiantes se pueden acomodar en el modelo incremental.",
+      "Los usuarios pueden ver el sistema temprano en el modelo incremental.",
+      "no hay diferencia entre estos dos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Los requisitos cambiantes se pueden acomodar en el modelo incremental». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 971
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si tuviera que crear aplicaciones cliente / servidor, ¿qué modelo elegiría? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo Espiral WINWIN",
+      "Modelo espiral",
+      "Modelo concurrente",
+      "Modelo incremental"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Modelo Espiral WINWIN». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 972
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La selección de un modelo se basa en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Requerimientos",
+      "Equipo de desarrollo",
+      "Usuarios",
+      "Todos los mencionados"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todos los mencionados». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 973
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué dos modelos no permiten definir requisitos al principio del ciclo? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cascada y RAD",
+      "Prototipos y Espiral",
+      "Prototipado y RAD",
+      "Cascada y espiral"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Prototipos y Espiral». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 974
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál del siguiente modelo de ciclo de vida se puede elegir si el equipo de desarrollo tiene menos experiencia en proyectos similares? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Espiral",
+      "Cascada",
+      "RAD",
+      "Modelo de mejora iterativa"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Espiral». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 975
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si fuera un desarrollador líder de una compañía de software y se le solicita que envíe un proyecto / producto dentro de un marco de tiempo estipulado sin barreras de costo, ¿qué modelo seleccionaría? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cascada",
+      "Espiral",
+      "RAD",
+      "Incremental"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Cascada». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 976
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué dos de los siguientes modelos no podrán dar el resultado deseado si la participación del usuario no está involucrada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cascada y espiral",
+      "RAD y espiral",
+      "RAD y cascada",
+      "RAD y prototipado"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «RAD y espiral». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 977
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no está definido en un buen documento de especificación de requisitos de software (SRS)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Requerimiento funcional",
+      "Requisito no funcional",
+      "Objetivos de implementación",
+      "Algoritmo para la implementación de software"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Requisito no funcional». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 978
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es la comprensión de las limitaciones de los productos de software, los problemas relacionados con el sistema de aprendizaje o los cambios que deben realizarse en los sistemas existentes de antemano, identificando y abordando el impacto del proyecto en la organización y el personal, etc.? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Diseño de software",
+      "Estudio de factibilidad",
+      "Recolección de requisitos",
+      "Análisis del sistema"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Análisis del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 979
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué proyecto se emprende como consecuencia de una solicitud específica de un cliente? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Proyectos de desarrollo de conceptos",
+      "Proyectos de mejora de aplicaciones",
+      "Nuevos proyectos de desarrollo de aplicaciones.",
+      "Proyectos de mantenimiento de aplicaciones"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Proyectos de desarrollo de conceptos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 980
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El proceso de ingeniería de requisitos incluye cuál de estos pasos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Estudio de factibilidad",
+      "Recolección de requisitos",
+      "Especificación y validación de requisitos de software",
+      "Todo lo mencionado anteriormente"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Estudio de factibilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 981
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La especificación de requisitos de software (SRS) también se conoce como especificación de _______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Prueba de caja blanca",
+      "Test de aceptación",
+      "Pruebas integradas",
+      "Prueba de caja negra"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Prueba de caja blanca». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 982
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿En qué proceso de obtención los desarrolladores discuten con el cliente y los usuarios finales y conocen sus expectativas del software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Recolección de requisitos",
+      "Requisitos de organizacion",
+      "Negociación y discusión",
+      "Documentación"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Requisitos de organizacion». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 983
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si los requisitos son fácilmente comprensibles y definidos, ¿qué modelo es el más adecuado? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Modelo espiral",
+      "Modelo de cascada",
+      "Modelo de prototipado",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Modelo de cascada». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 984
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué documento crea el analista del sistema después de que se recopilan los requisitos de varios interesados? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Especificación de requisitos de software",
+      "Validación de requisitos de software",
+      "Estudio de factibilidad",
+      "Recolección de requisitos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Validación de requisitos de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 985
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál está enfocado hacia el objetivo de la organización? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Estudio de factibilidad",
+      "Recolección de requisitos",
+      "Especificación de requisitos de software",
+      "Validación de requisitos de software"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Especificación de requisitos de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 986
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué documentación funciona como herramienta clave para el diseñador de software, el desarrollador y su equipo de prueba para llevar a cabo sus tareas respectivas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Documentación de requisitos",
+      "Documentación del usuario",
+      "Documentación de diseño de software",
+      "Documentación técnica"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Documentación de diseño de software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 987
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el significado de la obtención de requisitos en ingeniería de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Recopilación de requisitos.",
+      "Comprensión del requisito.",
+      "Obteniendo los requerimientos del cliente.",
+      "Todas las anteriores."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Recopilación de requisitos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 988
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es / es técnica de estimación de proyecto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Técnica de estimación empírica.",
+      "Técnica de estimación heurística.",
+      "Técnica de estimación analítica.",
+      "Todas las anteriores."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Técnica de estimación empírica». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 989
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué herramientas son útiles en todas las etapas de SDLC, para la recopilación de requisitos para pruebas y documentación? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Herramientas mayúsculas",
+      "Herramientas de caja baja",
+      "Herramientas de caja integradas",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Herramientas de caja integradas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 990
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles son los tipos de requisitos de desarrollo de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Disponibilidad",
+      "Confiabilidad",
+      "Usabilidad",
+      "Todos los mencionados"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Usabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 991
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Seleccione el requisito específico del desarrollador? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Potabilidad",
+      "Mantenibilidad",
+      "Disponibilidad",
+      "Tanto a como B"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Potabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 992
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los requisitos del sistema del usuario son las partes de qué documento? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "SDD",
+      "SRS",
+      "DDD",
+      "DFD"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «SRS». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 993
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es uno de los actores más importantes de los siguientes? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Personal de nivel de entrada",
+      "Accionista de nivel medio",
+      "Gerentes",
+      "Usuarios del softwad."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Usuarios del softwad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 994
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un requisito funcional? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Mantenibilidad",
+      "Portabilidad",
+      "Robustez",
+      "Ninguno de los mencionados"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Robustez». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 995
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un requisito que se ajusta al módulo de un desarrollador? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Disponibilidad",
+      "Probabilidad",
+      "Usabilidad",
+      "Flexibilidad"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Disponibilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 996
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "“Considere un sistema donde, un sensor de calor detecta una intrusión y alerta a la compañía de seguridad”. ¿Qué tipo de requisito está proporcionando el sistema? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Funcional",
+      "No funcional",
+      "Requisito conocido",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Funcional». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 997
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones explica la portabilidad en los requisitos no funcionales? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Es un grado en que el software que se ejecuta en una plataforma se puede convertir fácilmente",
+      "Se puede mejorar mediante el uso de idiomas, sistemas operativos y herramientas universalmente",
+      "La capacidad del sistema para comportarse de forma coherente de una manera aceptable para el",
+      "Tanto a como B"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Tanto a como B». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 998
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Elija la declaración incorrecta con respecto al requisito no funcional (NFR) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Enfoque orientado al producto: enfoque en la calidad del sistema (o software)",
+      "Enfoque orientado al proceso: enfoque en cómo se pueden usar los NFR en el proceso de diseño",
+      "Enfoque cuantitativo: encuentre escalas medibles para los atributos de funcionalidad",
+      "Enfoque cualitativo - Estudie varias relaciones entre los objetivos de calidad"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Enfoque orientado al proceso: enfoque en cómo se pueden usar los NFR en el proceso de diseño». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 999
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántos esquemas de clasificación se han desarrollado para los NFR (requisito no funcional)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Dos",
+      "Tres",
+      "Cuatro",
+      "Cinco"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Dos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1000
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Según los componentes de FURPS +, ¿cuál de los siguientes no pertenece a S? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Probabilidad",
+      "Eficiencia de velocidad",
+      "Utilidad",
+      "Instalabilidad"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Eficiencia de velocidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1001
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles son las cuatro dimensiones de la fiabilidad? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Usabilidad, Fiabilidad, Seguridad, Flexibilidad.",
+      "Disponibilidad, fiabilidad, mantenibilidad, seguridad.",
+      "Disponibilidad, fiabilidad, seguridad, seguridad.",
+      "Seguridad, Seguridad, Probabilidad, Usabilidad."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Usabilidad, Fiabilidad, Seguridad, Flexibilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1002
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el primer paso de la obtención de requisitos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Identificando a los interesados",
+      "Listado de requisitos",
+      "Recopilación de requisitos",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Listado de requisitos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1003
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Comenzando de menos a más importante, elija el orden de las partes interesadas. i. Gerentes ii. Personal de nivel de entrada iii. Usuarios iv. Accionista de nivel medio (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "i, ii, iv, iii",
+      "i, ii, iii, iv",
+      "ii, iv, i, iii",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «ii, iv, i, iii». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1004
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Organice las tareas involucradas en la obtención de requisitos de una manera apropiada. i. Consolidación ii. Priorización iii. Recopilación de requisitos iv. Evaluación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "iii, i, ii, iv",
+      "iii, iv, ii, i",
+      "iii, ii, iv, i",
+      "ii, iii, iv, i"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «iii, i, ii, iv». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1005
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué diseño identifica el software como un sistema con muchos componentes que interactúan entre sí? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Diseño arquitectonico",
+      "Diseño de alto nivel",
+      "Diseño detallado",
+      "Ambos B y C"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ambos B y C». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1006
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La herramienta CASE significa ______________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Ingeniería de software asistida por computadora",
+      "Ingeniería de software asistida por componentes",
+      "Ingeniería constructiva de software asistido",
+      "Ingeniería de Software de Análisis Computacional"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Ingeniería de software asistida por computadora». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1007
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "FAST significa ______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Técnica de software de aplicación facilitada.",
+      "Técnica de software de aplicación funcional.",
+      "Facilitado técnica de especificación de aplicaciones.",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1008
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Abrevia el término CASO (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Ingeniería de software autorizada por computadora",
+      "Ingeniería de software asistida por computadora",
+      "Ingeniería de Software Autorizada Común",
+      "Ingeniería de software con asistencia común"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Ingeniería de software autorizada por computadora». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1009
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué se describe por medio de DFD como se estudió anteriormente y se representa en forma algebraica? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Flujo de datos",
+      "Almacenamiento de datos",
+      "Estructuras de datos",
+      "Elementos de datos"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Estructuras de datos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1010
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una entidad en el Modelo ER es un ser del mundo real, que tiene algunas propiedades llamadas_____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Atributos",
+      "Relación",
+      "Dominio",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Atributos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1011
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El número máximo de objetos que pueden participar en una relación se denomina________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cardinalidad",
+      "Atributos",
+      "Operaciones",
+      "Transformadores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Cardinalidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1012
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una aplicación permite ejecutar varias instancias de sí misma, aparecen en la pantalla, ya que las ventanas separadas se denominan ______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Ventana",
+      "Pestañas",
+      "Menú",
+      "Cursor"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Pestañas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1013
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un marco de proceso genérico para la ingeniería de software abarca cinco actividades. ¿Qué son esas actividades? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Comunicación, gestión de riesgos, medición, producción, despliegue.",
+      "Comunicación, planificación, modelado, construcción, despliegue.",
+      "Análisis, diseño, programación, depuración, mantenimiento.",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1014
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Boehm sugiere un enfoque que aborde los objetivos del proyecto, los hitos y los cronogramas, las responsabilidades, los enfoques de gestión y técnicos y los recursos necesarios. Este principio se llama ______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Principio W3HH",
+      "Principio de la OMS",
+      "Principio W5HH",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Principio de la OMS». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería de Software · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1015
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los dispositivos físicos de una computadora: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "software",
+      "paquete",
+      "Hardware",
+      "Software del sistema"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Hardware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1016
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El paquete de software es un grupo de programas que resuelven múltiples problemas (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "verdad",
+      "falso"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «falso». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1017
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "____________ se refiere a renovar o cambiar componentes, como aumentar la memoria principal o las capacidades del disco duro, o agregar altavoces, módems, etc (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Grados",
+      "Prosodia",
+      "Síntesis",
+      "Actualizaciones"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Actualizaciones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1018
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes está diseñado para controlar las operaciones de una computadora? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de aplicación",
+      "Software del sistema",
+      "software de utilidad",
+      "Usuario"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Software del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1019
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un ejemplo de software del sistema? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "traductor de idiomas",
+      "software de utilidad",
+      "Software de comunicación",
+      "Procesadores de textos"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Procesadores de textos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1020
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una persona que diseña los programas en un paquete de software se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "usuario",
+      "Gerente de Software",
+      "Desarrollador del sistema",
+      "Programador del sistema"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Programador del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1021
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "___________________ está diseñado para resolver un problema específico o para hacer una tarea específica) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de aplicación",
+      "Software del sistema",
+      "software de utilidad",
+      "Usuario"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Software de aplicación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1022
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El ensamblador se utiliza como traductor para? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "lenguaje de bajo nivel",
+      "lenguaje de alto nivel",
+      "COBOL",
+      "C"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «lenguaje de bajo nivel». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1023
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo llamas a un programa en ejecución? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "comando",
+      "proceso",
+      "Tarea",
+      "Instrucción"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «proceso». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1024
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un estado de proceso? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Terminado",
+      "correr",
+      "Bloqueado",
+      "Ejecución"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Bloqueado». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1025
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software diseñado para realizar una tarea específica: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software síncrono",
+      "paquete de software",
+      "Software de aplicación",
+      "Software del sistema"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Software de aplicación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1026
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software de procesamiento de textos es un tipo de software de aplicación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "verdad",
+      "falso"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «verdad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1027
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Desarrollar software __________ significa un gran compromiso de tiempo, dinero y recursos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "en casa",
+      "en sincronización",
+      "en fecha",
+      "En duración"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «en casa». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1028
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes no es una forma de adquirir software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Comprando software preescrito",
+      "Ordenar software personalizado",
+      "Descargar software de dominio público",
+      "Duplicar el software"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Duplicar el software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1029
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software de dominio público suele ser: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Sistema soportado            a) System supported",
+      "Fuente soportada             b) Source supported",
+      "apoyado por la comunidad     c) Community supported",
+      "Programador soportado        d) Programmer supported"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «apoyado por la comunidad     c) Community supported». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1030
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Conjunto de programas que constan de documentación completa) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Paquete de software      a) Software Package",
+      "Software del sistema     b) System Software",
+      "software de utilidad     c) Utility Software",
+      "paquete de archivos      d) File package"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Paquete de software      a) Software Package». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1031
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Intérprete se usa como traductor para __________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "lenguaje de bajo nivel",
+      "lenguaje de alto nivel",
+      "COBOL",
+      "C"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «lenguaje de alto nivel». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1032
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se llama una instrucción específica diseñada para hacer una tarea? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "comando",
+      "proceso",
+      "Tarea",
+      "Instrucción"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «comando». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1033
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Normalmente interactúan con el sistema a través de la interfaz de usuario proporcionada por el software de la aplicación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "programadores",
+      "Desarrolladores",
+      "Usuarios",
+      "Probadores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Usuarios». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1034
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software sustituye al hardware y se almacena en la ROM (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software síncrono",
+      "paquete de software",
+      "Firmware",
+      "middleware"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Firmware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1035
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Middleware ha permitido la producción de varios tipos de máquinas inteligentes con chips de microprocesador con software incorporado (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "verdad",
+      "falso"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «falso». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1036
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un \"pegamento\" entre las partes del cliente y el servidor de la aplicación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "middleware",
+      "Firmware",
+      "Paquete",
+      "Software del sistema"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «middleware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1037
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El almacenamiento del firmware es ___________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Memoria caché",
+      "RAM",
+      "Externo",
+      "ROM"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «ROM». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1038
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un software que se encuentra entre el sistema operativo y las aplicaciones que se ejecutan en él (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Firmware",
+      "middleware",
+      "software de utilidad",
+      "Software de aplicación"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «middleware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1039
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Un tipo de middleware que permite entre las aplicaciones integradas y el sistema operativo en tiempo real? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Firmware",
+      "middleware de base de datos",
+      "portales",
+      "Middleware embebido"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Middleware embebido». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1040
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el otro nombre para el middleware de objetos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "interfaz de solicitud de objeto    a) Object request interface",
+      "Interfaz habilitada para objetos   b) Object enabled interface",
+      "Agente de solicitud de objetos.    c) Object Request broker",
+      "Broker habilitado objeto           d) Object enabled broker"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Agente de solicitud de objetos.    c) Object Request broker». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1041
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El _______ llama a ciertos procedimientos en sistemas remotos y se utiliza para realizar interacciones síncronas o asíncronas entre sistemas (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "procedimiento",
+      "RPC",
+      "orientado al mensaje",
+      "DB"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «RPC». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1042
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un software al que se puede acceder y modificar libremente (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software síncrono",
+      "paquete de software",
+      "OSS",
+      "middleware"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «OSS». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1043
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software de código abierto se puede utilizar para fines comerciales (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "verdad",
+      "falso"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «verdad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1044
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "PNG es un _________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "formato de imagen",
+      "formato de archivo",
+      "formato de internet",
+      "formato html"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «formato de imagen». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1045
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un software de código abierto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "LibreOffice",
+      "Microsoft Office",
+      "Manipulación de imágenes GNU.",
+      "MySQL"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Microsoft Office». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1046
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los usuarios deben aceptar los _______ términos y acuerdos cuando utilizan un software de código abierto (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "sistema",
+      "Licencia",
+      "comunidad",
+      "programador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Licencia». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1047
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un inconveniente de OSS? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Falta de soporte personalizado",
+      "Opción restringida",
+      "Sin garantía",
+      "Múltiples elecciones"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Múltiples elecciones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1048
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un ejemplo de un diseño web OSS (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Nvu",
+      "KOffice",
+      "AbiWorld",
+      "Open Office"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Nvu». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1049
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un editor de imágenes similar a Adobe Photoshop (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Nvu",
+      "Open Office",
+      "Bluefish",
+      "GIMPshop"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «GIMPshop». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1050
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un OSS para fines de comunicación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Virtue Mart",
+      "Drupal",
+      "Pidgin",
+      "ZenCart"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Pidgin». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1051
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una guía para las licencias OSS distintas de la GPL (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "OSI",
+      "OSD",
+      "OSE",
+      "OSL"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «OSD». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1052
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La GPL de GNU dice que cada copia de un programa regido por la licencia de la GPL, incluso si se modifica, debe estar sujeta a la GPL nuevamente (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "verdad",
+      "falso"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «verdad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1053
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Richard Stallman del MIT, estableció una licencia especial, la licencia ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "GNU",
+      "Gratis",
+      "Paquete",
+      "Comercial"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «GNU». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1054
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En 1969, los laboratorios AT&T desarrollaron ______ que apoyaba y trabajaba en diferentes plataformas de hardwad) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Linux",
+      "Unix",
+      "Windows",
+      "Ubuntu"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Unix». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1055
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "OSS significa ___________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Servicio de sistema abierto    a) Open System Service",
+      "Software de código abierto     b) Open Source Software",
+      "Software de sistema abierto    c) Open System Software",
+      "Abrir software sincronizado    d) Open Synchronized Software"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Software de código abierto     b) Open Source Software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1056
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Se utiliza intérprete como traductor para? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "lenguaje de bajo nivel",
+      "lenguaje de alto nivel",
+      "COBOL",
+      "C"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «lenguaje de alto nivel». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1057
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para decirle a Excel que estamos ingresando una fórmula en la celda, debemos comenzar con un operador como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      ". PS",
+      ". @",
+      ". +",
+      ". ="
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «. =». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1058
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un paquete de software de aplicación? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Redhat Linux",
+      "Microsoft Office",
+      "Adobe Pagemaker",
+      "Open Office"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Redhat Linux». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1059
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cuál de las siguientes afirmaciones es incorrecta? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Photoshop es una herramienta de diseño gráfico de Adobe.",
+      "Linux es un software gratuito y de código abierto.",
+      "Linux es propiedad y es vendido por Microsoft",
+      "Windows XP es un sistema operativo"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Linux es propiedad y es vendido por Microsoft». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1060
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Microsoft Word es un ejemplo de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "un sistema operativo",
+      "Dispositivo de procesamiento",
+      "Software de aplicacion",
+      "un dispositivo de entrada"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Software de aplicacion». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1061
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La extensión de archivo del documento MS-Word en Office 2007 es _______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      ".Doc",
+      ".docx",
+      ".pdf",
+      ".xls"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «.docx». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1062
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se organizan los datos en una hoja de cálculo? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Líneas y espacios",
+      "Capas y planos",
+      "Alto y ancho",
+      "Filas y columnas"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Filas y columnas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1063
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cambiar un documento existente se llama _____ el documento (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Creando",
+      "Edición",
+      "Modificando",
+      "Ajustando"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Edición». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1064
+  },
+  {
+    "topic": "read-study",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para moverse al principio de una línea de texto, presione la tecla _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Home",
+      "A",
+      "PageUp",
+      "Enter"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Home». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1065
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el término utilizado para el correo electrónico no solicitado? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Grupo de noticias        a. News group",
+      "Usar red                 b. Use net",
+      "Columna vertebral        c. Backbone",
+      "Correo no deseado        d. Spam"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Correo no deseado        d. Spam». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1066
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los programas diseñados para realizar tareas específicas se conocen como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software del sistema",
+      "Software de aplicacion",
+      "Programas de utilidad",
+      "sistema operativo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Software de aplicacion». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1067
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El programa que se utiliza para producir imágenes y texto y para organizarlo en un periódico se clasifica como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "paquete de publicación de texto",
+      "paquete de publicación de escritorio",
+      "paquete experimental",
+      "paquete editorial organizador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «paquete de publicación de escritorio». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1068
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de software proporciona al público su código fuente de forma gratuita? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de código abierto",
+      "Sistemas multitarea",
+      "UNIX",
+      "Software de sistemas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Software de código abierto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1069
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de software de aplicación se desarrolla específicamente para una industria en particular? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de productividad personal            a. Personal productivity software",
+      "Software de aplicaciones                      b. Applications software",
+      "Sistemas de Soporte a la Decisión             c. Decision support systems",
+      "Software de mercado vertical                  d. Vertical market software"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Software de mercado vertical                  d. Vertical market software». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1070
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es software de aplicaciones? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Procesamiento de textos",
+      "Hoja de cálculo",
+      "UNIX",
+      "Autoedición (Desktop publishing)"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «UNIX». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1071
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las instrucciones de software destinadas a satisfacer las necesidades de procesamiento específicas de un usuario se denominan _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de sistemas",
+      "Un microordenador",
+      "Documentación",
+      "Software de aplicaciones"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Software de aplicaciones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1072
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El software _______ permite a los usuarios realizar cálculos en filas y columnas de datos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Procesamiento de textos",
+      "Gráficos de presentación",
+      "Sistema de administración de base de datos",
+      "Hoja de cálculo electrónica"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Sistema de administración de base de datos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1073
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las líneas horizontales y verticales en una hoja de cálculo se llaman: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Celdas",
+      "Hojas",
+      "Líneas de bloque",
+      "Líneas de cuadrícula"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Líneas de cuadrícula». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1074
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el nombre de un programa de aplicación que recopila información del usuario y la envía a alguien a través de Internet? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Un virus                a. A virus",
+      "Spybot                  b. Spybot",
+      "Bomba lógica            c. Logic bomb",
+      "Parche de seguridad     d. Security patch"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Spybot                  b. Spybot». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1075
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los programas de software que cierran posibles brechas de seguridad en un sistema operativo se conocen como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Corrección de violaciones de seguridad      a. Security breach fixes",
+      "Actualizar parches                          b. Refresh patches",
+      "Reparaciones de seguridad                   c. Security repairs",
+      "Parches de seguridad                        d. Security patches"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Parches de seguridad                        d. Security patches». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1076
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La disposición física de los elementos en una página se conoce como ………. del documento (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "caracteristicas",
+      "formato",
+      "paginación",
+      "Ninguno de esos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «formato». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1077
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se llama la intersección de una columna y una fila en una hoja de trabajo? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Columna",
+      "Valor",
+      "Dirección",
+      "Celda"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Celda». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1078
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes opciones nos permite enviar la misma carta a diferentes personas en MS Word? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Unirse por correo       a. Mail join",
+      "Copia de correo         b. Mail copy",
+      "Insertar correo         c. Mail insert",
+      "Unificación de correo   d. Mail merge"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Unificación de correo   d. Mail merge». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1079
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes aplicaciones de software sería la más adecuada para realizar cálculos numéricos y estadísticos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Base de datos",
+      "Procesador de documentos",
+      "Paquete de graficos",
+      "Hoja de cálculo"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Hoja de cálculo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1080
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para guardar un documento existente con un nombre diferente, debe (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Vuelva a escribir el documento y asígnele un nombre diferente.",
+      "Utilice el comando Guardar como ...",
+      "Copie y pegue el documento original en un nuevo documento y luego guarde",
+      "Use el Explorador de Windows para copiar el documento en una ubicación diferente y luego"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Utilice el comando Guardar como ». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1081
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el nombre del proceso que se usa para convertir una serie de instrucciones, o programa, escrito en un lenguaje de alto nivel en instrucciones (o un programa) que se pueden ejecutar en una computadora? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Montaje          a. Assembling",
+      "Compilando       b. Compiling",
+      "Traductorio      c. Translating",
+      "Subiendo         d. Uploading"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Compilando       b. Compiling». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1082
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para \"maximizar\" una ventana significa (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "llenarlo a capacidad",
+      "expandirlo para que se ajuste al escritorio",
+      "poner solo como archivos dentro",
+      "Arrástrelo a la Papelera de reciclaje"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «expandirlo para que se ajuste al escritorio». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1083
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El guardar es el proceso de ………… (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Copiar un documento de la memoria a un medio de almacenamiento.",
+      "Realizar cambios en el contenido existente de un documento.",
+      "Cambiar la apariencia o aspecto general de un documento.",
+      "desarrollar un documento introduciendo texto usando un teclado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Copiar un documento de la memoria a un medio de almacenamiento». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1084
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para buscar un documento guardado en la memoria de la computadora y mostrarlo en la pantalla para verlo (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "marcha atrás      a. reverse",
+      "repetición        b. rerun",
+      "recuperar         c. retrieve",
+      "regreso           d. return"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «recuperar         c. retrieve». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1085
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no es un software antivirus? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "NAV",
+      "F-Prot",
+      "McAfee",
+      "Oracle"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Oracle». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1086
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El tipo de software diseñado para que los usuarios personalicen los programas es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "freeware",
+      "software de código abierto",
+      "shareware",
+      "macros"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «freeware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1087
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un software que resuelve una tarea es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "suite",
+      "programa independiente",
+      "programa de código abierto",
+      "programa gratuito"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «suite». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1088
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un programa de hoja de cálculo, las hojas de trabajo y los documentos están presentes en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "columna             a. column",
+      "célula              b. cell",
+      "fórmula             c. formula",
+      "libro de trabajo    d. workbook"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «libro de trabajo    d. workbook». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1089
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El poder de la hoja de cálculo reside en su (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "hojas de trabajo",
+      "Celdas",
+      "etiquetas",
+      "fórmulas"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Celdas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1090
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El componente que es portátil y permite al presentador colocar las diapositivas sobre cualquier superficie es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "monitor CRT a gran escala",
+      "pantalla de computadora",
+      "Conversor de PC a TV",
+      "proyector de datos"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Conversor de PC a TV». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1091
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se llama conjunto de caracteres que tienen las mismas características (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "tipo cara        a. type face",
+      "tipo de estilo   b. type style",
+      "fuente           c. font",
+      "pico             d. pico"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «tipo cara        a. type face». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1092
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un programa de presentación, el cuadro de tamaño variable que se utiliza para texto y elementos gráficos es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "caja de texto    a. text box",
+      "célula           b. cell",
+      "cuadro           c. frame",
+      "objeto           d. object"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «caja de texto    a. text box». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1093
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el software, las listas de comandos y opciones están presentes en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Barra de menús",
+      "barra de título",
+      "barra de formulas",
+      "barra de herramientas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Barra de menús». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1094
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué capa en la pila TCP / IP es equivalente a la capa de Transporte del modelo OSI? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Solicitud          A) Application",
+      "Host-to-Host       B) Host-to-Host",
+      "internet           C) Internet",
+      "Acceso a la red    D) Network Access"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Host-to-Host       B) Host-to-Host». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1095
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes opciones permite que un enrutador responda a una solicitud de ARP destinada a un host remoto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Gateway DP              A) Gateway DP",
+      "ARP inverso (RARP)      B) Reverse ARP (RARP)",
+      "Proxy ARP               C) Proxy ARP",
+      "ARP inverso (IARP)      D) Inverse ARP (IARP)"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Proxy ARP               C) Proxy ARP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1096
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Los agradecimientos, la secuenciación y el control de flujo son características de qué capa OSI? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Capa 2     A) Layer 2",
+      "Capa 3     B) Layer 3",
+      "Capa 4     C) Layer 4",
+      "Capa 7     D) Layer 7"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Capa 4     C) Layer 4». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1097
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Dónde se especifica un concentrador en el modelo OSI? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "capa de sesión               A) Session layer",
+      "capa fisica                  B) Physical layer",
+      "Capa de enlace de datos      C) Data Link layer",
+      "Capa de aplicación           D) Application layer"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «capa fisica                  B) Physical layer». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1098
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué clase de dirección IP tiene la mayoría de las direcciones de host disponibles de forma predeterminada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "A y B"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «A». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1099
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tan amplia una dirección IPv6? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "32 bits",
+      "128 bytes",
+      "64 bits",
+      "128 bits"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «128 bits». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1100
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo se usa para encontrar la dirección de hardware de un dispositivo local? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "RARP",
+      "ARP",
+      "IP",
+      "ICMP"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «ARP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1101
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo de (layer) capa 4 se utiliza para una conexión Telnet? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "IP",
+      "TCP",
+      "TCP / IP",
+      "UDP"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «TCP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1102
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la razón principal por la que se creó el modelo OSI? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Para crear un modelo en capas más grande que el modo DoD",
+      "Para que los desarrolladores de aplicaciones puedan cambiar solo los protocolos de una capa a la",
+      "Para que las diferentes redes puedan comunicarse",
+      "Para que Cisco pueda usar el modelo."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Para que las diferentes redes puedan comunicarse». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1103
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo utiliza Ping? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "TCP",
+      "ARP",
+      "ICMP",
+      "BootP"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «ICMP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 1; respuesta contrastada con la clave del documento",
+    "id": 1104
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué hace una VLAN? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Actúa como el puerto más rápido para todos los servidores.",
+      "Proporciona múltiples dominios de colisión en un puerto de switch",
+      "Rompe los dominios de difusión en una red de conmutación de capa 2",
+      "Proporciona múltiples dominios de difusión dentro de un único dominio de colisión"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Rompe los dominios de difusión en una red de conmutación de capa 2». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1105
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Con qué frecuencia se envían BPDU desde un dispositivo de capa 2? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "nunca",
+      "cada 2 segundos",
+      "cada 10 minutos",
+      "cada 30 segundos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «cada 2 segundos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1106
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué clase de dirección IP proporciona un máximo de solo 254 direcciones de host por ID de red? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Clase A",
+      "Clase B",
+      "Clase C",
+      "Clase D"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Clase C». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1107
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo se usa para enviar un mensaje desconocido de la red de destino a los hosts de origen? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "TCP",
+      "ARP",
+      "ICMP",
+      "BootP"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «ICMP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1108
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes protocolos usa TCP y UDP? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "FTP",
+      "SMTP",
+      "telnet",
+      "DNS"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «DNS». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1109
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si usa Telnet o FTP, ¿cuál es la capa más alta que está usando para transmitir datos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Solicitud (Application)",
+      "presentación",
+      "sesion",
+      "transporte"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Solicitud (Application)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1110
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes son los equivalentes decimales y hexadecimales del número binario 10011101? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "155, 0x9B",
+      "157, 0x9D",
+      "159, 0x9F",
+      "185, 0xB9"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «157, 0x9D». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1111
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es una red de stub? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Una red con más de un punto de salida",
+      "Una red con más de un punto de salida y entrada",
+      "Una red con una sola entrada y sin punto de salida",
+      "Una red que tiene un solo punto de entrada y salida"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Una red que tiene un solo punto de entrada y salida». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1112
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es una dirección IP privada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "12.0.0.1",
+      "168.172.19.39",
+      "172.15.14.36",
+      "192.168.24.43"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «192.168.24.43». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1113
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántos dominios de difusión (broadcast domains) se crean cuando segmenta una red con un conmutador de 12 puertos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "12"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «1». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1114
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el número máximo de direcciones IP que se pueden asignar a los hosts en una subred local que usa la máscara de subred 255.255.255.224? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "30"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «30». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1115
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones es cierta con respecto a RIPv2? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Tiene una distancia administrativa más baja que RIPv1.",
+      "Convierte más rápido que RIPv1.",
+      "Tiene los mismos temporizadores que RIPv1.",
+      "Es más difícil de configurar que RIPv1"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Tiene los mismos temporizadores que RIPv1». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1116
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el número de subred de un host con una dirección IP de 172.16.66.0/21? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "172.16.36.0",
+      "172.16.48.0",
+      "172.16.64.0",
+      "172.16.0.0"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «172.16.64.0». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1117
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Debe subnetear una red que tenga 5 subredes, cada una con al menos 16 hosts. ¿Qué máscara de subred con clase usarías? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "255.255.255.192",
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «255.255.255.224». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1118
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En una red VLSM, ¿qué máscara debería usar en los enlaces WAN punto a punto para reducir el desperdicio de direcciones IP? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "/27",
+      "/28",
+      "/29",
+      "/30"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «/30». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1119
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de cable UTP RJ45 se usa entre los (switches) conmutadores? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Recta                            A) Straight-through",
+      "Cable de cruce                   B) Crossover cable",
+      "Crossover con una CSU / DSU      C) Crossover with a CSU/DSU",
+      "Crossover con un enrutador       D) Crossover with a router in"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Cable de cruce                   B) Crossover cable». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1120
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Al configurar Frame Relay para subinterfaces punto a punto, ¿cuál de los siguientes no debe configurarse? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "La encapsulación Frame Relay en la interfaz física",
+      "El DLCI local en cada subinterfaz.",
+      "Una dirección IP en la interfaz física",
+      "El tipo de subinterfaz punto a punto"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Una dirección IP en la interfaz física». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1121
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tecnología de conmutación (switching) reduce el tamaño de un dominio de difusión? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "ISL",
+      "802.1Q",
+      "VLANs",
+      "STP"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «VLANs». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1122
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cuando los datos están encapsulados, ¿cuál es el orden correcto? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Datos, marco, paquete, segmento, bit",
+      "Segmento, datos, paquete, marco, bit",
+      "Datos, segmento, paquete, marco, bit",
+      "Datos, segmento, marco, paquete, bit"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Datos, segmento, paquete, marco, bit». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1123
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cuando un enrutador está conectado a un enlace WAN Frame Relay mediante una interfaz DTE en serie, ¿cómo se determina la velocidad del reloj? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Suministrado por la CSU / DSU",
+      "Por el enrutador extremo",
+      "Por orden del reloj.",
+      "Por la sincronización de flujo de bits de la capa física"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Suministrado por la CSU / DSU». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1124
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es la intoxicación por ruta? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Devuelve el protocolo recibido de un enrutador como una píldora venenosa, que detiene las",
+      "Es la información recibida de un enrutador que no puede devolverse al enrutador original.",
+      "Evita que los mensajes de actualización regulares restablezcan una ruta que acaba de aparecer.",
+      "Describe cuándo un enrutador establece la métrica para un enlace caído a infinito"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Describe cuándo un enrutador establece la métrica para un enlace caído a infinito». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1125
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de subred para un host con la dirección IP 200.10.5.68/28? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "200.10.5.56",
+      "200.10.5.32",
+      "200.10.5.64",
+      "200.10.5.0"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «200.10.5.64». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1126
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿La segmentación de un flujo de datos ocurre en qué capa del modelo OSI? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "física",
+      "Enlace de datos",
+      "red",
+      "transporte"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «transporte». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1127
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo reduce la sobrecarga administrativa en una red conmutada al permitir que la configuración de una nueva VLAN se distribuya a todos los switches en un dominio? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "STP",
+      "VTP",
+      "DHCP",
+      "ISL"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «VTP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1128
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿En cuál de las siguientes tecnologías se usa el término HFC? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "DSL",
+      "PPPoE",
+      "Frame Relay",
+      "T1 dedicado"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «T1 dedicado». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1129
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para probar la pila de IP en su host local, ¿a qué dirección IP haría ping? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "127.0.0.0",
+      "1.0.0.127",
+      "127.0.0.1",
+      "127.0.0.255"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «127.0.0.1». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1130
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si a un puerto Ethernet en un enrutador se le asignara una dirección IP de 172.16.112.1/25, ¿cuál sería la dirección de subred válida de este host? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "172.16.112.0",
+      "172.16.0.0",
+      "172.16.96.0",
+      "172.16.255.0"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «172.16.112.0». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1131
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántos canales no superpuestos están disponibles con 802.11a? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "3",
+      "12",
+      "23",
+      "40"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «12». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1132
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la distancia máxima con la velocidad de datos máxima para 802.11g? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cerca de 65-75 pies",
+      "Alrededor de 90-100 pies",
+      "Cerca de 150 pies",
+      "Más de 200 pies"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Alrededor de 90-100 pies». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1133
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para conectar una computadora con un dispositivo en la misma habitación, es probable que use (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Un cable coaxial.",
+      "Una línea dedicada",
+      "Una estación terrestre",
+      "Todo lo anterior"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Un cable coaxial». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1134
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el rango de frecuencia del estándar IEEE 802.11b? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "2.4Gbps",
+      "5 Gbps",
+      "2.4 GHz",
+      "5 GHz"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «2.4 GHz». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1135
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El concepto de cambio de paquetes (packets switching) fue propuesto por primera vez (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "A fines de los años 80 para el Ministerio de Defensa de los Estados Unidos.",
+      "A principios de la década de 1960 para sistemas de comunicación militar, principalmente para",
+      "A fines de la década de 1950 para el Ministerio de Defensa de los Estados Unidos.",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «A principios de la década de 1960 para sistemas de comunicación militar, principalmente para». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1136
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una configuración de red distribuida en la que todos los datos/información pasan a través de una computadora central es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Bus network",
+      "Star network",
+      "Ring network",
+      "Point-to-point network"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Star network». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1137
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántos hosts están conectados a cada una de las redes de área local en su sitio? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "128",
+      "254",
+      "256",
+      "64"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «254». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1138
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Redes similares a Internet dentro de una empresa) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Intranets",
+      "Switching alternating",
+      "Inter organizational networks",
+      "Extranets"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Intranets». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1139
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la velocidad de datos máxima para el estándar 802.11a? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "6 Mbps",
+      "11 Mbps",
+      "22 Mbps",
+      "54 Mbps"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «54 Mbps». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1140
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes dispositivos se usa para conectar dos sistemas, especialmente si los sistemas usan protocolos diferentes? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "concentrador        A) Hub",
+      "puente              B) Bridge",
+      "Puerta de enlace    C) Gateway",
+      "Repetidor           D) Repeater"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Puerta de enlace    C) Gateway». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1141
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué dispositivo separa una sola red en dos segmentos pero permite que los dos segmentos aparezcan como uno a protocolos más altos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "interruptor         A) Switch",
+      "puente              B) Bridge",
+      "Puerta de enlace    C) Gateway",
+      "Router              D) Router"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «puente              B) Bridge». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1142
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes no permite que múltiples usuarios o dispositivos compartan una línea de comunicaciones? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Doubleplexer",
+      "Multiplexor",
+      "Concentrador",
+      "Controlador"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Doubleplexer». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1143
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes se utiliza para la modulación y demodulación? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "módem",
+      "Protocolos",
+      "Puerta de enlace (Gateway)",
+      "Multiplexor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «módem». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1144
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las velocidades de transmisión más lentas son las de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Alambre de par trenzado",
+      "Cable coaxial",
+      "Cable de fibra óptica)",
+      "Microondas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Alambre de par trenzado». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1145
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En CRC no hay error si el resto en el receptor es _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Igual al resto en el remitente.",
+      "Cero",
+      "Nonzero",
+      "El cociente en el remitente."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Cero». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1146
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los cuadros de una LAN se pueden transmitir a otra LAN a través del dispositivo (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "enrutador",
+      "puente (Bridge)",
+      "Repetidor",
+      "Módem"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «puente (Bridge)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1147
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los terminadores se utilizan en topología ______ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "bus                                             A) Bus",
+      "estrella                                        B) Star",
+      "anillo                                          C) Ring",
+      "Token Ring                                      D) Token ring"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «bus                                             A) Bus». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1148
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El cable de red se encuentra en _____ capa (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Aplicación   A) Application",
+      "red          B) Network",
+      "fisico       C) Physical",
+      "transporte   D) Transport"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «fisico       C) Physical». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1149
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El proceso de convertir señales analógicas en señales digitales para que puedan ser procesadas por una computadora receptora se conoce como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "modulación",
+      "Demodulación",
+      "Sincronizando",
+      "Digitalización"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Digitalización». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1150
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Estás trabajando con traducciones gráficas. Qué capa del modelo OSI es responsable del formato de código y la conversión y los estándares gráficos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "capa de red",
+      "capa de sesión",
+      "capa de transporte",
+      "Capa de presentación"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Capa de presentación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1151
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red con BW de 10 Mbps puede pasar solo un promedio de 12000 cuadros por minuto. con cada cuadro llevando un promedio de 10000 bits. ¿Cuál es el rendimiento de esta red? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "5 Mbps",
+      "10 Mbps",
+      "2 Mbps",
+      "100 Mbps"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «2 Mbps». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1152
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué procesos utiliza TCP, pero no UDP? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Windowing",
+      "Agradecimientos",
+      "Puerto de origen",
+      "Puerto de destino"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Agradecimientos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1153
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para redes grandes, se usa _______ topología (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Bus",
+      "Ring",
+      "Star",
+      "Mesh"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Star». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1154
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "SMTP es un protocolo utilizado en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Application",
+      "Network",
+      "Physical",
+      "Transport"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Physical». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1155
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes señales no es una señal estándar RS-232-C? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "VDR",
+      "RTS",
+      "CTS",
+      "DSR"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «VDR». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1156
+  },
+  {
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes se considera un canal de comunicación de banda ancha? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cable coaxial",
+      "Cable de fibra óptica",
+      "Circuitos de microondas.",
+      "Todo lo anterior"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todo lo anterior». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1157
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En la arquitectura de red OSI, el enrutamiento se realiza mediante (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "capa de red",
+      "capa de enlace de datos",
+      "capa de transporte",
+      "capa de sesión"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «capa de red». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1158
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El número de bits por símbolo utilizado en el código de Baudot es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "7",
+      "5",
+      "8",
+      "9"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «5». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1159
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El servidor de impresión utiliza ________, que es un búfer que contiene los datos antes de enviarlos a la impresora) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Queue",
+      "Spool",
+      "Node",
+      "None of the above"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Spool». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1160
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el tiempo de propagación si la distancia entre los 2 puntos es 12000 km? Suponga que la velocidad de propagación es 2.4 × m / s (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "0.05s",
+      "1 segundo",
+      "2 seg.",
+      "100 mseg"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «0.05s». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1161
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En la topología _____, si se rompe el cable de red de una computadora, toda la red se cae (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Ring",
+      "Bus",
+      "Star",
+      "Token ring"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Ring». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1162
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el número mínimo de cables necesarios para enviar datos a través de una capa de enlace de comunicación en serie? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «2». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1163
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una computadora en la red comparte recursos para que otros la usen, se llama ____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "servidor",
+      "cliente",
+      "mainframe",
+      "Minicomputadora"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «servidor». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1164
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes modos de comunicación admite tráfico de dos vías pero solo en una dirección a la vez? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "simplex",
+      "half duplex",
+      "Full duplex",
+      "Todo lo anterior"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «half duplex». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1165
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes se requiere para comunicarse entre dos computadoras? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Software de comunicaciones.",
+      "protocolo",
+      "Hardware de comunicación.",
+      "Todo lo anterior"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todo lo anterior». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1166
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La mayor capacidad de transmisión de datos ocurre en dispositivos ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Voiceband",
+      "Medium band",
+      "Broadband",
+      "Mega-band"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Broadband». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1167
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se llama a los sistemas desarrollados para traducir automáticamente las direcciones basadas en texto a direcciones IP numéricas (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "DSL",
+      "DNS",
+      "SNL",
+      "SDN"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «DNS». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1168
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las reglas para el intercambio de datos entre computadoras, se llaman (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "interconexiones",
+      "Paquetes síncronos.",
+      "Protocolos",
+      "sincronización de transmisión de datos"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Protocolos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1169
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una tarjeta de expansión del tamaño de una tarjeta de crédito que se inserta en las computadoras portátiles que conecta el módem a la toma telefónica de la pared es la ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "modem interno",
+      "Módem externo",
+      "Módem PC Card",
+      "módem inalámbrico"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Módem PC Card». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1170
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "________ es el proceso de desglosar la información enviada o transmitida a través de Internet en partes pequeñas llamadas paquetes (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "protocolo",
+      "ancho de banda",
+      "Reformateo",
+      "identificación"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Reformateo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1171
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una pequeña configuración de red en su hogar se llama (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "red de hub",
+      "Red de centros",
+      "red de estaciones",
+      "Red de área local."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Red de área local». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1172
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las estrategias de red más comunes son ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "estrella, anillo, bus, jerárquico           A) star, ring, bus, hierarchical",
+      "terminal, punto a punto, servidor cliente   B) terminal, peer-to-peer, client server",
+      "topología, protocolo, arquitectura          C) topology, protocol, architecture",
+      "host, cliente, terminal                     D) host, client, terminal"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «estrella, anillo, bus, jerárquico           A) star, ring, bus, hierarchical». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1173
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La mayoría de los dispositivos habilitados para la Web siguen un estándar conocido como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "FireWire",
+      "Bluetooth",
+      "TCP/IP",
+      "Wi-Fi"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Wi-Fi». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1174
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si los nodos pueden servir como servidores y clientes, se dice que la red es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "híbrida",
+      "Terminal",
+      "Peer-to-peer",
+      "jerárquica"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Peer-to-peer». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1175
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red ________ describe cómo se configura una red de computadoras y qué estrategias se emplean (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "protocolo",
+      "NOS",
+      "arquitectura",
+      "conexión"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «arquitectura». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1176
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una tecnología relativamente nueva que permite la conectividad inalámbrica se llama ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Bluetooth",
+      "Blacktooth",
+      "Baseband",
+      "Broadband"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Bluetooth». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1177
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un (a) ________ protege la red de una organización contra ataques externos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "fortaleza",
+      "Extranet",
+      "Proxy",
+      "Cortafuegos"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Cortafuegos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1178
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La capacidad de un canal de comunicación se mide en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "ancho de banda",
+      "Capacidad de bits",
+      "Velocidad de transmisión",
+      "flujo de datos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «ancho de banda». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1179
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Bluetooth es un tipo de sistema de transmisión de información de ondas de radio que sirve para aproximadamente (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "30 pies",
+      "30 yardas",
+      "30 millas",
+      "300 millas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «30 pies». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1180
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cualquier dispositivo que esté conectado a una red se llama (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "cliente",
+      "Nodo",
+      "Servidor",
+      "Manager"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Nodo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1181
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Banda de voz ________ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Permite al usuario descargar mensajes.",
+      "Se utiliza para la comunicación telefónica estándar.",
+      "Se utiliza en líneas arrendadas especiales para conectar minicomputadoras y mainframes.",
+      "Proporciona un canal de comunicación de alta velocidad."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Se utiliza para la comunicación telefónica estándar». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1182
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El acrónimo NOS se refiere a la (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Sistema operativo en los clientes.       A) Operating system on the clients",
+      "Sistema de orden de red, o topología)    B) Network order system, or topology",
+      "Sistema operativo de la red.             C) Operating system of the network",
+      "Arquitectura de red                      D) Network architecture"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Sistema operativo de la red.             C) Operating system of the network». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1183
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se realiza una tarea de desarrollar un plan técnico y especificaciones para una solución que cumpla con los requisitos del negocio emprendido en la siguiente fase del proceso de desarrollo del sistema (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "iniciación del sistema",
+      "implementación del sistema",
+      "análisis del sistema",
+      "diseño de sistemas"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «diseño de sistemas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1184
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La gestión de procesos es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "la actividad continua de registro de hechos y especificaciones para un sistema para referencia",
+      "La actividad de alcance, planificación y dotación de personal para el desarrollo de un sistema)",
+      "La actividad de organizar el desarrollo de un sistema)",
+      "La actividad de documentar, gestionar y mejorar continuamente el proceso de desarrollo de"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «La actividad de documentar, gestionar y mejorar continuamente el proceso de desarrollo de». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1185
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Desde la perspectiva de la gestión de proyectos, un proyecto se considera un éxito si (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "el sistema se entrega a tiempo",
+      "El sistema se desarrolla dentro del presupuesto.",
+      "El sistema es aceptable para el cliente.",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todas las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1186
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Todas las siguientes son las causas de gestión de proyectos de proyectos fallidos, excepto (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Falta de compromiso de la organización con la metodología de desarrollo del sistema)",
+      "falta de documentación del proyecto",
+      "Compromiso prematuro con un presupuesto y calendario fijo.",
+      "No adoptar el cambio de negocio."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «falta de documentación del proyecto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1187
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál NO es una actividad de gestión de proyectos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "identificar tareas",
+      "estimar la duración de la tarea",
+      "asignar recursos",
+      "evaluar riesgos"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «evaluar riesgos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1188
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un modelo de red gráfica que describe las tareas de un proyecto y las relaciones entre esas tareas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Tabla PERT",
+      "WBS",
+      "Gráfico de gantt",
+      "Gráfico de linea"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Tabla PERT». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1189
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una dependencia entre tareas en la que dos tareas deben terminar al mismo tiempo se denomina (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "De principio a fin (SF)        a. Start-to-finish (SF)",
+      "Acabado a acabado (FF)         b. Finish-to-finish (FF)",
+      "Finalizar para empezar (FS)    c. Finish-to-start (FS)",
+      "Inicio a inicio (SS)           d. Start-to-start (SS)"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Acabado a acabado (FF)         b. Finish-to-finish (FF)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1190
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los gráficos de gestión de proyectos es más efectivo cuando desea estudiar las relaciones entre tareas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Gráfico de gantt",
+      "Carta de PMBOK",
+      "Tabla de WBS",
+      "Tabla PERT"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Tabla PERT». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1191
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es el tiempo estimado requerido para completar una tarea, basado en un promedio ponderado de duración pesimista, optimista y esperada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "duración mínima",
+      "finalización más temprana",
+      "duración promedio ponderada",
+      "duración más probable"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «duración más probable». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1192
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Todas las siguientes son las pautas para seleccionar y reclutar miembros del equipo, excepto (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Selecciona la mejor tarea para cada persona)",
+      "promover la armonía seleccionando miembros del equipo que se complementen y trabajen bien",
+      "plan para el futuro",
+      "reclutar miembros del equipo con amplia experiencia en desarrollo de sistemas"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «reclutar miembros del equipo con amplia experiencia en desarrollo de sistemas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 2; respuesta contrastada con la clave del documento",
+    "id": 1193
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El método utilizado en la escritura y el diseño de un programa se denomina como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "método de abajo hacia arriba       a. bottom-up method",
+      "método de arriba hacia abajo       b. top-down method",
+      "método de división                 c. split method",
+      "método de estados binarios         d. binary states method"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «método de arriba hacia abajo       b. top-down method». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1194
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para escribir funciones de un programa, como ingresar cuatro números e imprimir su suma, el segundo nivel de refinamiento del programa incluye (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "imprimir los valores",
+      "imprimir las variables",
+      "ingresa cuatro números",
+      "calcular suma"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «calcular suma». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1195
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El paso final en la producción de un programa es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Implementación y documentación.",
+      "almacenar los datos",
+      "obteniendo la salida",
+      "buscando la entrada"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Implementación y documentación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1196
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La declaración del programa en el lenguaje de programación 'PASCAL' generalmente termina con una (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "dos puntos",
+      "punto y coma",
+      "coma",
+      "apóstrofe"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «punto y coma». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1197
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Lo primero al producir un programa es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "definir la necesidad",
+      "diseñar un programa",
+      "planificar un programa",
+      "calcular el costo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «diseñar un programa». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1198
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Todas las variables utilizadas en cualquier programa deben ser declaradas primero en (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Declaración FIX",
+      "Declaración VAR",
+      "Declaración REF",
+      "Declaración REP"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Declaración VAR». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1199
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Escribir un programa en un lenguaje adecuado se llama (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "programación del programa      a. program coding",
+      "instrucciones del programa     b. program instructions",
+      "depuración del programa        c. program debugging",
+      "prueba de programa             d. program testing"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «programación del programa      a. program coding». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1200
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El tercer paso para producir un programa es (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "prueba el programa",
+      "depurar (debug) un programa",
+      "calcular los costos",
+      "tanto a como B"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «tanto a como B». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1201
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El proceso de dividir las partes del programa en una parte más detallada se clasifica como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "refinamiento por etapas              a. step-wise refinement",
+      "refinamiento de arriba hacia abajo   b. top-down refinement",
+      "refinamiento binario                 c. binary refinement",
+      "refinamiento dividido                d. split refinement"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «refinamiento por etapas              a. step-wise refinement». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1202
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las especificaciones de hardware y software son parte de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "requisitos informáticos",
+      "requisitos de declaración",
+      "diagrama de flujo del sistema",
+      "declaración de decisión"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «requisitos informáticos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1203
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una técnica de investigación que involucra un gran número de observaciones tomadas a intervalos aleatorios se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "aleatorización",
+      "estratificación",
+      "muestreo de personas",
+      "muestreo de trabajo"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «muestreo de trabajo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1204
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes NO es una guía para llevar a cabo con éxito una sesión de JRP? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "mantenerse en horario",
+      "permitir amplios descansos",
+      "Fomentar la participación de usuarios y directivos.",
+      "intercambiar ideas sobre alternativas técnicas a los problemas identificados en una sesión de JRP"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «intercambiar ideas sobre alternativas técnicas a los problemas identificados en una sesión de JRP». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1205
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un actor de un evento temporal? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "servidor externo actor",
+      "actor de negocios primario",
+      "el propio sistema",
+      "hora (time)"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «hora (time)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1206
+  },
+  {
+    "topic": "net-security",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un cliente del banco se detiene en el cajero automático de su banco para retirar dinero de su cuenta de cheques. En este caso, ¿quién es el actor principal del sistema? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "el cajero del banco",
+      "el Banco",
+      "el cliente del banco",
+      "la empresa de autorización de retiro de dinero"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «el cliente del banco». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1207
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes sería el mejor nombre para un caso de uso? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "retirar dinero     a. withdraw money",
+      "retirada           b. withdrawal",
+      "retirar dinero     c. withdrawMoney",
+      "retiro de dinero   d. money withdrawal"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «retirar dinero     a. withdraw money». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1208
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes NO es una buena fuente para identificar a los actores comerciales? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "documentos de requisitos existentes",
+      "manual de usuario para el sistema existente",
+      "diagrama contextual",
+      "relación diagrama de entidad"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «relación diagrama de entidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1209
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué relación de caso de uso se utiliza para modelar la relación entre un caso de uso y un actor? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "depende de",
+      "herencia",
+      "se extiende",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1210
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una restricción en el estado del sistema antes de que se pueda ejecutar el caso de uso se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "desencadenar",
+      "condición previa",
+      "post condición",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1211
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un caso de uso que captura las interacciones entre un usuario y el sistema sin tecnología y detalle de implementación es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "caso de uso de requisitos de negocio",
+      "caso de uso de requisitos lógicos",
+      "caso de uso de extensión",
+      "caso de uso abstracto"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «caso de uso de requisitos de negocio». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1212
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes NO es una categoría de entidades? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "concepto",
+      "lugar",
+      "objeto",
+      "relación"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «relación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1213
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un atributo que consiste en otros atributos se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "atributo extendido",
+      "elemento",
+      "atributo compuesto",
+      "atributo simple"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «atributo compuesto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1214
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se llama a cualquier clave candidata que no esté seleccionada para convertirse en la clave principal: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "la clave de dominio",
+      "la clave de entidad",
+      "la clave concatenada",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1215
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una relación que existe entre las instancias de la misma entidad se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "reflexivo",
+      "asociativo",
+      "identificando",
+      "recursiva"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «recursiva». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1216
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una técnica que organiza los datos en grupos para formar entidades no redundantes, estables, flexibles y adaptables es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "optimización",
+      "normalización",
+      "aleatorización",
+      "análisis de requerimientos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «normalización». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1217
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una entidad está en la segunda forma normal si: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "los valores de las claves no primarias dependen de la clave primaria completa",
+      "todos los valores de las claves primarias son independientes de los atributos de la clave no",
+      "usted agrega atributos no clave adicionales que dependen de otros atributos no clave",
+      "los valores de los atributos clave no primarios no dependen de ningún otro atributo clave no"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «los valores de las claves no primarias dependen de la clave primaria completa». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1218
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cada facultad tiene una o más oficinas. Esto es un ejemplo de: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "dominio",
+      "cardinalidad",
+      "relación",
+      "atributo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «cardinalidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1219
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En la relación entre curso y profesorado, la entidad del curso sería (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "no específico",
+      "supertipo",
+      "el niño",
+      "el padre"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «el niño». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1220
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un atributo cuyo valor puede calcularse de otros atributos se llama: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "atributo dependiente",
+      "atributo compuesto",
+      "atributo simple",
+      "atributo derivado"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «atributo derivado». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1221
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un programador probablemente prepararía un (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagrama de flujo del programa específico",
+      "diagrama de flujo del programa general",
+      "diagrama de flujo del sistema específico",
+      "diagrama de flujo del sistema general"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «diagrama de flujo del programa específico». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1222
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Organización de lista invertida (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "utiliza un índice para cada tipo de clave",
+      "tiene registros colocados al azar en todo el archivo",
+      "significa almacenar registros en bloques contiguos de acuerdo con una clave",
+      "almacena registros de forma secuencial pero utiliza un índice para localizar registros"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «utiliza un índice para cada tipo de clave». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1223
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los procesos en el nivel más detallado de los diagramas de flujo de datos se denominan (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "flujos de datos",
+      "interfaces",
+      "primitivas funcionales",
+      "transformar descripciones"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «primitivas funcionales». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1224
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los programadores se refieren al objetivo de resolver un problema como el _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Entrada",
+      "Salida",
+      "Propósito",
+      "Tratamiento"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Salida». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1225
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un archivo indexado ofrece la facilidad de un archivo aleatorio y el método de acceso de un (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "archivo indexado",
+      "archivo secuencial",
+      "archivo de acceso directo",
+      "archivo de acceso aleatorio"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «archivo secuencial». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1226
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La mayoría de los algoritmos comienzan por _____ (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Ingresando los elementos de salida en la computadora",
+      "Ingresando los elementos de entrada en la computadora",
+      "Visualización de los elementos de salida",
+      "Visualización de los elementos de entrada"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Ingresando los elementos de entrada en la computadora». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1227
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los esquemas de Nassi - Schneiderman (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "están siendo reemplazados por diagramas de flujo",
+      "se componen de cajas dentro de cajas",
+      "a menudo describen estructuras de control superpuestas",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «se componen de cajas dentro de cajas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1228
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes herramientas no se usa para modelar el nuevo sistema? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diccionario de datos",
+      "tablas de decisiones",
+      "diagramas de flujo de datos",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todas las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1229
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones es verdadera? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Las computadoras son esenciales para el análisis de sistemas.",
+      "El flujo de información en una organización es siempre vertical.",
+      "un diagrama de flujo del sistema no es parte de un paquete de documentación del programa",
+      "una ejecución paralela implica dos terminales diferentes que acceden a una base de datos común"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «un diagrama de flujo del sistema no es parte de un paquete de documentación del programa». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1230
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los cuatro íconos utilizados en la construcción del Diagrama de Flujo de Datos son (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Flujo, Proceso, Fuente, Tienda               a. Flow, Process, Source, Store",
+      "Flujo, Fuente, Tienda, Proceso               b. Flow, Source, Store, Process",
+      "Fuente, Proceso, Destino, Tienda             c. Source, Process, Destination, Store",
+      "Flujo, Proceso, Origen / Destino, Tienda     d. Flow, Process, Source/Destination, Store"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Flujo, Proceso, Origen / Destino, Tienda     d. Flow, Process, Source/Destination, Store». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1231
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los beneficios que son difíciles o imposibles de cuantificar se conocen como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "no cuantificable",
+      "excesivo",
+      "intangible",
+      "fijo"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «intangible». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1232
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de factibilidad mide la rentabilidad de un proyecto o solución? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "calendario de viabilidad",
+      "viabilidad operacional",
+      "viabilidad económica",
+      "viabilidad estratégica"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «viabilidad económica». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1233
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál NO es un ejemplo de un beneficio tangible? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "gastos reducidos",
+      "mayor rendimiento",
+      "aumento de ventas",
+      "mejor toma de decisiones"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «mejor toma de decisiones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1234
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un ejemplo de un beneficio intangible? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "mejora de la moral de los empleados",
+      "eliminación de pasos de trabajo",
+      "mejora de la buena voluntad del cliente",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todas las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1235
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes preguntas se considera cuando se busca la viabilidad técnica? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "¿Qué tan bien cumple una solución con los requisitos identificados del sistema?",
+      "¿Es práctica la tecnología o solución propuesta?",
+      "¿Contamos con la experiencia técnica necesaria?",
+      "tanto (b) como (c)"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «tanto (b) como (c)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1236
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿A qué categoría de costos pertenecen los pagos de licencia de software? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "fijo",
+      "variable",
+      "operacional",
+      "técnico"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «fijo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1237
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El valor actual de un dólar en cualquier momento en el futuro es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "valor de oportunidad",
+      "valor presente",
+      "valor futuro",
+      "valor actual"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «valor presente». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1238
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el comité de viabilidad, los representantes de los departamentos actúan como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Enlace con sus departamentos.",
+      "fuentes de información listas",
+      "usuarios directos del nuevo sistema",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todas las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1239
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las especificaciones finales se han llegado a (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "después del estudio de viabilidad",
+      "durante el estudio de viabilidad",
+      "justo antes de la fase de implementación",
+      "cuando el sistema está siendo diseñado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «después del estudio de viabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1240
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se especifican los criterios de aprobación del sistema (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cuando se elaboren las especificaciones finales.",
+      "durante el estudio de viabilidad",
+      "durante la etapa de especificaciones de requisitos",
+      "durante la etapa de estudio del sistema"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Cuando se elaboren las especificaciones finales». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1241
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se requiere estudio de hardware para (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Averiguar el costo del sistema informático necesario.",
+      "para determinar el tipo de sistema informático y las herramientas de software necesarias para",
+      "Asegurarse de que el sistema no quede obsoleto.",
+      "Encontrar la forma de implementar el sistema."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «para determinar el tipo de sistema informático y las herramientas de software necesarias para». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1242
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se realiza estudio de hardware (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "después de que se especifique el sistema final",
+      "en la etapa de especificación de requisitos",
+      "Antes de que se especifiquen los requisitos.",
+      "siempre que la gerencia decida que es necesario"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «después de que se especifique el sistema final». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1243
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La ____________ determina si el proyecto debe seguir adelante (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "evaluación de viabilidad",
+      "identificación de oportunidad",
+      "evaluación del sistema",
+      "especificación del programa"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «evaluación de viabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1244
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se especifica el plan de prueba del sistema (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Cuando se elaboren las especificaciones finales.",
+      "durante el estudio de viabilidad",
+      "durante la etapa de especificaciones de requisitos",
+      "En etapa de estudio del sistema."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Cuando se elaboren las especificaciones finales». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1245
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "……………… .. incluye la revisión de los procedimientos existentes y el flujo de información (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Estudio de viabilidad",
+      "Informe de viabilidad.",
+      "Diseño del sistema",
+      "análisis del sistema"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Estudio de viabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1246
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El organigrama es un tipo de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "cuadro básico              a. basic chart",
+      "carta de salida a bolsa    b. IPO chart",
+      "carta jerárquica           c. Hierarchical chart",
+      "gráfico de pasos           d. step chart"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «carta jerárquica           c. Hierarchical chart». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1247
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El ingrediente principal del informe que documenta el ……………… es el análisis de costo- beneficio (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Análisis del sistema",
+      "Estudio de viabilidad",
+      "analista de sistemas",
+      "Diseño del sistema"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Estudio de viabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1248
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En la fase de adquisición, ¿cuál de los siguientes NO es un recurso utilizado para realizar investigaciones sobre alternativas técnicas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "calificaciones del vendedor",
+      "normas internas",
+      "periódicos comerciales y periódicos",
+      "servicios de información"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «calificaciones del vendedor». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1249
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es un ejemplo de enfoques basados en modelos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Diseño estructurado, desarrollo rápido de aplicaciones, CASE.",
+      "Ingeniería de la información, CASE, diseño de aplicación conjunta.",
+      "diseño orientado a objetos, aplicación conjunta y desarrollo rápido de aplicaciones",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1250
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes se utiliza (es) en Rapid Application Development (RAD)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "técnicas estructuradas",
+      "Técnicas de desarrollo de aplicaciones conjuntas.",
+      "Técnicas de diseño orientadas a objetos.",
+      "tanto (a) como (b)"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «tanto (a) como (b)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1251
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes NO es una desventaja de la creación de prototipos? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "los errores no se pueden detectar tan fácilmente cuando se desarrolla un prototipo",
+      "Los prototipos son un modelo pasivo del sistema.",
+      "los usuarios finales no entienden completamente sus requisitos hasta que los ven",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1252
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es la primera tarea realizada por los desarrolladores del sistema durante la fase de adquisición? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "validar los reclamos de proveedores y actuaciones",
+      "criterios técnicos de investigación y opciones.",
+      "contrato de adjudicación y proveedor de informes",
+      "solicitar propuestas o presupuestos."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «criterios técnicos de investigación y opciones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1253
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un modelo de proceso utilizado para comunicar las características de implementación técnica de un sistema de información es un: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "modelo ambiental",
+      "modelo de datos físicos",
+      "modelo de datos lógico",
+      "diagrama de clase"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «modelo de datos físicos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1254
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes NO es una tarea de la fase de adquisición? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "evaluar y clasificar las propuestas de los proveedores",
+      "validar los reclamos de proveedores y actuaciones",
+      "Desarrollar modelos de sistema para cada una de las propuestas del vendedor.",
+      "criterios técnicos de investigación y opciones."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Desarrollar modelos de sistema para cada una de las propuestas del vendedor». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1255
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El diseño estructurado busca factorizar un programa en la jerarquía descendente de módulos que tienen las siguientes propiedades: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "altamente cohesivo y altamente acoplado",
+      "débilmente estructurado y libremente cohesionado",
+      "flojamente cohesivo y altamente acoplado",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1256
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es el primer paso para diseñar un sistema para el desarrollo interno? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diseñar la interfaz del sistema",
+      "diseñar la arquitectura de la aplicación",
+      "especificaciones de diseño del paquete",
+      "diseñar la base de datos del sistema"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «diseñar la arquitectura de la aplicación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1257
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los gerentes en organizaciones no deben diseñar sus propios sistemas como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Los sistemas tienen que interactuar con otros sistemas.",
+      "No tienen las habilidades especiales necesarias para diseñar sistemas.",
+      "no es su trabajo",
+      "siempre están muy ocupados"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «No tienen las habilidades especiales necesarias para diseñar sistemas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1258
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El analista de sistemas debe utilizar herramientas de software en su trabajo como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "todos los analistas los usan",
+      "Asisten en el diseño sistemático de sistemas.",
+      "son baratos",
+      "son fácilmente disponibles"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Asisten en el diseño sistemático de sistemas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1259
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Diferencia entre Decisión - Tablas y Árboles de Decisión es (son) (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "valor para el usuario final",
+      "forma de representación",
+      "uno muestra la lógica mientras que otro muestra el proceso",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «forma de representación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1260
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La ayuda de diseño del sistema debe principalmente (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "ayudar a analizar tanto los datos como las actividades",
+      "Ayuda en la documentación.",
+      "ayuda en la programación",
+      "generar código"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «ayudar a analizar tanto los datos como las actividades». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1261
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los errores cometidos en la etapa de análisis del sistema se muestran en: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "implementación",
+      "diseño del sistema",
+      "desarrollos del sistema",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «implementación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1262
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La programación real del código de software se realiza durante el ____________ paso en el SDLC (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Mantenimiento y evaluación",
+      "diseño",
+      "Análisis",
+      "Desarrollo y documentación."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Desarrollo y documentación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1263
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "____________ pasan la mayor parte del tiempo en las etapas iniciales del SDLC, conversando con los usuarios finales, recopilando información, documentando sistemas y proponiendo soluciones (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "analistas de sistemas",
+      "gerentes de proyecto",
+      "Ingenieros de redes",
+      "administradores de bases de datos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «analistas de sistemas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1264
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "____________ administra el desarrollo del sistema, asigna personal, administra el presupuesto y los informes, y se asegura de que se cumplan los plazos (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "gerentes de proyecto",
+      "ingenieros de redes",
+      "diseñadores gráficos",
+      "Analistas de sistemas."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «gerentes de proyecto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1265
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los cuadros estructurados son producto de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "recopilación de requisitos",
+      "análisis de requerimientos",
+      "diseño",
+      "codificación"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «diseño». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1266
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Reconocimiento óptico de caracteres: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "es menos frecuente que el reconocimiento óptico de marcas",
+      "se utiliza en formularios para preguntas de base subjetiva en exámenes",
+      "requiere que el usuario escriba cuidadosamente los datos de entrada en un formulario comercial",
+      "(a), (b) y (c)"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «es menos frecuente que el reconocimiento óptico de marcas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1267
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes NO es un problema de diseño de interfaz? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "enfoques de resolución de problemas inconsistentes",
+      "Uso excesivo de jerga informática y acrónimos.",
+      "El uso de fondo negro en forma de pantalla.",
+      "inconsistencia de diseño"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «El uso de fondo negro en forma de pantalla». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1268
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de menú está diseñado principalmente para usuarios expertos porque no hay pistas visuales de su presencia? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "icónico",
+      "ventana emergente",
+      "en cascada",
+      "desplegable (pull-down)"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «ventana emergente». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1269
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes interfaces basadas en instrucciones le permite al cliente ingresar una pregunta sobre un producto determinado? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "mnemotécnica",
+      "textual",
+      "lenguaje natural",
+      "basado en el lenguaje"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «lenguaje natural». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1270
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es una directriz de ingeniería humana? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "No se debe permitir a los usuarios continuar sin corregir un error.",
+      "El usuario del sistema siempre debe saber qué hacer a continuación.",
+      "Anticipe los errores que los usuarios pueden cometer.",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todas las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1271
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿En cuál de los siguientes pasos de la interfaz de usuario utilizan los diseñadores un diagrama de transición de estado para mostrar la secuencia y las variaciones de las pantallas que pueden ocurrir cuando el usuario del sistema se sienta en el terminal? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "prototipo del diálogo",
+      "probar el diálogo",
+      "prototipo de interfaz de usuario",
+      "trazar el diálogo"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «trazar el diálogo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1272
+  },
+  {
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es importante en el diseño de la interfaz de usuario? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "practicar el diseño iterativo",
+      "Entiende a tus usuarios y sus tareas.",
+      "utilizar herramientas automatizadas en el diseño de la interfaz de usuario",
+      "tanto (a) como (b)"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «tanto (a) como (b)». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1273
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Con respecto al tono de un diálogo, ¿cuál de los siguientes no debe utilizarse? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "use abreviaturas para que los usuarios puedan leerlas más rápidamente",
+      "usar términos simples",
+      "usar verbos de acción apropiados",
+      "Ser coherente en el uso de la terminología."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «use abreviaturas para que los usuarios puedan leerlas más rápidamente». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1274
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes interfaces basadas en instrucciones se construye alrededor de un lenguaje de comando ampliamente aceptado que el usuario puede usar para invocar acciones? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "una sintaxis mnemotécnica",
+      "una sintaxis de comando-control",
+      "una sintaxis basada en lenguaje",
+      "una sintaxis de lenguaje natural"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «una sintaxis basada en lenguaje». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1275
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es el primer paso en el proceso de diseño de la interfaz de usuario? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Prototipo del diálogo y la interfaz de usuario.",
+      "trazar el diálogo",
+      "probar el diálogo",
+      "rediseñar el diálogo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «trazar el diálogo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1276
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los códigos de clasificación de grupo son (i) conciso (ii) significativo (iii) expandible (iv) exhaustivo (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "i y ii",
+      "i, ii y iii",
+      "ii, iii y iv",
+      "i, ii y iv"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «ii, iii y iv». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1277
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La secuencia de numeración de registros se utiliza para (i) Identifique cada registro de manera única (ii) Seguimiento de un registro faltante en un lote de registros (iii) Cuenta el número de registros (iv) ordenar los registros (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "i, ii",
+      "i, ii, iii",
+      "i, ii, iii, iv",
+      "i y iv"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «i, ii, iii, iv». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1278
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un diseño que consiste en una jerarquía de módulos; Cada módulo tiene una sola entrada y una única subrutina de salida, que se conoce como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Tuple                          a. Tuple",
+      "giro de vuelta                 b. Turnaround",
+      "diseño de arriba hacia abajo   c. top-down design",
+      "estructura de jerarquía        d. hierarchy structure"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «diseño de arriba hacia abajo   c. top-down design». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1279
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los primeros elementos definidos para un nuevo sistema son sus: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "entradas",
+      "salidas",
+      "almacenamiento",
+      "tratamiento"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «salidas». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1280
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se utiliza el benchmarking (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "para la aceptación del sistema",
+      "para la aplicación de proto-mecanografía",
+      "Seleccionar sistemas informáticos.",
+      "Mantener archivos en condición de datos."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Seleccionar sistemas informáticos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1281
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "…………………. es un grupo de componentes interesados que trabajan juntos hacia una meta común al aceptar entradas y producir salidas en un proceso de transformación organizado (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "sistema",
+      "red",
+      "Equipo",
+      "Unidad del sistema"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1282
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Por entidad externa entendemos una (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Unidad fuera del sistema que se está diseñando y que puede ser controlada por un analista.",
+      "Unidad fuera del sistema cuyo comportamiento es independiente del sistema que se está",
+      "Una unidad externa al sistema que se está diseñando.",
+      "Una unidad que no es parte de un DFD."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Una unidad externa al sistema que se está diseñando». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1283
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El almacén de datos en un DFD representa (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "un archivo secuencial",
+      "un almacenamiento de discos",
+      "un repositorio de datos",
+      "una memoria de acceso aleatorio"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «un repositorio de datos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1284
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "…………… el sistema consta de programas, archivos de datos y documentación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Conceptual",
+      "lógico",
+      "Físico",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Físico». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 3; respuesta contrastada con la clave del documento",
+    "id": 1285
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La condición en la que los métodos y / o atributos definidos en una clase de objeto pueden ser reutilizados por otra clase de objeto se conoce como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "especialización",
+      "generalización",
+      "reutilización",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1286
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El número mínimo y máximo de ocurrencias de una clase de objeto para una sola ocurrencia de la clase de objeto relacionada es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "relación",
+      "cardinalidad",
+      "multiplicidad",
+      "herencia"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «multiplicidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1287
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de relación de clase puede describirse como \"es un\"? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "herencia",
+      "asociación",
+      "multiplicidad",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1288
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un concepto de diferentes objetos que responden al mismo mensaje de diferentes maneras se conoce como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "anular (override)",
+      "polimorfismo",
+      "encapsulación",
+      "herencia"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «polimorfismo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1289
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el análisis orientado a objetos, desarrollamos el modelo de casos de uso de requisitos en el modelo de casos de uso de análisis realizando todos los pasos siguientes, excepto: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Identificar, definir y documentar nuevos casos de uso.",
+      "Identificar, definir y documentar nuevos actores.",
+      "Identificar, definir y documentar nuevos almacenes de datos.",
+      "identificar cualquier posibilidad de reutilización"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Identificar, definir y documentar nuevos almacenes de datos». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1290
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un diagrama de secuencia del sistema, las líneas de vida se representan como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "las barras",
+      "las líneas verticales discontinuas extendidas hacia abajo desde el actor y los símbolos del sistema",
+      "clases de objeto",
+      "Flechas horizontales de los actores al sistema."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «las líneas verticales discontinuas extendidas hacia abajo desde el actor y los símbolos del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1291
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de relación de clase puede leerse como \"El objeto A contiene el Objeto B y el Objeto B es parte del objeto A\"? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "agregación",
+      "generalización",
+      "persistente",
+      "transitoria"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «agregación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1292
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los mensajes de un caso de uso se pueden representar gráficamente con un: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "caso de uso lógico",
+      "diagrama de actividad",
+      "diagrama de composición",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1293
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un caso de uso que documenta la interacción entre el usuario del sistema y el sistema es un: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "caso de uso de interacción",
+      "caso de uso de generalización",
+      "caso de uso del análisis del sistema",
+      "caso de uso abstracto"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «caso de uso del análisis del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1294
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un conjunto de convenciones de modelado que se usa para especificar o describir un sistema de software en términos de objetos es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagrama de flujo de datos",
+      "diagrama de objeto de atributo",
+      "diagrama de relación de entidad",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1295
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El tipo de diagramas que se utilizan para mostrar las interacciones entre series de mensajes se clasifican como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagramas de actividad",
+      "diagramas de diagrama de estado",
+      "diagramas de colaboración",
+      "diagramas de la línea de vida del objeto"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «diagramas de colaboración». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1296
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los diagramas que se utilizan para distribuir archivos, bibliotecas y tablas en la topología del hardware se denominan (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagramas de despliegue",
+      "diagramas de casos de uso",
+      "diagramas de secuencia",
+      "diagramas de colaboracion"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «diagramas de despliegue». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1297
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En las fases del ciclo de vida macro o ciclo de vida del sistema de información, la fase que consiste en el estudio del costo beneficio y las áreas potenciales de aplicación se llama (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "fase de análisis de despliegue",
+      "fase de análisis de validación",
+      "fase de análisis de viabilidad",
+      "fase de análisis de implementación"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «fase de análisis de viabilidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1298
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Cuando dos esquemas diferentes utilizan un mismo nombre para describir esquemas, se llama a esto (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "antónimo",
+      "sinónimo",
+      "homónimo",
+      "ninguno de los anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «sinónimo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1299
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los aspectos dinámicos relacionados con un sistema se muestran con la ayuda de (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagramas de secuencia",
+      "diagramas de interacción",
+      "diagramas de despliegue",
+      "diagramas de caso de uso"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «diagramas de interacción». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1300
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En los esquemas de diagramas de estado, el elemento que se muestra con la ayuda de un círculo de doble línea rellena con una flecha apuntando se clasifica como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "estado de dos grados",
+      "estado inicial",
+      "estado final",
+      "estado de grado cero"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «estado final». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1301
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El ciclo de vida del sistema de base de datos también se denomina (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "micro ciclo de vida",
+      "ciclo de vida macro",
+      "mini ciclo de vida de los datos",
+      "ciclo de vida de los metadatos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «micro ciclo de vida». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1302
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Los diagramas en lenguaje modificado unificado que incluye componentes ejecutables, interfaces y relaciones de dependencia se llaman (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "diagramas de objetos",
+      "diagramas de paquete",
+      "diagramas de despliegue",
+      "diagramas de componentes"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «diagramas de componentes». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1303
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En los diagramas de diagramas de estado, el elemento que se muestra con la ayuda de un círculo sólido con una flecha saliente se clasifica como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "estado de dos grados",
+      "estado inicial",
+      "estado final",
+      "estado de grado cero"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «estado inicial». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1304
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las mejoras, las actualizaciones y las correcciones de errores se realizan durante el paso ____________ en el SDLC (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Mantenimiento y evaluación",
+      "Identificación del problema / oportunidad",
+      "diseño",
+      "Desarrollo y documentación."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Mantenimiento y evaluación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1305
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las entidades externas pueden ser (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Fuente de datos de entrada solamente",
+      "Fuente de datos de entrada o destino de los resultados.",
+      "Destino de resultados solamente",
+      "Repositorio de datos."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Fuente de datos de entrada o destino de los resultados». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1306
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los modelos se utiliza para los componentes del sistema? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Gráfica PERT",
+      "Gráfica Gantt",
+      "Gráfico de jerarquía organizacional",
+      "DFD"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «DFD». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1307
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se conoce como el código utilizado para la validación (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Código de autocomprobación",
+      "código de secuencia",
+      "código alfanumérico",
+      "código de clasificación de grupo"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Código de autocomprobación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1308
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántos pasos hay en el ciclo de vida del desarrollo de sistemas (SDLC)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «4». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1309
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El primer paso en el ciclo de vida del desarrollo de sistemas (SDLC) es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Análisis.",
+      "Diseño.",
+      "Identificación del problema / oportunidad.",
+      "Desarrollo y documentación."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Identificación del problema / oportunidad». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1310
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El proceso organizado o conjunto de pasos que deben seguirse para desarrollar un sistema de información se conoce como: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "ciclo analítico.",
+      "ciclo de diseño.",
+      "especificación del programa.",
+      "Ciclo de vida del desarrollo del sistema."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ciclo de vida del desarrollo del sistema». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1311
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿El paso final en el ciclo de vida del desarrollo de Sytem (SDLC)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "análisis",
+      "operacional",
+      "desarrollo",
+      "diseño"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «operacional». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1312
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es falso con respecto a la evaluación de los lenguajes de programación de computadoras? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Características orientadas a la aplicación",
+      "Eficiencia y legibilidad",
+      "desarrollo de software",
+      "Coste de mantenimiento del hardware."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Coste de mantenimiento del hardware». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1313
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "El esquema del cual el intérprete traduce el programa fuente se conoce como (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "párrafo por párrafo",
+      "Instrucción por instrucción.",
+      "Línea por línea",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Línea por línea». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1314
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Programa portátil significa (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Programa con ruedas.",
+      "Independiente de sus autores.",
+      "Independiente de plataforma.",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Independiente de plataforma». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1315
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes comandos ordena los nombres de archivos en varias columnas? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "IS – X",
+      "ES",
+      "IS – 1",
+      "IS – f – X"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «ES». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1316
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un esquema de carga absoluta, ¿qué función del cargador es realizada por un cargador? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Reasignación",
+      "Asignación",
+      "Enlace",
+      "Cargando"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Cargando». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1317
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes expresiones está representada por el árbol de análisis? árbol de análisis (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "(A + B) * C",
+      "A + * BC",
+      "A + B * C",
+      "A * C + B"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «(A + B) * C». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1318
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Considere los siguientes operadores asociativos en orden decreciente de precedencia: - Resta (precedencia más alta) * multiplicación $ exponenciación (precedencia más baja) ¿Cuál es el resultado de la siguiente expresión? 3 - 2 * 4 $ | * 2 ** 3 (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "- 61",
+      "64",
+      "512",
+      "4096"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «4096». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1319
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es la fase más general de la gramática estructurada? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Regular",
+      "sensible al contexto",
+      "Libre de contexto",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «sensible al contexto». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1320
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes se usa para agrupar caracteres en tokens (en una computadora)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "un analizador",
+      "Optimizador de código",
+      "generador de código",
+      "Escáner"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Escáner». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1321
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "P: “El programa es una ejecución paso a paso de las instrucciones”. Dado P, ¿cuál de los siguientes es verdadero? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El programa es un subconjunto de un conjunto de instrucciones.",
+      "El programa es una secuencia de un subconjunto de un conjunto de instrucciones.",
+      "El programa es un conjunto parcialmente ordenado de un conjunto de instrucciones.",
+      "Todas las anteriores"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «El programa es una secuencia de un subconjunto de un conjunto de instrucciones». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1322
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un rompecabezas MIU, cualquiera de las letras M, I o U podría aparecer como un símbolo de inicio. Las reglas de producción se dan a continuación: R1: U → IU R2: Mx → Mxx donde ːˑ es el operador de concatenación de cadenas. Teniendo en cuenta esto, ¿cuál de los siguientes se mantiene para (i) MIUIUIUIUUUUUUU (ii) MIUIUIUIUIUIUIUIUU (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "O bien (i) o (ii) pero no ambas son palabras válidas.",
+      "Tanto (i) como (ii) son palabras válidas y toman un número idéntico de transformaciones para la",
+      "Tanto (i) como (ii) son palabras válidas pero implican un número diferente de transformaciones en",
+      "Ninguno de estos"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Tanto (i) como (ii) son palabras válidas pero implican un número diferente de transformaciones en». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1323
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Las funciones recursivas se ejecutan en un (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Primero en primer orden",
+      "Último en primera salida",
+      "tendencia paralela",
+      "equilibrio de carga"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Último en primera salida». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1324
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un esquema de carga absoluta, ¿qué función del cargador se realiza mediante el ensamblador? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "reasignación",
+      "asignación",
+      "vincular",
+      "cargando"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «reasignación». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1325
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Al final del análisis, (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Se identifican los tokens.",
+      "Se identifican el conjunto de instrucciones.",
+      "Se identifican los grupos sintácticos.",
+      "Se identifican las instrucciones de la máquina."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Se identifican los tokens». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1326
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La eliminación de código muerto en la optimización de código de máquina se refiere a: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Eliminación de todas las etiquetas.",
+      "Eliminación de valores que nunca se utilizan.",
+      "Eliminación de funciones que no estén implicadas.",
+      "Eliminación de un módulo después de su uso."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es «Eliminación de valores que nunca se utilizan». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1327
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un árbol de análisis es un árbol de análisis anotado si: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "muestra valores de atributo en cada nodo.",
+      "No hay atributos heredados.",
+      "ha sintetizado nodos como nodos terminales.",
+      "cada nodo no terminal es un atributo heredado."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «muestra valores de atributo en cada nodo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1328
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un compilador de dos pasadas, durante la primera pasada: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "los símbolos de dirección definidos por el usuario están correlacionados con su equivalente binario",
+      "se comprueba la sintaxis de la declaración y se enumeran los errores, si los hay",
+      "se genera el programa objeto",
+      "Se esclarece la semántica del programa fuente."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «los símbolos de dirección definidos por el usuario están correlacionados con su equivalente binario». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1329
+  },
+  {
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La técnica de análisis que que evita el seguimiento de vuelta es: (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "análisis de arriba hacia abajo",
+      "Análisis recursivo descendente",
+      "Predictivo",
+      "árbol de sintaxis"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Predictivo». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1330
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Solicitud (Request) es instancia de qué clase? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Solicitud (Request)",
+      "HttpRequest",
+      "HttpServletRequest",
+      "ServletRequest"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «HttpServletRequest». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1331
+  },
+  {
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones es cierta sobre el alcance de la solicitud (Request)? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Los objetos creados con el alcance de la solicitud son accesibles solo desde la página en la que",
+      "Los objetos creados con el alcance de la solicitud son accesibles solo desde las páginas que",
+      "Los objetos creados con el alcance de la solicitud son accesibles solo desde las páginas que",
+      "Los objetos creados con el alcance de la solicitud son accesibles solo desde las páginas que"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «Los objetos creados con el alcance de la solicitud son accesibles solo desde las páginas que». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1332
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones es cierta sobre el atributo de idioma? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "El atributo de lenguaje indica el lenguaje de programación utilizado en las secuencias de",
+      "El atributo de lenguaje indica el lenguaje de programación utilizado en las secuencias de",
+      "El atributo de lenguaje indica el lenguaje de programación utilizado en las secuencias de",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Ninguna de las anteriores». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1333
+  },
+  {
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Dónde se definen los filtros? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "Los filtros se definen en el archivo descriptor de despliegue web.xml.",
+      "Los filtros están definidos en las páginas jsp.",
+      "Ambos de los anteriores.",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es «Los filtros se definen en el archivo descriptor de despliegue web.xml». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1334
+  },
+  {
+    "topic": "sw-programming",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes afirmaciones sobre el atributo isThreadSafe es cierta? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "La opción isThreadSafe marca una página como segura para subprocesos.",
+      "Si establece la opción isThreadSafe en falso, el motor JSP se asegura de que solo un hilo a la vez",
+      "Por defecto, todos los JSP se consideran seguros para subprocesos.",
+      "Todo lo anterior."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es «Todo lo anterior». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1335
+  },
+  {
+    "topic": "net-design",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la firma correcta del método jspDestroy () de la clase HttpJspPage? (reactivo adaptado de la guía)",
+    "stimulus": "",
+    "options": [
+      "void jspDestroy (solicitud HTTPRequest, respuesta HTTPResponse)",
+      "void jspDestroy (solicitud HTTPRequest, respuesta HTTPResponse) lanza ServletException,",
+      "void jspDestroy ()",
+      "void jspDestroy () lanza ServletException, IOException"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es «void jspDestroy ()». Esta opción corresponde a lo que plantea el reactivo; las demás opciones no responden de forma adecuada al enunciado.",
+    "source": "Guía EGEL Ingeniería Computacional · práctica 4; respuesta contrastada con la clave del documento",
+    "id": 1336
+  },
+  {
+    "id": 1337,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Convierta el número binario 10010010 a decimal.",
+    "stimulus": "",
+    "options": [
+      "146",
+      "147",
+      "145",
+      "109"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El valor posicional de los bits encendidos suma 146; por eso 10010010₂ = 146₁₀.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1338,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Convierta el número binario 01110111 a decimal.",
+    "stimulus": "",
+    "options": [
+      "119",
+      "120",
+      "118",
+      "136"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El valor posicional de los bits encendidos suma 119; por eso 01110111₂ = 119₁₀.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1339,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Qué clase de dirección IPv4 se reserva para multicast?",
+    "stimulus": "",
+    "options": [
+      "Clase A",
+      "Clase B",
+      "Clase C",
+      "Clase D"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Las direcciones de clase D (224.0.0.0 a 239.255.255.255) se reservan tradicionalmente para multicast.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1340,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuál es la máscara por defecto de una red de clase A?",
+    "stimulus": "",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La máscara por defecto de clase A es /8, equivalente a 255.0.0.0.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1341,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuál de las siguientes direcciones pertenece al espacio privado de clase A?",
+    "stimulus": "",
+    "options": [
+      "10.25.4.8",
+      "11.25.4.8",
+      "172.32.4.8",
+      "192.169.4.8"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El bloque privado 10.0.0.0/8 pertenece al espacio privado tradicional de clase A.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1342,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Qué característica identifica una dirección de broadcast de una subred IPv4?",
+    "stimulus": "",
+    "options": [
+      "Todos los bits de host están en 0",
+      "Todos los bits de host están en 1",
+      "Todos los bits de red están en 1",
+      "Se utiliza como dirección de un host"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La dirección de broadcast se forma poniendo en 1 todos los bits de host; no se asigna a un host individual.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1343,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Qué operación lógica se aplica entre una dirección IP y una máscara para obtener la dirección de red?",
+    "stimulus": "",
+    "options": [
+      "OR",
+      "XOR",
+      "AND",
+      "NOT"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La operación AND bit a bit conserva los bits de red y pone en cero los bits de host.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1344,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuántas direcciones totales contiene una subred IPv4 /24?",
+    "stimulus": "",
+    "options": [
+      "64",
+      "128",
+      "254",
+      "256"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Un prefijo /24 deja 8 bits de host: 2⁸ = 256 direcciones totales, de las cuales normalmente 254 son asignables a hosts.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1345,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuántas direcciones de host convencionales se pueden asignar en una subred /24?",
+    "stimulus": "",
+    "options": [
+      "252",
+      "254",
+      "256",
+      "510"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Una subred /24 contiene 256 direcciones totales; se excluyen la dirección de red y la de broadcast, quedando 254 hosts utilizables.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1346,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Qué prefijo corresponde a la máscara 255.255.255.192?",
+    "stimulus": "",
+    "options": [
+      "/24",
+      "/25",
+      "/26",
+      "/27"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "255.255.255.192 tiene 26 bits en 1, por lo que equivale a /26.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1347,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuántas direcciones totales contiene una subred /30?",
+    "stimulus": "",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Un prefijo /30 deja 2 bits de host: 2² = 4 direcciones totales; en IPv4 tradicional, 2 son utilizables por hosts.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1348,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Qué rango representa la máscara 255.255.0.0 en notación CIDR?",
+    "stimulus": "",
+    "options": [
+      "/8",
+      "/16",
+      "/24",
+      "/32"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La máscara 255.255.0.0 tiene 16 bits consecutivos en 1, por lo que su prefijo es /16.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1349,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuál es el rango privado IPv4 172.16.0.0/12?",
+    "stimulus": "",
+    "options": [
+      "172.16.0.0–172.31.255.255",
+      "172.0.0.0–172.15.255.255",
+      "172.32.0.0–172.63.255.255",
+      "172.16.0.0–172.255.255.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El bloque privado 172.16.0.0/12 abarca desde 172.16.0.0 hasta 172.31.255.255.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1350,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "¿Cuál es la función principal de una máscara de subred?",
+    "stimulus": "",
+    "options": [
+      "Identificar la porción de red y la de host",
+      "Asignar una dirección MAC",
+      "Cifrar el tráfico IP",
+      "Determinar la velocidad física del enlace"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La máscara indica qué bits de la dirección IP corresponden a la red/subred y cuáles al host.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1351,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Para la dirección 172.16.99.99/18, ¿cuál es la dirección de broadcast de la subred?",
+    "stimulus": "",
+    "options": [
+      "172.16.127.255",
+      "172.16.64.0",
+      "172.16.127.254",
+      "172.16.64.1"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El prefijo /18 fija el tamaño del bloque. La subred contiene la IP indicada; al poner en 1 los bits de host se obtiene el broadcast 172.16.127.255.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1352,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Para la dirección 192.168.85.129/26, ¿cuál es la dirección de broadcast de la subred?",
+    "stimulus": "",
+    "options": [
+      "192.168.85.191",
+      "192.168.85.128",
+      "192.168.85.190",
+      "192.168.85.129"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El prefijo /26 fija el tamaño del bloque. La subred contiene la IP indicada; al poner en 1 los bits de host se obtiene el broadcast 192.168.85.191.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1353,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Para la dirección 201.100.5.68/28, ¿cuál es la dirección de broadcast de la subred?",
+    "stimulus": "",
+    "options": [
+      "201.100.5.79",
+      "201.100.5.64",
+      "201.100.5.78",
+      "201.100.5.65"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El prefijo /28 fija el tamaño del bloque. La subred contiene la IP indicada; al poner en 1 los bits de host se obtiene el broadcast 201.100.5.79.",
+    "source": "4.- Workbook V2.1 · reactivo elaborado a partir de los ejercicios y tablas resueltos del documento"
+  },
+  {
+    "id": 1354,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "De las Clases IP:",
+    "stimulus": "",
+    "options": [
+      "la Clase C posee 24 bits de Red",
+      "la Clase A posee 16 bits de host",
+      "la Clase D está reservada para aplicaciones multicast"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) la Clase D está reservada para aplicaciones multicast. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1355,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de broadcast",
+    "stimulus": "",
+    "options": [
+      "posee todos los bits de host en 1",
+      "es la última dirección IP de una subred",
+      "puede ser utilizada por un PC"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) es la última dirección IP de una subred. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1356,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una máscara 255.255.0.0 indica:",
+    "stimulus": "",
+    "options": [
+      "que corresponde a una red del tamaño de una Clase A",
+      "que podría ser una subred de una Clase A",
+      "que puede ser una Clase B"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) que puede ser una Clase B. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1357,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si la máscara de una subred es 255.255.255.192 y el broadcast es 199.20.50.191, entonces:",
+    "stimulus": "",
+    "options": [
+      "es la 3era subred de una clase C",
+      "la dirección de red es 199.20.50.0",
+      "la subred posee 64 direcciones IP",
+      "la máscara es 255.255.255.192",
+      "el PC 200.5.5.175 pertenece a esta subred",
+      "la subred posee tamaño 32 direcciones IP"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) la subred posee 64 direcciones IP. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1358,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si la subred posee dirección de red 100.20.0.0 y broadcast 100.20.255.255:",
+    "stimulus": "",
+    "options": [
+      "hay 65536 direcciones IP en la subred",
+      "es una clase B",
+      "es una subred de una clase A del tamaño de una clase B"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) es una clase B. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1359,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La subred 200.1.20.192 con máscara 255.255.255.192 indica que:",
+    "stimulus": "",
+    "options": [
+      "existen 64 direcciones IP en esa subred",
+      "que es la 3era subred de la clase C",
+      "posee dirección broadcast 200.1.20.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) existen 64 direcciones IP en esa subred. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1360,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una PC tiene dirección IP 200.1.16.225 y máscara 255.255.255.192",
+    "stimulus": "",
+    "options": [
+      "pertenece a la 4ta subred de la clase C",
+      "posee broadcast 200.1.16.256",
+      "la subred puede contener hasta 62 PC y/o tarjetas de red"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) la subred puede contener hasta 62 PC y/o tarjetas de red. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1361,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de broadcast que corresponde a la IP 10.254.255.19 / 255.255.255.248?",
+    "stimulus": "",
+    "options": [
+      "10.254.255.23",
+      "10.254.255.24",
+      "10.254.255.255",
+      "10.255.255.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 10.254.255.23. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1362,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de broadcast que corresponde a la IP 172.16.99.99 / 255.255.192.0?",
+    "stimulus": "",
+    "options": [
+      "172.16.99.255",
+      "172.16.127.255",
+      "172.16.255.255",
+      "172.16.64.127"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 172.16.127.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1363,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si usted deseará tener 12 subredes con un ID de red Clase C, ¿qué máscara de subred debería utilizar?",
+    "stimulus": "",
+    "options": [
+      "255.255.255.252",
+      "255.255.255.248",
+      "255.255.255.240",
+      "255.255.255.255"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.255.240. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1364,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el número máximo de subredes que pueden ser asignadas a una red, cuando se utiliza la dirección 172.16.0.0 y la máscara de subred 255.255.240.0?",
+    "stimulus": "",
+    "options": [
+      "16",
+      "32",
+      "30",
+      "14",
+      "La máscara de subred es inválida para esa dirección de red."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 14. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1365,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted ha dividido en subredes la red 213.105.72.0 utilizando una máscara de subred /28. ¿Cuán- tas subredes utilizables y direcciones de host utilizables por subred obtiene de esta manera?",
+    "stimulus": "",
+    "options": [
+      "62 redes y 2 host.",
+      "6 redes y 30 host.",
+      "8 redes y 32 host.",
+      "16 redes y 16 host.",
+      "14 redes y 14 host."
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 14 redes y 14 host.. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1366,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted dispone únicamente de una dirección de red clase C y debe asignar una subred para un enlace serial punto a punto. Está considerando implementar VLSM. ¿Cuál es la máscara de subred más eficiente para aplicar a ese enlace?",
+    "stimulus": "",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.252",
+      "255.255.255.254"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.255.252. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1367,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted es el Administrador de una red que soporta VLSM y necesita reducir el desperdicio de di- recciones IP en sus enlaces WAN punto a punto. ¿Cuál de las máscaras que se enumeran abajo le conviene utilizar?",
+    "stimulus": "",
+    "options": [
+      "/38",
+      "/30",
+      "/27",
+      "/23",
+      "/18",
+      "/32"
+    ],
+    "answer": [
+      5
+    ],
+    "explanation": "La respuesta correcta es F) /32. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1368,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Utilizando la dirección de clase C 192.168.21.0, necesita generar 28 subredes. ¿Qué máscara de subred deberá utilizar?",
+    "stimulus": "",
+    "options": [
+      "255.255.0.28",
+      "255.255.255.0",
+      "255.255.255.28",
+      "255.255.255.248",
+      "255.255.255.252"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.255.248. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1369,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Dada la dirección IP 195.106.14.0/24, ¿cuál es el número total de redes y el número total de host por red que se obtiene?",
+    "stimulus": "",
+    "options": [
+      "1 red con 254 host.",
+      "2 redes con 128 host.",
+      "4 redes con 64 host.",
+      "6 redes con 30 host."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 1 red con 254 host.. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1370,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Utilizando una dirección de red clase C, Usted necesita 5 subredes con un máximo de 17 host en cada una de esas subredes. ¿Qué máscara de subred deberá utilizar?",
+    "stimulus": "",
+    "options": [
+      "255.255.255.192",
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 255.255.255.224. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1371,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Partiendo de la red 192.141.27.0/28, identifique las direcciones de host válidas (elija 3)",
+    "stimulus": "",
+    "options": [
+      "192.141.27.33",
+      "192.141.27.112",
+      "192.141.27.119",
+      "192.141.27.126",
+      "192.141.27.175",
+      "192.141.27.208"
+    ],
+    "answer": [
+      1,
+      4,
+      5
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: B) 192.141.27.112, E) 192.141.27.175, F) 192.141.27.208. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1372,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Utilizando la dirección 192.64.10.0/28, ¿cuántas subredes y cuántos host por subred están disponibles?",
+    "stimulus": "",
+    "options": [
+      "62 subredes y 2 host",
+      "6 subredes y 30 host",
+      "8 subredes y 32 host",
+      "16 subredes y 16 host",
+      "14 subredes y 14 host"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 14 subredes y 14 host. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1373,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es una dirección de broadcast perteneciente a la red 192.57.78.0/27?",
+    "stimulus": "",
+    "options": [
+      "192.157.78.33",
+      "192.57.78.64",
+      "192.57.78.87",
+      "192.57.78.97",
+      "192.57.78.159",
+      "192.57.78.254"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 192.57.78.159. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1374,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Dirección IP: 172.20.7.160 Máscara de subred: 255.255.255.192 Usted está configurando una impresora de red. Desea utilizar la última dirección IP de su subred para esta impresora. Basándose en la dirección IP y la máscara de subred de su terminal de trabajo, ¿Cuál es la última dirección IP disponible en su subred?",
+    "stimulus": "",
+    "options": [
+      "172.20.7.255",
+      "172.20.7.197",
+      "172.20.7.190",
+      "172.20.7.129",
+      "172.20.255.255"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 172.20.7.190. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1375,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es la dirección de broadcast para una ID de red Clase B que utiliza la máscara de subred por defecto?",
+    "stimulus": "",
+    "options": [
+      "172.16.10.255",
+      "172.16.255.255",
+      "172.255.255.254",
+      "255.255.255.255"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 172.16.255.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1376,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes es el rango de host válido para la dirección IP 192.168.168.188 255.255.255.192?",
+    "stimulus": "",
+    "options": [
+      "192.168.168.129-190",
+      "192.168.168.129-191",
+      "192.168.168.128-190",
+      "192.168.168.128-192"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 192.168.168.129-190. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1377,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el rango de host válido del cual es parte la dirección IP 172.16.10.22 / 255.255.255.240?",
+    "stimulus": "",
+    "options": [
+      "172.16.10.20 a 172.16.10.22",
+      "172.16.10.1 a 172.16.10.255",
+      "172.16.1.16 a 172.16.10.23",
+      "172.16.10.17 a 172.16.10.31",
+      "172.16.10.17 a 172.16.10.30"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 172.16.10.17 a 172.16.10.30. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1378,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de broadcast de la dirección de subred 192.168.99.20 / 255.255.255.252?",
+    "stimulus": "",
+    "options": [
+      "192.168.99.127",
+      "192.168.99.63",
+      "192.168.99.23",
+      "192.168.99.31"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 192.168.99.23. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1379,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Su red utiliza la dirección IP 172.30.0.0/16. Inicialmente existen 25 subredes, con un mínimo de 1000 hosts por subred. Se proyecta un crecimiento en los próximos años de un total de 55 subredes. ¿Qué mascara de subred se deberá utilizar? Anexo de Subneteo Página 6",
+    "stimulus": "",
+    "options": [
+      "255.255.240.0",
+      "255.255.248.0",
+      "255.255.252.0",
+      "255.255.254.0",
+      "255.255.255.0"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 255.255.255.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1380,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted planea la migración de 100 ordenadores de IPX/SPX a TCP/IP y que puedan establecer conectividad con Internet. Su ISP le ha asignado la dirección IP 192.168.16.0/24. Se requieren 10 Subredes con 10 hosts cada una. ¿Qué mascara de subred debe utilizarse?",
+    "stimulus": "",
+    "options": [
+      "255.255.255.224",
+      "255.255.255.192",
+      "255.255.255.240",
+      "255.255.255.248"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.255.240. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1381,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red está dividida en 8 subredes de una clase B. ¿Qué mascara de subred se deberá utilizar si se pretende tener 2500 host por subred",
+    "stimulus": "",
+    "options": [
+      "a.255.248.0.0",
+      "b.255.255.240.0",
+      "c.255.255.248.0",
+      "d.255.255.255.255",
+      "e.255.255.224.0",
+      "f.255.255.252.0"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) b.255.255.240.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1382,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles de las siguientes subredes no pertenece a la misma red si se ha utilizado la máscara de subred 255.255.224.0?",
+    "stimulus": "",
+    "options": [
+      "f.172.16.66.24",
+      "g.172.16.65.33",
+      "h.172.16.64.42",
+      "i.172.16.63.51"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) i.172.16.63.51. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1383,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Se tiene una dirección IP 172.17.111.0 mascara 255.255.254.0, ¿cuantas subredes y cuantos host validos habrá por subred?",
+    "stimulus": "",
+    "options": [
+      "126 subredes con 512 hosts",
+      "128 subredes con 510 hosts",
+      "126 subredes con 510 hosts",
+      "126 subredes con 1022 hosts"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 126 subredes con 510 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1384,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted está designando un direccionamiento IP para cuatro subredes con la red 10.1.1.0, se prevé un crecimiento de una red por año en los próximos cuatro años. ¿Cuál será la máscara que permita la mayor cantidad de host?",
+    "stimulus": "",
+    "options": [
+      "255.0.0.0",
+      "255.254.0.0",
+      "255.240.0.0",
+      "255.255.255.0"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 255.0.0.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1385,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "A partir de la dirección IP 172.18.71.2 255.255.248.0, ¿Cuál es la dirección de subred y de bro- adcast a la que pertece el host?",
+    "stimulus": "",
+    "options": [
+      "network ID = 172.18.64.0, broadcast 172.18.80.255",
+      "network ID = 172.18.32.0, broadcast 172.18.71.255",
+      "network ID = 172.18.32.0, broadcast 172.18.80.255",
+      "network ID = 172.18.64.0, broadcast 172.18.71.255"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) network ID = 172.18.64.0, broadcast 172.18.71.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1386,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red clase B será dividida en 20 subredes a las que se sumaran 30 más en los próximos años ¿Qué mascara se deberá utilizar para obtener un total de 800 host por subred?",
+    "stimulus": "",
+    "options": [
+      "255.248.0.0",
+      "255.255.252.0",
+      "255.255.224.0",
+      "255.255.248.0"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 255.255.252.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1387,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles de las siguientes mascaras de red equivale a: /24?",
+    "stimulus": "",
+    "options": [
+      "255.0.0.0",
+      "224.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.255.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1388,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red clase C 192.168.1.0 255.255.255.252, está dividida en subredes ¿Cuantas subredes y cuantos host por subred tendrá cada una?",
+    "stimulus": "",
+    "options": [
+      "62 subnets with each 2 hosts",
+      "126 subnets with each 4 hosts",
+      "126 subnets with each 6 hosts",
+      "30 subnets with each 6 hosts",
+      "2 subnets with each 62 hosts"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 30 subnets with each 6 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1389,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted tiene una IP 156.233.42.56 con una máscara de subred de 7 bits. ¿Cuántos host y cuántas subredes son posibles? Anexo de Subneteo Página 9",
+    "stimulus": "",
+    "options": [
+      "126 subredes y 510 hosts",
+      "128 subredes y 512 hosts",
+      "510 host y 126 subredes",
+      "512 subredes y 128 subredes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 126 subredes y 510 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1390,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una red clase B será dividida en subredes. ¿Qué mascara se deberá utilizar para obtener un total de 500 host por subred?",
+    "stimulus": "",
+    "options": [
+      "255.255.224.0",
+      "255.255.248.0",
+      "255.255.128.0",
+      "255.255.254.0"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.254.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1391,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si un host de una red tiene la dirección 172.16.45.14/30, ¿Cuál es la dirección de la subred a la cual pertenece ese host?",
+    "stimulus": "",
+    "options": [
+      "172.16.45.0",
+      "172.16.45.4",
+      "172.16.45.8",
+      "172.16.45.12",
+      "172.16.45.18",
+      "172.16.0.0"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 172.16.45.12. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1392,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles de las que se mencionan a continuación son 2 direcciones IP que pueden ser asignadas a host de la subred 192.168.15.19/28?",
+    "stimulus": "",
+    "options": [
+      "192.168.15.17",
+      "192.168.15.14",
+      "192.168.15.29",
+      "192.168.15.16",
+      "192.168.15.31",
+      "Ninguna de las que se menciona."
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: A) 192.168.15.17, C) 192.168.15.29. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1393,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted se encuentra trabajando en una empresa a la que le ha sido asignada una dirección clase C y se necesita crear 10 subredes. Se le requiere que disponga de tantas direcciones de host en cada subred, como resulte posible. ¿Cuál de las siguientes es la máscara de subred que deberá utilizar? Anexo de Subneteo Página 10",
+    "stimulus": "",
+    "options": [
+      "255.255.255.192",
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.242",
+      "Ninguna de las que se menciona."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.255.240. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1394,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de las siguientes es una dirección de host IP unicast válida?",
+    "stimulus": "",
+    "options": [
+      "172.31.128.255/18",
+      "255.255.255.255",
+      "192.168.24.59/30",
+      "FFFF.FFFF.FFFF",
+      "224.1.5.2",
+      "Todas las de arriba."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 172.31.128.255/18. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1395,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántas subredes y host disponibles por subred se obtienen si usted aplica una máscara /28 a la red clase C 210.10.2.0?",
+    "stimulus": "",
+    "options": [
+      "30 subredes y 6 host por subred.",
+      "6 subredes y 30 host por subred.",
+      "8 subredes y 32 host por subred.",
+      "32 subredes y 8 host por subred.",
+      "14 subredes y 14 host por subred.",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 14 subredes y 14 host por subred.. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1396,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de subred que corresponde al host 172.16.210.0/22?",
+    "stimulus": "",
+    "options": [
+      "172.16.42.0",
+      "172.16.107.0",
+      "172.16.208.0",
+      "172.16.252.0",
+      "172.16.254.0",
+      "Ninguna de las anteriores."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 172.16.208.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1397,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la dirección de subred que corresponde a la dirección IP 201.100.5.68/28?",
+    "stimulus": "",
+    "options": [
+      "201.100.5.0",
+      "201.100.5.32",
+      "201.100.5.64",
+      "201.100.5.65",
+      "201.100.5.31",
+      "201.100.5.80"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 201.100.5.64. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1398,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La empresa en la que se desempeña tiene asignada la dirección clase B 172.12.0.0. De acuerdo a las necesidades planteadas, esta red debería ser dividida en subredes que soporten un máximo de 459 host por subred, procurando mantener en su máximo el número de subredes disponibles ¿Cuál es la máscara que deberá utilizar?",
+    "stimulus": "",
+    "options": [
+      "255.255.0.0",
+      "255.255.128.0",
+      "255.255.224.0",
+      "255.255.254.0",
+      "255.255.248.0",
+      "255.255.192.0"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.254.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1399,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Identifique 3 direcciones de host válidas en la red 192.168.27.0 con máscara de subred 255.255.255.240 (seleccione 3)",
+    "stimulus": "",
+    "options": [
+      "192.168.27.33",
+      "192.168.27.112",
+      "192.168.27.119",
+      "192.168.27.126",
+      "192.168.27.175",
+      "192.168.27.208"
+    ],
+    "answer": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: A) 192.168.27.33, C) 192.168.27.119, D) 192.168.27.126. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1400,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una dirección de red clase C ha sido subneteada con una máscara /27. ¿Cuál de las siguientes direcciones es una dirección de broadcast para una de las subredes resultantes?",
+    "stimulus": "",
+    "options": [
+      "201.57.78.33",
+      "201.57.78.64",
+      "201.57.78.97",
+      "201.57.78.159",
+      "201.57.78.254"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 201.57.78.159. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1401,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Teniendo una máscara de subred de 255.255.255.224, ¿Cuál de las siguientes direcciones pue- den ser asignadas a los host de la red?",
+    "stimulus": "",
+    "options": [
+      "15.234.118.63",
+      "92.11.178.93",
+      "134.178.18.56",
+      "192.168.16.87",
+      "201.45.116.159",
+      "217.63.12.192"
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: B) 92.11.178.93, C) 134.178.18.56, D) 192.168.16.87. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1402,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántas subredes usables y cuántos host usables por subred resultan de la dirección de red 201.105.13.0 subneteada con una máscara de /26?",
+    "stimulus": "",
+    "options": [
+      "64 subredes y 4 hosts",
+      "4 subredes y 64 hosts",
+      "2 subredes y 62 hosts",
+      "62 subredes y 2 hosts"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 2 subredes y 62 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1403,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuáles de las siguientes direcciones pueden ser asignadas a hosts? (seleccione 2)",
+    "stimulus": "",
+    "options": [
+      "205.7.8.32 /27",
+      "191.168.10.2 /23",
+      "127.0.0.1",
+      "224.0.0.10",
+      "203.123.45.47 /28",
+      "101.10.0.0 /13"
+    ],
+    "answer": [
+      2,
+      3
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: C) 127.0.0.1, D) 224.0.0.10. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1404,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Teniendo una dirección de red IP clase B, cuál de las máscaras de subred mostradas, permiten 100 subredes con 500 direcciones de host usables por subred?",
+    "stimulus": "",
+    "options": [
+      "255.255.0.0",
+      "255.255.224.0",
+      "255.255.254.0",
+      "255.255.255.0",
+      "255.255.255.224"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.254.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1405,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted tiene una red clase C y requiere crear 5 subredes usables, cada una de las cuales con ca- pacidad para mínimo 18 hosts. ¿Cuál de las siguientes máscaras de subred debe usar?",
+    "stimulus": "",
+    "options": [
+      "255.255.224.0",
+      "255.255.240.0",
+      "255.255.255.0",
+      "255.255.255.224",
+      "255.255.255.240"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "La respuesta correcta es D) 255.255.255.224. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1406,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La red 213.115.77.0 ha sido subneteada usando una máscara de subred de /28. ¿Cuántas sub- redes usables y cuántos hosts por subred resultan de esta operación?",
+    "stimulus": "",
+    "options": [
+      "2 redes con 62 hosts",
+      "6 redes con 30 hosts",
+      "16 redes con 16 hosts",
+      "62 redes con 2 hosts",
+      "14 redes con 14 hosts",
+      "Ninguna de las anteriores"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "La respuesta correcta es E) 14 redes con 14 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1407,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La red 201.145.32.0 está subneteada usando una máscara /26. ¿Cuántos redes y hosts por sub- red existen usando esta máscara de subred?",
+    "stimulus": "",
+    "options": [
+      "4 redes con 64 hosts",
+      "64 redes y 4 hosts",
+      "2 redes y 62 hosts",
+      "62 redes y 2 hosts",
+      "6 redes y 30 hosts"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 2 redes y 62 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1408,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usted tiene una red clase B con una máscara 255.255.255.0. ¿Cuáles de las siguientes afirmacio- nes acerca de esta red son verdaderas? (Seleccione todas las respuestas válidas)",
+    "stimulus": "",
+    "options": [
+      "Se tienen 254 subredes utilizables",
+      "Se tienen 256 direcciones de host utilizables por subred",
+      "Se tienen 50 subredes utilizables",
+      "Se tienen 254 direcciones de host utilizables por subred",
+      "Se tienen 24 direcciones de host utilizables por subred",
+      "Se tiene una sola red utilizable."
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: A) Se tienen 254 subredes utilizables, E) Se tienen 24 direcciones de host utilizables por subred. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1409,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuántas direcciones IP usables se pueden obtener de una dirección convencional clase C?",
+    "stimulus": "",
+    "options": [
+      "128",
+      "192",
+      "254",
+      "256",
+      "510"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 254. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1410,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de broadcast de la subred 173.16.26.0 /23 es:",
+    "stimulus": "",
+    "options": [
+      "173.16.27.255",
+      "173.16.29.255",
+      "173.16.31.255",
+      "173.16.33.255",
+      "173.16.35.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 173.16.27.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1411,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una máscara de subred /28 es:",
+    "stimulus": "",
+    "options": [
+      "255.255.255.242",
+      "255.255.255.240",
+      "255.240.0.0",
+      "255.255.255.224"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 255.255.255.240. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1412,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de broadcast de la subred 114.0.15.0 /25 es:",
+    "stimulus": "",
+    "options": [
+      "114.0.15.127",
+      "114.0.15.255",
+      "114.0.16.127",
+      "114.0.14.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 114.0.15.127. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1413,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de broadcast de la subred 18.3.128.0 /19 es:",
+    "stimulus": "",
+    "options": [
+      "18.3.159.255",
+      "18.3.191.255",
+      "18.3.127.255",
+      "18.3.255.255"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 18.3.159.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1414,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una máscara de subred /26 es:",
+    "stimulus": "",
+    "options": [
+      "255.255.255.242",
+      "255.255.255.242",
+      "255.255.255.192",
+      "255.255.255.224"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.255.192. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1415,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La máscara de subred 255.255.0.0 es en notación simplificada:",
+    "stimulus": "",
+    "options": [
+      "/18",
+      "/16",
+      "/8",
+      "/15"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) /16. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1416,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de subred 200.200.2.128 /30 es la subred válida número:",
+    "stimulus": "",
+    "options": [
+      "32",
+      "44",
+      "11",
+      "72"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 32. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1417,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si la subred posee dirección de red 200.5.5.160 y broadcast 200.5.5.191, entonces",
+    "stimulus": "",
+    "options": [
+      "la máscara es 255.255.255.192",
+      "el PC 200.5.5.175 pertenece a esta subred",
+      "la subred posee tamaño 32 direcciones IP"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) la subred posee tamaño 32 direcciones IP. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1418,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "A Usted le ha sido asignada una dirección de red clase C. Su Director le ha solicitado crear 30 subredes con al menos 5 host por subred para los diferentes departamentos en su organización. ¿Cuál es la máscara de subred que le permitirá crear esas 30 subredes?",
+    "stimulus": "",
+    "options": [
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.252"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 255.255.255.248. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1419,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Usando una máscara de subred de 255.255.255.224, ¿Cuál de las direcciones IP mostradas pue- den asignarse a los hosts en una subred? (seleccione todas las que apliquen)",
+    "stimulus": "",
+    "options": [
+      "16.23.118.63",
+      "87.45.16.159",
+      "92.11.178.93",
+      "134.178.18.56",
+      "192.168.16.87",
+      "217.168.166.192"
+    ],
+    "answer": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: C) 92.11.178.93, D) 134.178.18.56, E) 192.168.16.87. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1420,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Su ISP le ha asignado la siguiente dirección IP y máscara de subred: Dirección IP: 199.141.27.0 Máscara de subred: 255.255.255.240 Cuál de las siguientes direcciones pueden ser asignadas a hosts en la subred resultante? (seleccione todas las que apliquen)",
+    "stimulus": "",
+    "options": [
+      "199.141.24.2",
+      "199.141.24.175",
+      "199.141.24.13",
+      "199.141.24.11",
+      "199.141.24.208",
+      "199.141.24.112"
+    ],
+    "answer": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: A) 199.141.24.2, C) 199.141.24.13, D) 199.141.24.11. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1421,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La red 210.106.14.0 está subneteada usando una máscara /24. ¿Cuántas redes usables y direc- ciones de hosts pueden ser obtenidas de ella?",
+    "stimulus": "",
+    "options": [
+      "1 red con 254 hosts",
+      "4 redes con 128 hosts",
+      "2 redes con 24 hosts",
+      "6 redes con 64 hosts",
+      "8 redes con 36 hosts"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La respuesta correcta es A) 1 red con 254 hosts. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1422,
+    "topic": "net-admin",
+    "type": "multiple",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Su ISP asignó un espacio completo de direcciones clase B. De este espacio, usted necesita al menos 300 subredes que puedan soportar al menos 50 hosts cada una. ¿Cuál de las máscaras de subred satisfacen sus necesidades? (seleccione 2)",
+    "stimulus": "",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.252.0",
+      "255.255.255.224",
+      "255.255.255.192",
+      "255.255.248.0"
+    ],
+    "answer": [
+      2,
+      4
+    ],
+    "explanation": "La clave del documento marca como correctas estas opciones: C) 255.255.252.0, E) 255.255.255.192. Se deben seleccionar todas las respuestas válidas; revisa cada dirección o condición contra la máscara y los límites de la subred.",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1423,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una PC tiene una dirección IP 172.16.209.10 /22. ¿A qué subred pertenece este host?",
+    "stimulus": "",
+    "options": [
+      "172.16.42.0",
+      "172.16.107.0",
+      "172.16.208.0",
+      "172.16.252.0",
+      "172.16.254.0"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La respuesta correcta es C) 172.16.208.0. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1424,
+    "topic": "net-admin",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "La dirección de broadcast de la subred 10.126.0.0 /15 es:",
+    "stimulus": "",
+    "options": [
+      "10.109.255.255",
+      "10.127.255.255",
+      "10.135.255.255",
+      "10.169.255.255"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La respuesta correcta es B) 10.127.255.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
+    "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
   }
 ];

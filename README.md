@@ -38,3 +38,27 @@ Las preguntas del banco son material de práctica redactado para este simulador.
 - `data/questions.js` — banco de reactivos.
 - `data/exam-sets.js` — distribuciones de simulacros.
 - `data/build-report.json` — conteos del banco.
+
+
+## Actualización de reactivos (octubre de 2026)
+
+Se incorporaron reactivos nuevos basados en los documentos proporcionados sobre direccionamiento IPv4/subneteo, redes, seguridad, ingeniería de software, compiladores, estructuras de datos, bases de datos, arquitectura de computadoras, sistemas embebidos, control, comprensión lectora y redacción. Cada reactivo agregado incluye una explicación en la retroalimentación. Se revisó la duplicación exacta por enunciado contra el banco existente; no se copiaron reactivos con enunciado idéntico. Las preguntas son de práctica adaptadas, no una reproducción literal de las guías.
+
+
+## Actualización ampliada de reactivos
+
+Se incorporó un conjunto ampliado de reactivos adaptados de las prácticas de las guías EGEL de Ingeniería de Software e Ingeniería Computacional. Se conservaron los reactivos originales, se ubicaron los nuevos por tema, se añadieron explicaciones de retroalimentación y se filtraron coincidencias textuales cercanas. También se conservaron los reactivos previos sobre subneteo.
+
+Nota: las explicaciones de reactivos importados indican por qué la opción registrada en la clave del documento es la correcta; algunos reactivos pueden tener erratas de OCR heredadas del PDF y conviene revisar manualmente los reactivos señalados por su fuente.
+
+
+La actualización ampliada incluye también los ejercicios propuestos de subneteo y reactivos elaborados a partir de los ejercicios resueltos del Workbook de direccionamiento IP. Los reactivos que requieren seleccionar varias opciones usan selección múltiple en la interfaz.
+
+
+La actualización ampliada incluye también los ejercicios propuestos de subneteo y reactivos elaborados a partir de los ejercicios resueltos del Workbook de direccionamiento IP. Los reactivos que requieren seleccionar varias opciones usan selección múltiple en la interfaz.
+
+
+La actualización ampliada incluye también los ejercicios propuestos de subneteo y reactivos elaborados a partir de los ejercicios resueltos del Workbook de direccionamiento IP. Los reactivos que requieren seleccionar varias opciones usan selección múltiple en la interfaz.
+
+
+Conteo de esta compilación: 1,424 reactivos en total. Incluye 890 originales, 30 reactivos agregados en la actualización previa y 504 reactivos adicionales extraídos/adaptados de las guías EGEL, los ejercicios de subneteo y el Workbook. Los seis números de ejercicio cuyos enunciados no aparecen en el texto extraído del PDF no se inventaron; se incorporaron los enunciados disponibles y los ejercicios que pudieron reconstruirse con respaldo suficiente.
