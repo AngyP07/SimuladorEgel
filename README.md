@@ -62,3 +62,7 @@ La actualización ampliada incluye también los ejercicios propuestos de subnete
 
 
 Conteo de esta compilación: 1,424 reactivos en total. Incluye 890 originales, 30 reactivos agregados en la actualización previa y 504 reactivos adicionales extraídos/adaptados de las guías EGEL, los ejercicios de subneteo y el Workbook. Los seis números de ejercicio cuyos enunciados no aparecen en el texto extraído del PDF no se inventaron; se incorporaron los enunciados disponibles y los ejercicios que pudieron reconstruirse con respaldo suficiente.
+
+
+## Actualización con documentos adicionales
+Se añadieron reactivos nuevos sobre circuitos y electrónica, teoría de control y PID, rendimiento/eficiencia y sistemas ERP/CRM. Cada reactivo incluye respuesta y explicación y se clasifica en el área temática correspondiente. El archivo data/build-report.json registra el conteo de esta actualización.

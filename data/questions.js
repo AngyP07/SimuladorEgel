@@ -27614,5 +27614,3685 @@ window.QUESTIONS = [
     ],
     "explanation": "La respuesta correcta es B) 10.127.255.255. Se obtiene aplicando el concepto de direccionamiento indicado en el enunciado (máscara/prefijo, dirección de red, broadcast o rango de hosts).",
     "source": "5.- Ejercicios propuestos de subneteo · respuesta cotejada con la clave del documento"
+  },
+  {
+    "id": 1425,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué magnitud física representa la corriente eléctrica?",
+    "stimulus": "",
+    "options": [
+      "La energía almacenada por unidad de volumen",
+      "El flujo de carga eléctrica por unidad de tiempo",
+      "La diferencia de potencial entre dos puntos",
+      "La oposición al paso de corriente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La corriente es la rapidez con que fluye la carga: i(t)=dq(t)/dt y se mide en amperes.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1426,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Baja",
+    "question": "Un resistor de 20 Ω se conecta a 10 V. ¿Qué corriente circula?",
+    "stimulus": "",
+    "options": [
+      "0.5 A",
+      "2 A",
+      "10 A",
+      "200 A"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Por la ley de Ohm, I=V/R=10/20=0.5 A.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1427,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un circuito consume 3 A con una tensión de 12 V. ¿Cuál es su potencia?",
+    "stimulus": "",
+    "options": [
+      "4 W",
+      "15 W",
+      "36 W",
+      "144 W"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La potencia eléctrica es P=V·I; por tanto 12×3=36 W.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1428,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué expresa la Ley de Corrientes de Kirchhoff en un nodo?",
+    "stimulus": "",
+    "options": [
+      "La suma de voltajes en una malla es cero",
+      "La corriente es igual en todos los resistores en paralelo",
+      "La suma algebraica de corrientes es cero",
+      "La potencia disipada siempre es constante"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La LCK deriva de la conservación de la carga: la suma algebraica de corrientes que entran y salen del nodo es cero.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1429,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué principio fundamenta la Ley de Tensiones de Kirchhoff?",
+    "stimulus": "",
+    "options": [
+      "Conservación de la energía",
+      "Conservación de la masa",
+      "Inducción electromagnética",
+      "Conservación del momento"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La LTK establece que la suma algebraica de tensiones en un lazo cerrado es cero, como consecuencia de la conservación de energía.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1430,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Dos resistencias de 4 Ω y 6 Ω se conectan en serie. ¿Cuál es la resistencia equivalente?",
+    "stimulus": "",
+    "options": [
+      "2.4 Ω",
+      "10 Ω",
+      "24 Ω",
+      "1.5 Ω"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En serie se suman: Req=4+6=10 Ω.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1431,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Dos resistencias de 6 Ω se conectan en paralelo. ¿Cuál es la resistencia equivalente?",
+    "stimulus": "",
+    "options": [
+      "12 Ω",
+      "6 Ω",
+      "3 Ω",
+      "1 Ω"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "En paralelo, 1/Req=1/6+1/6=2/6; por tanto Req=3 Ω.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1432,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un circuito en paralelo, ¿qué magnitud es igual en todas las ramas?",
+    "stimulus": "",
+    "options": [
+      "Corriente",
+      "Resistencia",
+      "Tensión",
+      "Potencia"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Todas las ramas en paralelo comparten los mismos dos nodos, por lo que la tensión es igual.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1433,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el comportamiento ideal de un circuito abierto?",
+    "stimulus": "",
+    "options": [
+      "Resistencia nula y tensión cero",
+      "Resistencia muy grande y corriente nula",
+      "Corriente infinita",
+      "Voltaje necesariamente nulo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Un circuito abierto ideal tiene R→∞ e i=0.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1434,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa una rama en la topología de un circuito?",
+    "stimulus": "",
+    "options": [
+      "Una conexión común de tres o más elementos",
+      "Un elemento de dos terminales",
+      "Una trayectoria necesariamente cerrada",
+      "El nodo de referencia"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Una rama corresponde a un elemento de dos terminales; los nodos son conexiones comunes y los lazos son trayectorias cerradas.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1435,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el análisis nodal, ¿qué ley se aplica en cada nodo esencial?",
+    "stimulus": "",
+    "options": [
+      "Ley de tensiones de Kirchhoff",
+      "Ley de corrientes de Kirchhoff",
+      "Ley de Faraday",
+      "Ley de Joule"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El método nodal asigna tensiones a los nodos y aplica LCK para formar las ecuaciones.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1436,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué elemento almacena energía en un campo eléctrico?",
+    "stimulus": "",
+    "options": [
+      "Resistor",
+      "Capacitor",
+      "Diodo",
+      "Transistor BJT"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El capacitor almacena energía en su campo eléctrico; su energía ideal es wC=½CV².",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1437,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En régimen permanente de corriente directa, un capacitor ideal se comporta como:",
+    "stimulus": "",
+    "options": [
+      "Cortocircuito",
+      "Circuito abierto",
+      "Fuente de corriente ideal",
+      "Resistencia negativa"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En estado estable dv/dt=0; como i=C·dv/dt, la corriente es cero y equivale a circuito abierto.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1438,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué magnitud no puede cambiar instantáneamente en un capacitor ideal?",
+    "stimulus": "",
+    "options": [
+      "La tensión",
+      "La resistencia",
+      "La frecuencia",
+      "La potencia"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La tensión del capacitor es continua en el tiempo porque un cambio instantáneo exigiría una corriente impulsiva ilimitada.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1439,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué elemento almacena energía en un campo magnético?",
+    "stimulus": "",
+    "options": [
+      "Capacitor",
+      "Inductor",
+      "Resistor",
+      "Diodo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El inductor almacena energía magnética; su energía es wL=½LI².",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1440,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En régimen permanente de corriente directa, un inductor ideal se aproxima a:",
+    "stimulus": "",
+    "options": [
+      "Circuito abierto",
+      "Cortocircuito",
+      "Fuente de tensión",
+      "Resistencia infinita"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En estado estable di/dt=0 y v=L·di/dt=0, por lo que idealmente se comporta como cortocircuito.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1441,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué indica la constante de tiempo τ de un circuito RC de primer orden?",
+    "stimulus": "",
+    "options": [
+      "La frecuencia de reloj del procesador",
+      "La rapidez característica del transitorio",
+      "La resistencia de aislamiento",
+      "La potencia máxima"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En RC, τ=Rth·C y caracteriza la rapidez con que evoluciona la respuesta exponencial.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1442,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Para un circuito RL, ¿cómo se calcula la constante de tiempo?",
+    "stimulus": "",
+    "options": [
+      "τ=R/L",
+      "τ=L/Rth",
+      "τ=R·L",
+      "τ=1/(L·R)"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La constante de tiempo de un circuito RL es τ=L/Rth.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1443,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa el voltaje de Thévenin?",
+    "stimulus": "",
+    "options": [
+      "La corriente de cortocircuito",
+      "La tensión de circuito abierto en los terminales",
+      "La tensión en el resistor menor",
+      "La caída de tensión del capacitor"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Vth es la tensión que aparece en los terminales cuando la salida está en circuito abierto.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1444,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el equivalente de Norton, ¿qué representa IN?",
+    "stimulus": "",
+    "options": [
+      "La tensión de circuito abierto",
+      "La corriente de cortocircuito",
+      "La resistencia de carga",
+      "La potencia máxima"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La corriente de Norton IN corresponde a la corriente de cortocircuito entre los terminales.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1445,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuándo se transfiere máxima potencia a una carga resistiva desde una red lineal equivalente?",
+    "stimulus": "",
+    "options": [
+      "Cuando RL=0",
+      "Cuando RL=Rth",
+      "Cuando RL=2Rth",
+      "Cuando RL tiende a infinito"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El teorema de máxima transferencia establece que RL debe igualar la resistencia de Thévenin vista desde la carga.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1446,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué técnica permite sustituir una red lineal por una fuente de tensión en serie con una resistencia?",
+    "stimulus": "",
+    "options": [
+      "Norton",
+      "Thévenin",
+      "Superposición",
+      "Transformación R-2R"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El equivalente de Thévenin representa la red mediante Vth en serie con Rth.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1447,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué permite el teorema de superposición en redes lineales?",
+    "stimulus": "",
+    "options": [
+      "Eliminar todas las fuentes dependientes",
+      "Sumar las respuestas debidas a cada fuente independiente por separado",
+      "Convertir cualquier circuito en paralelo",
+      "Calcular solo la potencia máxima"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Se analiza cada fuente independiente por separado y luego se suman algebraicamente sus contribuciones.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1448,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa un fasor?",
+    "stimulus": "",
+    "options": [
+      "Una señal digital binaria",
+      "La magnitud y fase de una señal senoidal mediante números complejos",
+      "Una corriente continua constante",
+      "Una tabla de verdad"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Los fasores representan magnitud y fase de señales senoidales en el dominio de frecuencia.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1449,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una señal tiene frecuencia f, ¿cómo se relaciona con la frecuencia angular ω?",
+    "stimulus": "",
+    "options": [
+      "ω=f/2π",
+      "ω=2πf",
+      "ω=f²",
+      "ω=1/f²"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La frecuencia angular se calcula como ω=2πf.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1450,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la impedancia de un resistor ideal en análisis fasorial?",
+    "stimulus": "",
+    "options": [
+      "jωL",
+      "1/(jωC)",
+      "R",
+      "−jωL"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La impedancia resistiva es real y constante: ZR=R.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1451,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la impedancia de un inductor ideal?",
+    "stimulus": "",
+    "options": [
+      "R",
+      "jωL",
+      "1/(jωC)",
+      "−jωL"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En el dominio fasorial, la impedancia del inductor es ZL=jωL.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1452,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la impedancia de un capacitor ideal?",
+    "stimulus": "",
+    "options": [
+      "jωC",
+      "1/(jωC)",
+      "jωL",
+      "R·C"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La impedancia capacitiva es ZC=1/(jωC).",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1453,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función cumple un filtro pasa-bajas?",
+    "stimulus": "",
+    "options": [
+      "Deja pasar altas frecuencias y atenúa bajas",
+      "Deja pasar bajas frecuencias y atenúa altas",
+      "Convierte CA en CD",
+      "Amplifica todas las frecuencias por igual"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El filtro pasa-bajas transmite componentes de baja frecuencia y atenúa las altas.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1454,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función cumple un filtro pasa-altas?",
+    "stimulus": "",
+    "options": [
+      "Atenúa componentes lentas y transmite las de mayor frecuencia",
+      "Elimina todas las frecuencias",
+      "Almacena carga",
+      "Convierte señales analógicas a digitales"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El pasa-altas atenúa componentes de baja frecuencia y permite el paso de frecuencias por encima del corte.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1455,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué hace un convertidor DAC?",
+    "stimulus": "",
+    "options": [
+      "Convierte una señal analógica en código binario",
+      "Convierte un código digital en tensión o corriente analógica",
+      "Amplifica una señal de radio",
+      "Almacena datos en memoria"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Un DAC transforma un código digital en una magnitud analógica, como tensión o corriente.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1456,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica ideal tiene la entrada de un amplificador operacional?",
+    "stimulus": "",
+    "options": [
+      "Resistencia de entrada nula",
+      "Resistencia de entrada infinita y corriente de entrada nula",
+      "Corriente de entrada máxima",
+      "Ganancia unitaria obligatoria"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El modelo ideal supone impedancia de entrada infinita, por lo que no entra corriente a sus terminales.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1457,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un amplificador operacional ideal con realimentación negativa, ¿qué aproximación se utiliza?",
+    "stimulus": "",
+    "options": [
+      "Cortocircuito físico entre entradas",
+      "Cortocircuito virtual: tensiones de entrada aproximadamente iguales",
+      "Corriente infinita en la entrada",
+      "Salida siempre igual a cero"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La ganancia ideal muy alta y la realimentación negativa llevan a que las tensiones de entrada sean aproximadamente iguales, sin conexión física.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1458,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función puede realizar un amplificador operacional?",
+    "stimulus": "",
+    "options": [
+      "Solo almacenar datos",
+      "Invertir, sumar, restar o integrar señales",
+      "Generar direcciones IP",
+      "Controlar directamente cualquier motor de potencia"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El material presenta aplicaciones de AO como inversión, suma, diferencia e integración.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1459,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se controla principalmente un transistor BJT?",
+    "stimulus": "",
+    "options": [
+      "Por tensión de compuerta",
+      "Por corriente de base",
+      "Por frecuencia de reloj",
+      "Por campo magnético externo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El BJT es controlado por corriente de base; una corriente pequeña puede controlar una corriente mayor entre colector y emisor.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1460,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un BJT, ¿qué describe la región de corte?",
+    "stimulus": "",
+    "options": [
+      "El transistor conduce plenamente",
+      "El transistor no deja pasar corriente de colector significativa",
+      "El transistor amplifica linealmente",
+      "El transistor se comporta como capacitor"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En corte el transistor está apagado y se aproxima a un interruptor abierto.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1461,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un BJT usado como interruptor, ¿qué representa la saturación?",
+    "stimulus": "",
+    "options": [
+      "Interruptor abierto",
+      "Interruptor cerrado",
+      "Región de aislamiento",
+      "Ruptura dieléctrica"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En saturación el transistor conduce plenamente y se aproxima a un interruptor cerrado.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1462,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ventaja ofrece una configuración Darlington?",
+    "stimulus": "",
+    "options": [
+      "Reduce a cero la corriente de colector",
+      "Aumenta la ganancia total de corriente",
+      "Convierte corriente alterna en digital",
+      "Elimina la necesidad de alimentación"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La ganancia de corriente total se aproxima al producto de las ganancias de los dos transistores.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1463,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué dato del datasheet permite verificar límites máximos de tensión y corriente de un BJT?",
+    "stimulus": "",
+    "options": [
+      "Color del encapsulado",
+      "Absolute Maximum Ratings",
+      "Fecha de compra",
+      "Nombre comercial"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La sección Absolute Maximum Ratings especifica límites que no deben excederse para evitar dañar el dispositivo.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1464,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué controla un MOSFET?",
+    "stimulus": "",
+    "options": [
+      "La corriente de base",
+      "La tensión aplicada a la compuerta",
+      "La temperatura del colector",
+      "La frecuencia de la red"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El MOSFET es un dispositivo controlado por tensión en su compuerta.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1465,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ventaja se asocia a la combinación CMOS de transistores NMOS y PMOS?",
+    "stimulus": "",
+    "options": [
+      "Alto consumo estático permanente",
+      "Construcción de puertas lógicas con bajo consumo estático",
+      "Necesidad de corriente de base",
+      "Conversión directa de luz a corriente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Las redes complementarias NMOS/PMOS permiten implementar lógica digital con bajo consumo estático.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1466,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué debe interponerse normalmente entre una salida digital y un LED para limitar su corriente?",
+    "stimulus": "",
+    "options": [
+      "Un capacitor de gran valor",
+      "Una resistencia",
+      "Un inductor ideal",
+      "Un transformador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La resistencia en serie limita la corriente del LED y protege tanto al LED como a la salida de control.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1467,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué no debe conectarse una carga de alta corriente directamente a un pin de microcontrolador?",
+    "stimulus": "",
+    "options": [
+      "Porque los pines solo leen datos",
+      "Porque puede excederse la corriente máxima del pin; se usa una etapa de potencia",
+      "Porque el pin genera corriente alterna",
+      "Porque el microcontrolador no tiene reloj"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La salida del microcontrolador debe controlar la compuerta o etapa de un transistor adecuado, no alimentar directamente cargas de alta corriente.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1468,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué problema de muestreo ocurre cuando una señal se muestrea por debajo de la tasa necesaria y sus componentes se confunden?",
+    "stimulus": "",
+    "options": [
+      "Saturación térmica",
+      "Aliasing",
+      "Cortocircuito",
+      "Modulación PWM"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El aliasing provoca que componentes de frecuencia se representen incorrectamente por una frecuencia de muestreo insuficiente.",
+    "source": "Conceptos Básicos de Hardware en Computación · material proporcionado"
+  },
+  {
+    "id": 1469,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué describe el modelado de un sistema dinámico?",
+    "stimulus": "",
+    "options": [
+      "Su apariencia física únicamente",
+      "Su comportamiento matemático a lo largo del tiempo",
+      "Solo el costo de fabricación",
+      "La distribución de direcciones de red"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El modelado describe matemáticamente la evolución temporal del sistema; suele usar ecuaciones diferenciales que relacionan entradas y salidas.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1470,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué relaciona la función de transferencia G(s) de un sistema lineal?",
+    "stimulus": "",
+    "options": [
+      "La salida con la entrada en el dominio de Laplace",
+      "La corriente con la resistencia en CD",
+      "La memoria con el procesador",
+      "El error con el número de sensores"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La función de transferencia se expresa como G(s)=Y(s)/X(s), bajo las condiciones habituales de sistemas lineales.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1471,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué información permite evaluar la estabilidad mediante los polos de un sistema continuo?",
+    "stimulus": "",
+    "options": [
+      "La ubicación de los polos en el plano complejo",
+      "El número de variables de entrada solamente",
+      "El precio de los actuadores",
+      "La longitud de los cables"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Los criterios como Routh-Hurwitz y el lugar de las raíces permiten determinar estabilidad a partir del comportamiento de los polos.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1472,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué acción del PID actúa proporcionalmente al error actual?",
+    "stimulus": "",
+    "options": [
+      "Integral",
+      "Derivativa",
+      "Proporcional",
+      "Anticipativa"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La componente proporcional calcula P=Kp·error y responde al error presente.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1473,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué acción del PID acumula el error a lo largo del tiempo?",
+    "stimulus": "",
+    "options": [
+      "Proporcional",
+      "Integral",
+      "Derivativa",
+      "Feedforward exclusivamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La integral acumula error y ayuda a eliminar el error estacionario persistente.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1474,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué acción del PID utiliza la tasa de cambio del error?",
+    "stimulus": "",
+    "options": [
+      "Proporcional",
+      "Integral",
+      "Derivativa",
+      "Discreta aleatoria"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "La componente derivativa se calcula a partir del cambio del error respecto al tiempo y anticipa tendencias.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1475,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué combinación caracteriza a un controlador PID?",
+    "stimulus": "",
+    "options": [
+      "Error presente únicamente",
+      "Error acumulado únicamente",
+      "Error presente, acumulado y tasa de cambio",
+      "Solo la salida del sensor"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "PID combina componentes proporcional, integral y derivativa para ajustar la salida del controlador.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1476,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el propósito principal del término integral cuando existe error persistente?",
+    "stimulus": "",
+    "options": [
+      "Aumentar el ruido del sensor",
+      "Eliminar el error estacionario",
+      "Reducir la frecuencia de muestreo",
+      "Desconectar la realimentación"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La acumulación temporal del error hace que la acción integral corrija desviaciones que permanecen en el tiempo.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1477,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un PID digital, ¿qué representa Ts?",
+    "stimulus": "",
+    "options": [
+      "La temperatura del sensor",
+      "El tiempo de muestreo",
+      "La tensión de salida",
+      "El valor del setpoint"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Ts es el intervalo de muestreo; el pseudocódigo lo supone constante para actualizar integral y derivada.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1478,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué el pseudocódigo PID ejecuta su rutina mediante una interrupción de timer?",
+    "stimulus": "",
+    "options": [
+      "Para ejecutar el cálculo en intervalos temporales regulares",
+      "Para evitar leer el sensor",
+      "Para que el setpoint cambie aleatoriamente",
+      "Para reemplazar al actuador"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El timer invoca la rutina exactamente cada Ts segundos, manteniendo un periodo de muestreo constante.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1479,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el pseudocódigo, ¿cómo se calcula el error?",
+    "stimulus": "",
+    "options": [
+      "y − setpoint",
+      "setpoint − y",
+      "Kp + Ki + Kd",
+      "integral/Ts"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El error se obtiene restando la medición actual a la referencia deseada: error=setpoint−y.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1480,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué variable conserva el error del ciclo anterior para calcular la derivada?",
+    "stimulus": "",
+    "options": [
+      "integral",
+      "error_previo",
+      "salida",
+      "setpoint"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "error_previo almacena el error del ciclo anterior y permite calcular (error−error_previo)/Ts.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1481,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa la variable integral del pseudocódigo?",
+    "stimulus": "",
+    "options": [
+      "El valor del sensor",
+      "El acumulador del error",
+      "La salida saturada",
+      "La ganancia derivativa"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La variable integral conserva la suma aproximada del error multiplicado por Ts a través de los ciclos.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1482,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ocurre si Ts varía sin ajustar el cálculo de la integral?",
+    "stimulus": "",
+    "options": [
+      "La integral puede calcularse incorrectamente",
+      "La salida siempre se hace cero",
+      "La derivada desaparece",
+      "El sensor deja de medir"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La integral discreta usa error·Ts; variar Ts sin compensación altera la acumulación y corrompe el cálculo.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1483,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué la derivada suele ser sensible al ruido del sensor?",
+    "stimulus": "",
+    "options": [
+      "Porque amplifica cambios rápidos de la señal",
+      "Porque solo utiliza el valor promedio",
+      "Porque elimina toda variación",
+      "Porque no depende de mediciones"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La derivada responde a cambios rápidos; el ruido puede producir variaciones grandes y afectar la salida.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1484,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué medida práctica se menciona para reducir el efecto del ruido en la derivada?",
+    "stimulus": "",
+    "options": [
+      "Aumentar ilimitadamente Kd",
+      "Filtrar la señal o derivar el error filtrado",
+      "Desconectar el sensor",
+      "Eliminar la componente proporcional"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El material recomienda filtrar la señal o utilizar la derivada del error filtrado.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1485,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa saturar la salida de un controlador?",
+    "stimulus": "",
+    "options": [
+      "Limitarla a los valores físicos máximo y mínimo",
+      "Integrar el error dos veces",
+      "Aumentar Ts hasta infinito",
+      "Cambiar la referencia por la medición"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La saturación restringe la salida entre MAX_SALIDA y MIN_SALIDA para respetar los límites del actuador.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1486,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué problema busca mitigar la técnica anti-windup?",
+    "stimulus": "",
+    "options": [
+      "Acumulación excesiva de la integral cuando la salida está saturada",
+      "Pérdida de paquetes en Ethernet",
+      "Desbordamiento de memoria RAM",
+      "Alias de señales digitales"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El anti-windup evita que el acumulador integral siga creciendo de forma perjudicial cuando el actuador ya alcanzó sus límites.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1487,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un sistema de control en lazo cerrado, ¿qué información regresa al controlador?",
+    "stimulus": "",
+    "options": [
+      "La salida medida del proceso",
+      "Solo el costo del proceso",
+      "Una señal fija sin medición",
+      "El historial de facturas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El lazo cerrado utiliza realimentación de la variable medida para comparar el resultado con el punto de referencia.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1488,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué caracteriza a un sistema de lazo abierto?",
+    "stimulus": "",
+    "options": [
+      "Utiliza siempre realimentación de salida",
+      "Opera sin realimentación de la variable controlada",
+      "Tiene dos controladores en cascada",
+      "No requiere una entrada"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El control en lazo abierto no utiliza la medición de la salida para corregir la acción.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1489,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la principal ventaja del control en cascada?",
+    "stimulus": "",
+    "options": [
+      "Eliminar todos los sensores",
+      "Mejorar el desempeño al controlar variables primaria y secundaria",
+      "Evitar cualquier controlador",
+      "Convertir el proceso en lazo abierto"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La cascada combina lazos para corregir más rápidamente perturbaciones en variables secundarias que afectan a la principal.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1490,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el control de nivel de un tanque, el sensor mide el nivel y el controlador ajusta el flujo. ¿Qué esquema se utiliza?",
+    "stimulus": "",
+    "options": [
+      "Lazo abierto",
+      "Lazo cerrado",
+      "Sin control",
+      "Control manual"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La medición del nivel se realimenta y permite corregir el flujo para mantener el valor deseado.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1491,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué herramienta gráfica muestra ganancia y fase en función de la frecuencia?",
+    "stimulus": "",
+    "options": [
+      "Diagrama de Bode",
+      "Diagrama entidad-relación",
+      "Diagrama de Gantt",
+      "Tabla de verdad"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Los diagramas de Bode representan la respuesta en frecuencia mediante magnitud/ganancia y fase.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1492,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Para qué se utiliza el diagrama de Nyquist?",
+    "stimulus": "",
+    "options": [
+      "Para analizar estabilidad y robustez en frecuencia",
+      "Para calcular inventarios",
+      "Para diseñar tablas SQL",
+      "Para medir la temperatura directamente"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Nyquist es una herramienta de respuesta en frecuencia utilizada para evaluar estabilidad y márgenes.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1493,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa el espacio de estados?",
+    "stimulus": "",
+    "options": [
+      "Un conjunto de ecuaciones diferenciales de primer orden",
+      "Una lista de tareas del sistema operativo",
+      "Una tabla de direcciones MAC",
+      "Una red de resistencias exclusivamente"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El enfoque de espacio de estados describe la dinámica mediante variables de estado y ecuaciones de primer orden.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1494,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué pregunta responde la controlabilidad?",
+    "stimulus": "",
+    "options": [
+      "¿Se puede llevar el sistema a estados deseados mediante entradas?",
+      "¿Se puede leer el código fuente?",
+      "¿Cuánto cuesta el sensor?",
+      "¿Cuántos datos almacena el sistema?"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La controlabilidad indica si las entradas permiten alcanzar cualquier estado desde una condición inicial.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1495,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué pregunta responde la observabilidad?",
+    "stimulus": "",
+    "options": [
+      "¿Se puede inferir el estado interno a partir de las salidas?",
+      "¿Se puede aumentar la potencia del motor?",
+      "¿Se puede reducir el número de actuadores?",
+      "¿Se puede cambiar el protocolo?"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La observabilidad determina si los estados internos pueden deducirse a partir de las salidas medidas.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1496,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la función de un sensor en un proceso industrial?",
+    "stimulus": "",
+    "options": [
+      "Ejecutar físicamente la corrección",
+      "Medir una variable y generar una señal",
+      "Decidir la política de seguridad",
+      "Almacenar la producción"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Los sensores miden variables del proceso y envían señales al controlador.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1497,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la función del actuador?",
+    "stimulus": "",
+    "options": [
+      "Medir el error",
+      "Ejecutar la corrección calculada por el controlador",
+      "Calcular la función de transferencia",
+      "Registrar datos históricos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Válvulas, bombas y motores son actuadores que realizan la acción correctiva.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1498,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo industrial se describe como simple, abierto y utilizado sobre RS-232, RS-485 y Ethernet?",
+    "stimulus": "",
+    "options": [
+      "Bluetooth",
+      "Modbus",
+      "HTTP exclusivamente",
+      "SMTP"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Modbus es un protocolo abierto y sencillo utilizado para comunicación industrial en distintos medios.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1499,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué protocolo se identifica como robusto y rápido para automatización de fábricas y control de procesos?",
+    "stimulus": "",
+    "options": [
+      "Profibus",
+      "FTP",
+      "POP3",
+      "NFC"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material describe Profibus como protocolo industrial robusto y rápido, desarrollado por Siemens.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1500,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica distingue a Ethernet Industrial en ambientes de automatización?",
+    "stimulus": "",
+    "options": [
+      "Alta latencia deliberada",
+      "Baja latencia, velocidad y estabilidad",
+      "Ausencia de estándares",
+      "Uso exclusivo en redes domésticas"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Ethernet Industrial adapta Ethernet a exigencias industriales de baja latencia, alta velocidad y estabilidad.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1501,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué reto de comunicación es frecuente en ambientes industriales?",
+    "stimulus": "",
+    "options": [
+      "Ruido electromagnético",
+      "Ausencia de señales físicas",
+      "Exceso de memoria caché",
+      "Duplicación de tablas CRM"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La maquinaria puede generar interferencia electromagnética que afecta las señales de comunicación.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1502,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué un sistema embebido suele utilizar un microcontrolador?",
+    "stimulus": "",
+    "options": [
+      "Para realizar una función específica con recursos limitados",
+      "Para ejecutar cualquier aplicación de escritorio",
+      "Para sustituir toda la red industrial",
+      "Para almacenar grandes bases de datos empresariales"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Los sistemas embebidos se diseñan para tareas concretas y suelen optimizar procesamiento, memoria y energía.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1503,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué implica que un sistema embebido sea de tiempo real?",
+    "stimulus": "",
+    "options": [
+      "Que responde dentro de restricciones temporales definidas",
+      "Que siempre está conectado a Internet",
+      "Que no utiliza sensores",
+      "Que procesa únicamente datos históricos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El cumplimiento de tiempos de respuesta es parte esencial del comportamiento correcto del sistema.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1504,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué elemento integra normalmente un sistema embebido de control?",
+    "stimulus": "",
+    "options": [
+      "Sensores, procesador y actuadores",
+      "Solo hojas de cálculo",
+      "Un ERP completo",
+      "Únicamente una pantalla"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material señala que estos sistemas suelen integrar sensores, procesadores y actuadores.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1505,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ocurre cuando un sensor de presión transmite una variación a un PLC que ajusta una válvula?",
+    "stimulus": "",
+    "options": [
+      "Se implementa una cadena de medición, comunicación, control y actuación",
+      "Se ejecuta un CRM",
+      "Se elimina la realimentación",
+      "Se realiza una consulta SQL"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El sensor mide, la red comunica, el PLC calcula la corrección y la válvula actúa sobre el proceso.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1506,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué debe hacer la salida del PID después de calcular P+I+D?",
+    "stimulus": "",
+    "options": [
+      "Aplicarse sin límites a cualquier actuador",
+      "Limitarse a los límites físicos antes de actuar",
+      "Convertirse en una dirección IP",
+      "Guardarse como error anterior sin actuar"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El pseudocódigo satura la salida antes de enviarla al actuador para respetar los límites físicos.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1507,
+    "topic": "hw-control",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el pseudocódigo PID, ¿qué instrucción actualiza el estado para el siguiente ciclo?",
+    "stimulus": "",
+    "options": [
+      "error_previo = error",
+      "integral = 0 siempre",
+      "Ts = error",
+      "setpoint = y"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Al final se guarda el error actual como error_previo para que la siguiente derivada compare ambos ciclos.",
+    "source": "Teoría de Control y Pseudocódigo PID · material proporcionado"
+  },
+  {
+    "id": 1508,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En un proyecto de software, ¿qué significa eficiencia?",
+    "stimulus": "",
+    "options": [
+      "Alcanzar la meta sin importar los recursos",
+      "Usar los recursos de la mejor manera para lograr el objetivo",
+      "Comprar el hardware más reciente",
+      "Aumentar el número de funciones sin medir costos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La eficiencia relaciona logros con recursos utilizados; busca alcanzar el objetivo con menos recursos o más resultados con los mismos.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1509,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa eficacia en el contexto de un proyecto?",
+    "stimulus": "",
+    "options": [
+      "Alcanzar los objetivos propuestos",
+      "Reducir siempre el presupuesto",
+      "Utilizar menos memoria",
+      "Aumentar la frecuencia de reloj"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La eficacia se refiere al nivel de consecución de metas y objetivos.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1510,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un equipo entrega el sistema solicitado en la fecha acordada, pero consume el doble de horas planeadas. ¿Qué logró?",
+    "stimulus": "",
+    "options": [
+      "Eficiencia sin eficacia",
+      "Eficacia sin eficiencia",
+      "Ni eficacia ni eficiencia",
+      "Ambas necesariamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Se alcanzó la meta, por lo que hubo eficacia; el exceso de recursos implica falta de eficiencia.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1511,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un programa utiliza menos memoria, pero no cumple los requisitos del usuario. ¿Qué describe mejor el caso?",
+    "stimulus": "",
+    "options": [
+      "Eficiencia sin eficacia",
+      "Eficacia sin eficiencia",
+      "Ambas",
+      "Ninguna"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Se optimizaron recursos, pero no se alcanzó el objetivo funcional; es eficiencia sin eficacia.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1512,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la situación ideal para un sistema de cómputo?",
+    "stimulus": "",
+    "options": [
+      "Ser eficaz aunque desperdicie recursos",
+      "Ser eficiente sin cumplir requisitos",
+      "Cumplir objetivos y utilizar adecuadamente los recursos",
+      "Usar siempre el hardware más caro"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "El material considera ideal lograr los objetivos y, simultáneamente, administrar bien los recursos.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1513,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué acción puede mejorar la eficiencia de una aplicación que consulta repetidamente los mismos datos?",
+    "stimulus": "",
+    "options": [
+      "Almacenar datos frecuentes en caché",
+      "Duplicar todas las consultas",
+      "Aumentar el tamaño de las imágenes",
+      "Desactivar la memoria"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La caché guarda copias de datos frecuentes en un medio más rápido y reduce accesos a fuentes lentas.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1514,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué debe garantizar principalmente la eficacia de un sistema?",
+    "stimulus": "",
+    "options": [
+      "Que cumpla los requisitos funcionales y de rendimiento definidos",
+      "Que tenga el procesador más nuevo",
+      "Que utilice el mínimo de líneas de código",
+      "Que no tenga interfaz gráfica"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La eficacia depende de que el sistema realice las funciones y cumpla los objetivos establecidos por los usuarios.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1515,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Al comparar dos computadoras que ejecutan el mismo programa, ¿qué medida es directamente útil para comparar su rapidez?",
+    "stimulus": "",
+    "options": [
+      "Tiempo de ejecución",
+      "Color del gabinete",
+      "Cantidad de puertos USB sin contexto",
+      "Tamaño del monitor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El tiempo de ejecución permite comparar cuánto tarda cada máquina en completar la misma tarea.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1516,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se relaciona el rendimiento con el tiempo de ejecución para una misma tarea?",
+    "stimulus": "",
+    "options": [
+      "A mayor tiempo, mayor rendimiento",
+      "A menor tiempo, mayor rendimiento",
+      "No existe relación",
+      "El tiempo solo depende del monitor"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El rendimiento es inversamente proporcional al tiempo de ejecución para una carga de trabajo comparable.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1517,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una computadora A tarda 20 s y B tarda 40 s en ejecutar el mismo programa. ¿Cuántas veces más rápida es A?",
+    "stimulus": "",
+    "options": [
+      "0.5 veces",
+      "2 veces",
+      "20 veces",
+      "4 veces"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La aceleración temporal se obtiene como 40/20=2; A tarda la mitad que B y es dos veces más rápida.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1518,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa CPI en arquitectura de computadoras?",
+    "stimulus": "",
+    "options": [
+      "Ciclos de reloj por instrucción",
+      "Capacidad de procesamiento de Internet",
+      "Cantidad de puertos de entrada",
+      "Código de programa integrado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "CPI es el promedio de ciclos de reloj necesarios para ejecutar una instrucción.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1519,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si dos procesadores tienen igual frecuencia y ejecutan el mismo programa, ¿cuál suele tener mejor rendimiento?",
+    "stimulus": "",
+    "options": [
+      "El de mayor CPI",
+      "El de menor CPI",
+      "El de mayor temperatura",
+      "El de mayor tiempo de espera"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Con igual frecuencia y trabajo comparable, menos ciclos por instrucción reducen el tiempo de CPU.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1520,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa el tiempo de CPU?",
+    "stimulus": "",
+    "options": [
+      "Todo el tiempo transcurrido incluyendo esperas externas",
+      "El tiempo imputable a ejecutar instrucciones de un proceso",
+      "El tiempo que tarda en encender el monitor",
+      "El tiempo de transferencia de archivos únicamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El tiempo de CPU corresponde al tiempo de ejecución de instrucciones atribuible al proceso.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1521,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué incluye el tiempo de respuesta o tiempo transcurrido?",
+    "stimulus": "",
+    "options": [
+      "Solo ciclos de CPU",
+      "El tiempo total desde el inicio hasta el fin, incluidas esperas",
+      "Solo tiempo de usuario",
+      "Solo tiempo de sistema"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El tiempo de respuesta es el tiempo total observado, no únicamente el tiempo durante el que la CPU ejecuta instrucciones.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1522,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es la multitarea en un sistema operativo?",
+    "stimulus": "",
+    "options": [
+      "Ejecutar una sola tarea por sesión",
+      "Atender varias tareas mediante la asignación de tiempo de CPU",
+      "Duplicar físicamente el procesador",
+      "Eliminar el planificador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La multitarea permite que varios procesos progresen; el procesador se multiplexa en el tiempo.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1523,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué hace el planificador en un sistema multitarea?",
+    "stimulus": "",
+    "options": [
+      "Asigna intervalos de ejecución a los procesos",
+      "Calcula la tensión del procesador",
+      "Diseña el circuito de memoria",
+      "Convierte instrucciones en datos SQL"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El planificador distribuye lapsos de tiempo para que los procesos tengan oportunidad de ejecutarse.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1524,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué caracteriza al algoritmo round-robin mencionado en el material?",
+    "stimulus": "",
+    "options": [
+      "Cada proceso recibe un turno o intervalo de tiempo",
+      "El proceso más largo siempre se ejecuta primero",
+      "Solo existe un proceso",
+      "Los procesos nunca cambian de estado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Round-robin reparte la CPU mediante turnos temporales entre los procesos listos.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1525,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué expresa la Ley de Amdahl?",
+    "stimulus": "",
+    "options": [
+      "La mejora global depende de la fracción del tiempo que usa el subsistema mejorado",
+      "El rendimiento depende solo del tamaño de RAM",
+      "La frecuencia siempre duplica el rendimiento",
+      "El costo no afecta el diseño"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La ganancia total está limitada por la parte del programa que realmente se beneficia de la mejora.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1526,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una parte de un programa casi nunca se ejecuta, ¿qué efecto tendrá optimizarla mucho?",
+    "stimulus": "",
+    "options": [
+      "Una mejora global muy grande necesariamente",
+      "Una mejora global limitada",
+      "El programa dejará de funcionar",
+      "El CPI será cero"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La Ley de Amdahl indica que optimizar una fracción poco utilizada tiene poco efecto en el tiempo total.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1527,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Al diseñar o mejorar un computador, ¿qué factores principales se deben equilibrar según el material?",
+    "stimulus": "",
+    "options": [
+      "Objetivos, coste y rendimiento",
+      "Color, peso y marca",
+      "Sistema operativo y navegador únicamente",
+      "Número de usuarios y ubicación"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El diseño de un computador requiere equilibrar los objetivos de la máquina, su coste y el rendimiento esperado.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1528,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es la aceleración de rendimiento al comparar dos computadoras?",
+    "stimulus": "",
+    "options": [
+      "Relación entre sus rendimientos",
+      "Diferencia entre sus precios únicamente",
+      "Relación entre sus tamaños",
+      "Número de instrucciones almacenadas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La aceleración compara cuantitativamente el rendimiento de dos sistemas.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1529,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa que el CPI de un procesador aumente manteniendo los demás factores?",
+    "stimulus": "",
+    "options": [
+      "Se requieren más ciclos promedio por instrucción",
+      "Se reduce el tiempo de CPU necesariamente",
+      "Se duplica la frecuencia",
+      "Se elimina el tiempo de ejecución"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un CPI mayor implica más ciclos de reloj por instrucción y, en condiciones comparables, menor rendimiento.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1530,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una aplicación de inventario mantiene datos exactos y permite registrar altas y bajas, pero consume demasiada CPU. ¿Qué aspecto cumple y cuál debe mejorar?",
+    "stimulus": "",
+    "options": [
+      "Cumple eficiencia y debe mejorar eficacia",
+      "Cumple eficacia y debe mejorar eficiencia",
+      "No cumple ninguno",
+      "Cumple ambos completamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Las funciones y exactitud satisfacen la meta (eficacia); el consumo excesivo de recursos señala una oportunidad de eficiencia.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1531,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué no siempre conviene comprar el procesador más nuevo para una empresa?",
+    "stimulus": "",
+    "options": [
+      "Porque el rendimiento adicional puede no aportar valor a los procesos reales",
+      "Porque los procesadores nuevos no ejecutan software",
+      "Porque el hardware no influye en el rendimiento",
+      "Porque la eficiencia depende solo del color"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material señala que debe evaluarse la utilidad real de la capacidad adicional frente a las necesidades y costes.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1532,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué recurso se busca administrar eficientemente en el desarrollo de un prototipo?",
+    "stimulus": "",
+    "options": [
+      "Tiempo, recursos materiales y humanos",
+      "Solo el tamaño de pantalla",
+      "Únicamente la cantidad de archivos",
+      "Solo la marca de la CPU"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La eficiencia implica administrar los recursos disponibles, incluidos tiempo, materiales y trabajo humano.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1533,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si se producen 100 unidades en 12 horas y luego las mismas 100 en 10 horas, ¿qué mejora?",
+    "stimulus": "",
+    "options": [
+      "Eficacia únicamente",
+      "Eficiencia en el uso del tiempo",
+      "El número de objetivos",
+      "El consumo de memoria"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Se obtiene el mismo resultado con menos tiempo, por lo que aumenta la eficiencia.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1534,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué medición permite cuantificar cuántas instrucciones se ejecutan y cuánto tiempo consumen?",
+    "stimulus": "",
+    "options": [
+      "Contadores y temporizadores del procesador o sistema operativo",
+      "Únicamente el tamaño del teclado",
+      "Un diagrama de clases",
+      "Una tabla de contactos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material indica que procesadores y sistemas operativos disponen de recursos para medir tiempos y contar instrucciones.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1535,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ocurre con el tiempo total de un proceso en un sistema multitarea frente al tiempo de CPU?",
+    "stimulus": "",
+    "options": [
+      "Puede incluir cambios de contexto y esperas",
+      "Siempre es idéntico al tiempo de CPU",
+      "Nunca incluye interrupciones",
+      "Depende solo de CPI"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El tiempo total puede sumar tiempo de CPU, cambios de contexto y el tiempo de espera por otros procesos.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1536,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué parámetro es inversamente proporcional al rendimiento para la misma tarea?",
+    "stimulus": "",
+    "options": [
+      "Tiempo de ejecución",
+      "Número de letras del programa",
+      "Resolución de pantalla",
+      "Capacidad del disco sin acceso"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un menor tiempo de ejecución representa mayor rendimiento para la misma carga de trabajo.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1537,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es una mejora local de un subsistema?",
+    "stimulus": "",
+    "options": [
+      "Modificar un componente o parte del sistema para acelerar su función",
+      "Reemplazar todos los sistemas",
+      "Cambiar el objetivo del usuario",
+      "Eliminar la medición de rendimiento"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La Ley de Amdahl analiza precisamente el impacto de mejorar una parte del sistema sobre el rendimiento global.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1538,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si una optimización acelera una parte que representa 10% del tiempo, ¿por qué el beneficio global no puede ser ilimitado?",
+    "stimulus": "",
+    "options": [
+      "Porque el 90% restante no recibe esa mejora",
+      "Porque el sistema deja de usar memoria",
+      "Porque la frecuencia se vuelve cero",
+      "Porque el programa cambia de lenguaje"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La porción no optimizada sigue consumiendo tiempo y limita la aceleración total.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1539,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué diferencia esencial existe entre tiempo de CPU de usuario y de sistema?",
+    "stimulus": "",
+    "options": [
+      "El primero ejecuta código del proceso y el segundo tareas del sistema operativo",
+      "El primero mide red y el segundo monitor",
+      "No existe diferencia",
+      "Uno mide energía y el otro temperatura"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material separa el tiempo de CPU atribuible al modo usuario y al modo sistema.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1540,
+    "topic": "hw-architecture",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué criterio debe orientar la comparación de rendimiento entre computadoras?",
+    "stimulus": "",
+    "options": [
+      "Ejecutar cargas de trabajo comparables y medir resultados",
+      "Comparar únicamente sus nombres comerciales",
+      "Comparar solo la capacidad del disco",
+      "Elegir siempre la más costosa"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Las mediciones de rendimiento deben referirse a la misma tarea o cargas comparables para que la comparación tenga sentido.",
+    "source": "Eficiencia, eficacia y rendimiento de la computadora · material proporcionado"
+  },
+  {
+    "id": 1541,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa ERP?",
+    "stimulus": "",
+    "options": [
+      "Enterprise Resource Planning",
+      "Electronic Record Protocol",
+      "External Resource Program",
+      "Enterprise Routing Process"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "ERP significa Enterprise Resource Planning, traducido como Planificación de Recursos Empresariales.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1542,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el objetivo principal de un ERP?",
+    "stimulus": "",
+    "options": [
+      "Centralizar la relación con prospectos únicamente",
+      "Integrar procesos internos como finanzas, compras e inventario",
+      "Sustituir todos los sistemas operativos",
+      "Administrar exclusivamente campañas publicitarias"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El ERP integra procesos internos de la empresa en una plataforma y una base de datos compartida.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1543,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica permite que una venta actualice inventario y contabilidad?",
+    "stimulus": "",
+    "options": [
+      "Módulos aislados",
+      "Base de datos central compartida",
+      "Archivos manuales independientes",
+      "Duplicación de capturas"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Los módulos del ERP consultan y actualizan una base de datos común, lo que mantiene la información coordinada.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1544,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál de los siguientes módulos es habitual en un ERP?",
+    "stimulus": "",
+    "options": [
+      "Inventario y almacén",
+      "Embudo de prospectos exclusivamente",
+      "Chat personal",
+      "Editor de imágenes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Inventario y almacén es uno de los módulos empresariales habituales del ERP.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1545,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el flujo pedido-a-cobro, ¿qué área verifica y reserva las existencias después de registrar el pedido?",
+    "stimulus": "",
+    "options": [
+      "Inventario",
+      "Recursos humanos",
+      "Marketing",
+      "Auditoría externa"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Después de registrar el pedido, el módulo de inventario verifica y reserva los productos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1546,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función realiza el área de finanzas en el flujo pedido-a-cobro?",
+    "stimulus": "",
+    "options": [
+      "Generar factura y registro contable",
+      "Capturar prospectos",
+      "Enviar campañas",
+      "Calcular la señal de un sensor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "En el flujo presentado, finanzas genera la factura y el registro contable del pedido.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1547,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa CRM?",
+    "stimulus": "",
+    "options": [
+      "Customer Relationship Management",
+      "Computer Resource Monitor",
+      "Central Routing Module",
+      "Customer Record Machine"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "CRM significa Customer Relationship Management o Gestión de la Relación con el Cliente.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1548,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es el enfoque principal de un CRM?",
+    "stimulus": "",
+    "options": [
+      "Administrar recursos internos y nómina",
+      "Centralizar datos e interacciones de clientes y prospectos",
+      "Controlar procesos industriales",
+      "Administrar el inventario de materias primas solamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El CRM concentra contactos, compras, conversaciones y oportunidades para gestionar la relación con clientes.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1549,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa la vista 360° del cliente en un CRM?",
+    "stimulus": "",
+    "options": [
+      "Una vista gráfica en tres dimensiones",
+      "Una ficha integrada con su historial y datos de interacción",
+      "Una copia de seguridad de la base de datos",
+      "Un reporte financiero anual"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "La vista 360° reúne en una ficha el historial e información relevante del cliente.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1550,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de CRM automatiza tareas de ventas, marketing y servicio?",
+    "stimulus": "",
+    "options": [
+      "Analítico",
+      "Colaborativo",
+      "Operativo",
+      "Transaccional de inventario"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "El CRM operativo automatiza actividades y procesos de ventas, marketing y atención.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1551,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de CRM analiza datos para segmentar clientes y detectar patrones?",
+    "stimulus": "",
+    "options": [
+      "Operativo",
+      "Analítico",
+      "Colaborativo",
+      "De infraestructura"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El CRM analítico utiliza los datos para comprender comportamientos, segmentar y apoyar decisiones.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1552,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de CRM facilita compartir información del cliente entre áreas y canales?",
+    "stimulus": "",
+    "options": [
+      "Colaborativo",
+      "Operativo",
+      "Analítico",
+      "Financiero"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El CRM colaborativo permite que distintas áreas compartan información sobre el cliente.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1553,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En el embudo de ventas, ¿qué es un prospecto o lead?",
+    "stimulus": "",
+    "options": [
+      "Un cliente que ya pagó",
+      "Una persona que ha mostrado interés inicial",
+      "Una factura vencida",
+      "Un producto agotado"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El prospecto es alguien que muestra interés mediante un formulario, red social o evento.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1554,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ocurre en la etapa de oportunidad calificada?",
+    "stimulus": "",
+    "options": [
+      "Se confirma presupuesto, necesidad y quién decide",
+      "Se elimina el contacto",
+      "Se registra la nómina",
+      "Se despacha el producto sin pedido"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Ventas confirma que existe necesidad, presupuesto y una persona con capacidad de decisión.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1555,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué sistema responde mejor a la pregunta “¿qué tenemos y cuánto cuesta?”?",
+    "stimulus": "",
+    "options": [
+      "CRM",
+      "ERP",
+      "Sistema de correo",
+      "Editor de documentos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El ERP se enfoca en recursos, costos, inventarios y procesos internos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1556,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué sistema responde mejor a “¿quién nos compra y cómo lo atendemos?”?",
+    "stimulus": "",
+    "options": [
+      "ERP",
+      "CRM",
+      "Sistema operativo",
+      "Compilador"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El CRM se centra en clientes, prospectos, interacciones y seguimiento de oportunidades.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1557,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué información suele viajar del CRM al ERP al cerrarse una oportunidad?",
+    "stimulus": "",
+    "options": [
+      "Datos del pedido, cliente y condiciones de pago",
+      "Solo el historial de nómina",
+      "La configuración del sistema operativo",
+      "Los datos de temperatura de un sensor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Al cerrarse una venta, el CRM envía al ERP los datos necesarios para procesar el pedido.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1558,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué información puede regresar del ERP al CRM?",
+    "stimulus": "",
+    "options": [
+      "Existencias, envío, facturas y saldos",
+      "Contraseñas en texto plano",
+      "Código fuente del navegador",
+      "Solo campañas de marketing"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El ERP devuelve información del cumplimiento del pedido, inventario, facturación y cobranza.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1559,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "En una arquitectura por capas, ¿qué responsabilidad corresponde al cliente web o móvil?",
+    "stimulus": "",
+    "options": [
+      "Mostrar formularios, tablas y tableros",
+      "Ejecutar directamente todas las consultas físicas a disco",
+      "Administrar el sistema eléctrico",
+      "Sustituir la base de datos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La capa cliente presenta la interfaz y permite capturar información.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1560,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función tiene una API REST en el ERP/CRM?",
+    "stimulus": "",
+    "options": [
+      "Recibir solicitudes HTTP y datos JSON, autenticar y validar",
+      "Almacenar físicamente productos",
+      "Controlar un motor por PWM",
+      "Reemplazar la lógica de negocio"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La API REST expone operaciones para la interfaz y otros sistemas; recibe peticiones HTTP y puede usar JSON.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1561,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Dónde se implementan reglas como “no vender si no hay existencia”?",
+    "stimulus": "",
+    "options": [
+      "En la lógica de negocio del servidor",
+      "Solo en el color del botón",
+      "En el monitor del usuario",
+      "En un archivo de imagen"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Las reglas de negocio deben validarse en el backend para proteger la integridad de las operaciones.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1562,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué garantiza una llave foránea en una base de datos relacional?",
+    "stimulus": "",
+    "options": [
+      "Que un pedido haga referencia a un cliente existente",
+      "Que todos los usuarios tengan permisos de administrador",
+      "Que una consulta sea siempre gratuita",
+      "Que no existan registros duplicados de cualquier tabla"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La referencia entre pedidos y clientes evita asociar un pedido con un cliente inexistente.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1563,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Para qué se utiliza una restricción CHECK (cantidad > 0)?",
+    "stimulus": "",
+    "options": [
+      "Para impedir cantidades inválidas en la base de datos",
+      "Para crear usuarios automáticamente",
+      "Para cifrar el correo electrónico",
+      "Para ordenar las ventas por fecha"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "CHECK valida que la cantidad cumpla una condición, evitando almacenar valores cero o negativos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1564,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa CRUD en el contexto de módulos de clientes y productos?",
+    "stimulus": "",
+    "options": [
+      "Crear, leer, actualizar y eliminar registros",
+      "Calcular, revisar, usar y desplegar",
+      "Conectar, rutear, unir y desconectar",
+      "Controlar, reportar, unificar y diseñar"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "CRUD agrupa las operaciones básicas de creación, consulta, actualización y eliminación.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1565,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué propiedad ACID se ilustra cuando una transacción guarda todos los cambios o ninguno?",
+    "stimulus": "",
+    "options": [
+      "Atomicidad",
+      "Aislamiento visual",
+      "Durabilidad de interfaz",
+      "Consistencia gráfica"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Atomicidad significa que una transacción se ejecuta completamente o se revierte por completo.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1566,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Si un pedido no tiene existencia suficiente y el backend responde HTTP 409, ¿qué indica?",
+    "stimulus": "",
+    "options": [
+      "Creación exitosa",
+      "Conflicto por falta de existencia",
+      "Autenticación exitosa",
+      "Recurso eliminado"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El código 409 Conflict comunica que existe un conflicto con el estado del recurso, en el ejemplo por falta de inventario.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1567,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué evita una clave de idempotencia en una solicitud repetida?",
+    "stimulus": "",
+    "options": [
+      "Que un reintento genere el mismo pedido más de una vez",
+      "Que el usuario pueda iniciar sesión",
+      "Que se almacene el historial",
+      "Que se actualice el inventario"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La idempotencia permite reconocer reintentos de la misma operación y evitar duplicar pedidos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1568,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué es un webhook en la integración CRM-ERP descrita?",
+    "stimulus": "",
+    "options": [
+      "Una notificación o llamada automática cuando ocurre un evento",
+      "Una tabla de productos",
+      "Un tipo de memoria caché",
+      "Un protocolo de control PID"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El CRM puede avisar automáticamente al ERP mediante un webhook cuando una oportunidad se gana.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1569,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué se utiliza autenticación con tokens en la API?",
+    "stimulus": "",
+    "options": [
+      "Para identificar y autorizar sistemas que realizan solicitudes",
+      "Para aumentar el tamaño de la base de datos",
+      "Para convertir JSON a SQL automáticamente",
+      "Para eliminar la necesidad de permisos"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Los tokens permiten autenticar solicitudes y aplicar permisos por sistema o usuario.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1570,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué ventaja tiene un monolito modular para un proyecto pequeño?",
+    "stimulus": "",
+    "options": [
+      "Es más sencillo de probar y desplegar que muchos servicios separados",
+      "Cada módulo requiere una red independiente",
+      "Elimina la necesidad de separar responsabilidades",
+      "No permite organizar el código"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Un monolito modular se despliega como una aplicación, pero conserva límites claros entre módulos y reduce complejidad inicial.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1571,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es una desventaja de adoptar microservicios demasiado pronto?",
+    "stimulus": "",
+    "options": [
+      "No permite escalar módulos",
+      "Añade complejidad de red, versiones y datos distribuidos",
+      "Impide utilizar APIs",
+      "Obliga a usar una sola base de datos"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Los microservicios pueden escalar por separado, pero añaden complejidad operativa y de comunicación.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1572,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué debe registrar una bitácora de auditoría?",
+    "stimulus": "",
+    "options": [
+      "Quién cambió qué y cuándo",
+      "Solo el color de la interfaz",
+      "La velocidad del ventilador",
+      "Las contraseñas sin cifrar"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La auditoría mantiene trazabilidad de las modificaciones y permite conocer autor, cambio y momento.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1573,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué principio de seguridad limita la información visible según el puesto del usuario?",
+    "stimulus": "",
+    "options": [
+      "Roles y permisos",
+      "Caché de navegador",
+      "Compresión de datos",
+      "Balanceo de carga"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El control basado en roles limita el acceso a las funciones y datos que corresponden a cada usuario.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1574,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función tiene una prueba automatizada para la regla de no sobreventa?",
+    "stimulus": "",
+    "options": [
+      "Verificar que una petición con cantidad mayor al inventario sea rechazada",
+      "Aumentar el inventario automáticamente",
+      "Eliminar la autenticación",
+      "Cambiar la moneda de la factura"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La prueba envía una solicitud con una cantidad no disponible y comprueba que el servidor responda con conflicto.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1575,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué papel cumple la integración continua en el desarrollo de ERP/CRM?",
+    "stimulus": "",
+    "options": [
+      "Ejecutar pruebas automáticamente ante cambios",
+      "Sustituir los respaldos",
+      "Evitar el uso de control de versiones",
+      "Crear clientes sin autorización"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La integración continua ejecuta pruebas en cada cambio para detectar errores temprano.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1576,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué se recomienda proteger especialmente en un ERP o CRM?",
+    "stimulus": "",
+    "options": [
+      "Contraseñas con hash, conexiones cifradas y respaldos",
+      "Contraseñas en texto plano",
+      "Solo los nombres de módulos",
+      "Únicamente las imágenes del sitio"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Estos sistemas manejan datos personales y financieros, por lo que requieren controles de seguridad y respaldo.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1577,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué entregable corresponde al Sprint 0 del plan de desarrollo presentado?",
+    "stimulus": "",
+    "options": [
+      "Requisitos y modelo de datos",
+      "Facturación y pagos",
+      "Integración y despliegue",
+      "Embudo de oportunidades"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El Sprint 0 inicia con requisitos, casos de uso y modelo de datos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1578,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué trabajo se plantea para el Sprint 2?",
+    "stimulus": "",
+    "options": [
+      "Clientes y productos",
+      "Pedidos e inventario",
+      "CRM y oportunidades",
+      "Integración y despliegue"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El plan ubica pedidos e inventario en el Sprint 2, incluyendo transacciones y reglas de existencia.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1579,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué actividad corresponde al Sprint 5?",
+    "stimulus": "",
+    "options": [
+      "Definir requisitos",
+      "Crear tablas de clientes",
+      "Integración y despliegue con API, pruebas y Docker",
+      "Registrar oportunidades iniciales"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "El último sprint integra sistemas, automatiza pruebas y prepara el despliegue.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1580,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es un ejemplo de ERP citado en el material?",
+    "stimulus": "",
+    "options": [
+      "Salesforce",
+      "Odoo",
+      "HubSpot",
+      "Zoho CRM"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Odoo aparece como ejemplo de ERP modular de código abierto.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1581,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es un ejemplo de CRM citado en el material?",
+    "stimulus": "",
+    "options": [
+      "SAP S/4HANA",
+      "Oracle NetSuite",
+      "Salesforce",
+      "Odoo"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Salesforce se presenta como ejemplo de CRM en la nube.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1582,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de datos se asocian principalmente al ERP?",
+    "stimulus": "",
+    "options": [
+      "Inventarios, costos, facturas y nómina",
+      "Contactos, oportunidades y llamadas",
+      "Únicamente campañas y tickets",
+      "Solo mensajes de redes sociales"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El ERP administra datos internos de operación, como inventario, costos, facturación y recursos humanos.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1583,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué tipo de datos se asocian principalmente al CRM?",
+    "stimulus": "",
+    "options": [
+      "Nómina y costos de producción",
+      "Contactos, oportunidades e interacciones",
+      "Existencias de materias primas únicamente",
+      "Asientos contables exclusivamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El CRM concentra datos de clientes, prospectos, oportunidades e historial de interacciones.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1584,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Por qué se recomienda una base de datos relacional para un ERP/CRM?",
+    "stimulus": "",
+    "options": [
+      "Por transacciones e integridad referencial",
+      "Porque no requiere diseño de datos",
+      "Porque no permite relaciones",
+      "Porque elimina la autenticación"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Una base relacional permite modelar entidades relacionadas, aplicar llaves foráneas y realizar transacciones.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1585,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa que un ERP sea modular?",
+    "stimulus": "",
+    "options": [
+      "Puede incorporar módulos según las necesidades de la empresa",
+      "Cada módulo debe usar una empresa distinta",
+      "Solo funciona con todos los módulos instalados",
+      "No comparte información entre áreas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La empresa puede comenzar con módulos esenciales y añadir otros conforme crece o cambian sus necesidades.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1586,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué problema empresarial se busca reducir al integrar ERP y CRM?",
+    "stimulus": "",
+    "options": [
+      "Silos de información, datos duplicados y decisiones tardías",
+      "El número de clientes",
+      "La necesidad de procesos",
+      "El uso de reportes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La integración reduce la dispersión de datos entre áreas y los errores por capturas separadas.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1587,
+    "topic": "sw-data",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué sucede si dos vendedores intentan comprar simultáneamente la última unidad?",
+    "stimulus": "",
+    "options": [
+      "Una actualización condicional y transacción evitan sobreventa",
+      "El sistema debe duplicar la existencia",
+      "El CRM elimina el pedido",
+      "La base de datos ignora ambos usuarios"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La actualización condicional que descuenta solo si hay existencia suficiente evita condiciones de carrera; la transacción revierte si no puede completar.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1588,
+    "topic": "sw-engineering",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué formato se utiliza habitualmente en el ejemplo de API REST del material?",
+    "stimulus": "",
+    "options": [
+      "XML binario",
+      "JSON",
+      "PDF",
+      "CSV exclusivamente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El ejemplo de integración presenta solicitudes HTTP con un cuerpo JSON.",
+    "source": "ERP y CRM · Sistemas de información empresarial · material proporcionado"
+  },
+  {
+    "id": 1589,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Un diodo semiconductor ideal permite principalmente el flujo de corriente:",
+    "stimulus": "",
+    "options": [
+      "En ambos sentidos por igual",
+      "En un solo sentido",
+      "Solo cuando no existe tensión",
+      "Únicamente en corriente alterna"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El diodo conduce en polarización directa y bloquea el flujo significativo en polarización inversa, por lo que funciona como elemento de dirección o rectificación.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1590,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué caída de tensión directa aproximada se indica para un diodo de silicio?",
+    "stimulus": "",
+    "options": [
+      "0.1 V",
+      "0.3 V",
+      "0.7 V",
+      "5 V"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "El material señala una caída aproximada de 0.7 V para un diodo de silicio en conducción directa.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1591,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué caída de tensión directa aproximada se indica para un diodo de germanio?",
+    "stimulus": "",
+    "options": [
+      "0.3 V",
+      "0.7 V",
+      "1.5 V",
+      "3 V"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material compara la caída directa aproximada: 0.3 V para germanio y 0.7 V para silicio.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1592,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué representa el parámetro PIV de un diodo?",
+    "stimulus": "",
+    "options": [
+      "Potencia instantánea variable",
+      "Voltaje inverso pico que puede soportar",
+      "Corriente de base",
+      "Ganancia de corriente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "PIV es el voltaje inverso pico; superarlo puede llevar al dispositivo a ruptura.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1593,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué sucede con un diodo cuando está polarizado inversamente dentro de sus límites?",
+    "stimulus": "",
+    "options": [
+      "Conduce como cortocircuito",
+      "Presenta una corriente de fuga pequeña",
+      "Se comporta como fuente ideal",
+      "Amplifica corriente"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "En polarización inversa normal, el diodo bloquea y solo presenta una corriente de fuga pequeña.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1594,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué función cumple un diodo Zener cuando opera en su región de ruptura controlada?",
+    "stimulus": "",
+    "options": [
+      "Permite regulación o referencia de tensión",
+      "Amplifica corriente de base",
+      "Almacena energía magnética",
+      "Dispara un TRIAC"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La ruptura Zener permite mantener una tensión aproximadamente definida, dentro de las condiciones de operación especificadas.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1595,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la variable de control característica de un BJT?",
+    "stimulus": "",
+    "options": [
+      "Tensión compuerta-fuente",
+      "Corriente de base",
+      "Corriente de compuerta nula",
+      "Ángulo de disparo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El BJT es bipolar y su conducción se controla mediante corriente de base.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1596,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la variable de control característica de un MOSFET?",
+    "stimulus": "",
+    "options": [
+      "Corriente de base",
+      "Tensión compuerta-fuente",
+      "Corriente de colector",
+      "Voltaje de ánodo"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El MOSFET es un dispositivo unipolar controlado por la tensión VGS aplicada a la compuerta.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1597,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica de entrada distingue al MOSFET?",
+    "stimulus": "",
+    "options": [
+      "Impedancia de entrada muy alta",
+      "Necesita corriente de base continua",
+      "Impedancia de entrada nula",
+      "Tiene siempre tres uniones PN"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La compuerta aislada del MOSFET produce una impedancia de entrada extremadamente alta y corriente de entrada ideal cercana a cero.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1598,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es una aplicación típica del BJT según la comparación del material?",
+    "stimulus": "",
+    "options": [
+      "Amplificación analógica",
+      "Control de fase de CA con dos SCR",
+      "Disparo bidireccional sin compuerta",
+      "Rectificación sin polarización"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El material asocia BJT con amplificación analógica y alta ganancia, además de su uso como interruptor.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1599,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es una aplicación típica de MOSFET/CMOS?",
+    "stimulus": "",
+    "options": [
+      "Lógica digital de computadoras",
+      "Control de potencia de CA mediante DIAC",
+      "Rectificación pasiva únicamente",
+      "Medición de presión"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "La combinación MOSFET/CMOS se asocia con conmutación digital y alta eficiencia.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1600,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué estructura de semiconductor caracteriza a un tiristor SCR?",
+    "stimulus": "",
+    "options": [
+      "PNPN",
+      "NPN únicamente",
+      "P-N simple",
+      "Canal N aislado"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El SCR utiliza una estructura de cuatro capas PNPN y presenta comportamiento de enclavamiento.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1601,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cómo se activa normalmente un SCR?",
+    "stimulus": "",
+    "options": [
+      "Aplicando un pulso a la compuerta",
+      "Aumentando la resistencia de carga",
+      "Conectando un capacitor en paralelo",
+      "Retirando la alimentación de ánodo"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El SCR requiere un pulso de disparo en la compuerta para pasar al estado de conducción.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1602,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "Una vez enclavado un SCR, ¿cómo se apaga según el material?",
+    "stimulus": "",
+    "options": [
+      "Quitando la señal de compuerta",
+      "Interrumpiendo la corriente de ánodo o reduciéndola por debajo de la corriente de mantenimiento",
+      "Aplicando otro pulso positivo a la compuerta",
+      "Aumentando la corriente de compuerta"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "El SCR no se apaga simplemente retirando la señal de compuerta; debe caer la corriente de ánodo por debajo de la corriente de mantenimiento o usarse conmutación.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1603,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué significa la corriente de mantenimiento (holding current) de un SCR?",
+    "stimulus": "",
+    "options": [
+      "La corriente mínima necesaria para conservar la conducción",
+      "La corriente máxima de compuerta",
+      "La corriente de fuga del diodo",
+      "La corriente de base del BJT"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Si la corriente de ánodo cae por debajo de la corriente de mantenimiento, el SCR deja de conducir.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1604,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica tiene un DIAC?",
+    "stimulus": "",
+    "options": [
+      "Es un dispositivo bidireccional sin compuerta",
+      "Es un transistor controlado por corriente",
+      "Es un diodo unidireccional de potencia",
+      "Es un amplificador operacional"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El DIAC es bidireccional y no tiene terminal de compuerta; dispara al alcanzar un nivel de tensión.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1605,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Cuál es la función del DIAC en un circuito de control de fase con TRIAC?",
+    "stimulus": "",
+    "options": [
+      "Proporcionar un pulso de disparo al TRIAC",
+      "Medir la corriente de carga",
+      "Limitar la tensión de compuerta del MOSFET",
+      "Rectificar toda la señal"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El DIAC genera el pulso de ruptura que dispara el TRIAC en el ángulo de fase establecido.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1606,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué característica distingue al TRIAC frente a un SCR convencional?",
+    "stimulus": "",
+    "options": [
+      "Puede controlar corriente alterna en ambos sentidos",
+      "Solo conduce en un sentido",
+      "No requiere terminales",
+      "Es un dispositivo de memoria"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El TRIAC es un dispositivo de potencia bidireccional y puede controlar ambas alternancias de una señal de CA.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1607,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué aplicación es adecuada para un TRIAC?",
+    "stimulus": "",
+    "options": [
+      "Regulación de potencia de una carga de corriente alterna",
+      "Almacenamiento de datos binarios",
+      "Amplificación de corriente de base",
+      "Conversión de código digital a voltaje"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El TRIAC se utiliza para control de potencia en CA, por ejemplo mediante control de fase.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
+  },
+  {
+    "id": 1608,
+    "topic": "hw-circuits",
+    "type": "single",
+    "format": "Cuestionamiento directo",
+    "difficulty": "Media",
+    "question": "¿Qué diferencia esencial existe entre el apagado de un SCR y un transistor BJT usado como interruptor?",
+    "stimulus": "",
+    "options": [
+      "El SCR puede quedar enclavado y requiere reducir la corriente de ánodo; el BJT se controla por corriente de base",
+      "Ambos se apagan siempre retirando la señal de compuerta",
+      "El BJT se enclava siempre y el SCR no",
+      "El SCR se controla por tensión compuerta-fuente"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "El SCR mantiene conducción después del disparo hasta que la corriente cae bajo su umbral de mantenimiento; el BJT se gobierna mediante corriente de base.",
+    "source": "Electrónicos.pdf · Arquitectura del Estado Sólido (OCR de páginas escaneadas) y Conceptos Básicos de Hardware"
   }
 ];
